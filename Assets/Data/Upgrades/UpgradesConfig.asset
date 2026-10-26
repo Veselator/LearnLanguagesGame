@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5affd6cd86e0c04448819031677211d0, type: 3}
+  m_Name: UpgradesConfig
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Gameplay.Economy.UpgradesConfig
+  _upgrades:
+  - {fileID: 11400000, guid: d9d8dc41f9b82d44f9e5a058e04f7e87, type: 2}
+  - {fileID: 11400000, guid: 56e04ba29f8b07f449266af94c1c419b, type: 2}
+  - {fileID: 11400000, guid: bf582d5cb34644a4f83d681a80606378, type: 2}
+  - {fileID: 11400000, guid: ad3892c6a49133442bd49b312c8037b6, type: 2}
+  - {fileID: 11400000, guid: 09d47ab0e9b3b0a4c8c6b34954c22051, type: 2}
+  - {fileID: 11400000, guid: 06e0bb2525978294c969a70f52e3d002, type: 2}
+  - {fileID: 11400000, guid: 9d9c57b2ab4b24049a75578b97defbef, type: 2}
+  - {fileID: 11400000, guid: 5240059af8643af44aaa6e5854190963, type: 2}
+  - {fileID: 11400000, guid: b8c12d391f6425642b2ca786da15f11c, type: 2}
+  _villageSlots: 2
+  _castleSlots: 3
+  _citySlots: 5

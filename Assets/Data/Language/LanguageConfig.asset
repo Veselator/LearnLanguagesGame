@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93c3e0a801b2c54097c8f26a9bb280c, type: 3}
+  m_Name: LanguageConfig
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Learning.Data.LanguageConfig
+  _languages:
+  - {fileID: 11400000, guid: a4e36e9a59e72d84ea74f533916ba8c8, type: 2}
+  - {fileID: 11400000, guid: 56879b162457819458a86d6cb81efcd1, type: 2}
+  _tasksSettings:
+    _choiceTimeLimit: 15
+    _inputTimeLimit: 25
+    _resultDisplayTime: 1.4
+    _taskWeights:
+    - 3
+    - 2
+    - 2
+    - 1.5
+    - 1.5

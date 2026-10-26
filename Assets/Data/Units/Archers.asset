@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5f9487f4085bb4b97a734fa27cf38e, type: 3}
+  m_Name: Archers
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Gameplay.Units.UnitTypeDefinition
+  _id: archers
+  _nameKey: unit.archers
+  _class: 1
+  _maxSoldiers: 80
+  _attack: 6
+  _defense: 6
+  _speed: 3
+  _range: 6
+  _rangedAttack: 9
+  _chargeBonus: 0
+  _recruitable: 1
+  _minimumSettlement: 2
+  _requiresAdvancedBuilding: 0
+  _recruitCost:
+    _gold: 45
+    _food: 8
+    _wood: 15
+    _stone: 0
+  _upkeep:
+    _gold: 2
+    _food: 1
+    _wood: 0
+    _stone: 0
+  _reinforceGoldPerTen: 3

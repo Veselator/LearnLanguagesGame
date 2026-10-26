@@ -1,0 +1,3266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e5f0209b845874c950c6cd266aea14, type: 3}
+  m_Name: LanguageData_French
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Learning.Data.LanguageData
+  _targetLanguage: 1
+  _entries:
+  - _word: chat
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: cat
+    - _language: 2
+      _translation: "\u043A\u043E\u0442/\u043A\u043E\u0448\u043A\u0430"
+    - _language: 3
+      _translation: "\u043A\u0456\u0442/\u043A\u0456\u0448\u043A\u0430"
+  - _word: chien
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: dog
+    - _language: 2
+      _translation: "\u0441\u043E\u0431\u0430\u043A\u0430"
+    - _language: 3
+      _translation: "\u0441\u043E\u0431\u0430\u043A\u0430/\u043F\u0435\u0441"
+  - _word: cheval
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: horse
+    - _language: 2
+      _translation: "\u043B\u043E\u0448\u0430\u0434\u044C/\u043A\u043E\u043D\u044C"
+    - _language: 3
+      _translation: "\u043A\u0456\u043D\u044C"
+  - _word: vache
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: cow
+    - _language: 2
+      _translation: "\u043A\u043E\u0440\u043E\u0432\u0430"
+    - _language: 3
+      _translation: "\u043A\u043E\u0440\u043E\u0432\u0430"
+  - _word: oiseau
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: bird
+    - _language: 2
+      _translation: "\u043F\u0442\u0438\u0446\u0430"
+    - _language: 3
+      _translation: "\u043F\u0442\u0430\u0445"
+  - _word: poisson
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: fish
+    - _language: 2
+      _translation: "\u0440\u044B\u0431\u0430"
+    - _language: 3
+      _translation: "\u0440\u0438\u0431\u0430"
+  - _word: cochon
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: pig
+    - _language: 2
+      _translation: "\u0441\u0432\u0438\u043D\u044C\u044F"
+    - _language: 3
+      _translation: "\u0441\u0432\u0438\u043D\u044F"
+  - _word: mouton
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: sheep
+    - _language: 2
+      _translation: "\u043E\u0432\u0446\u0430"
+    - _language: 3
+      _translation: "\u0432\u0456\u0432\u0446\u044F"
+  - _word: souris
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: mouse
+    - _language: 2
+      _translation: "\u043C\u044B\u0448\u044C"
+    - _language: 3
+      _translation: "\u043C\u0438\u0448\u0430"
+  - _word: loup
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: wolf
+    - _language: 2
+      _translation: "\u0432\u043E\u043B\u043A"
+    - _language: 3
+      _translation: "\u0432\u043E\u0432\u043A"
+  - _word: ours
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: bear
+    - _language: 2
+      _translation: "\u043C\u0435\u0434\u0432\u0435\u0434\u044C"
+    - _language: 3
+      _translation: "\u0432\u0435\u0434\u043C\u0456\u0434\u044C"
+  - _word: "ch\xE8vre"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: goat
+    - _language: 2
+      _translation: "\u043A\u043E\u0437\u0430"
+    - _language: 3
+      _translation: "\u043A\u043E\u0437\u0430"
+  - _word: renard
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: fox
+    - _language: 2
+      _translation: "\u043B\u0438\u0441\u0430"
+    - _language: 3
+      _translation: "\u043B\u0438\u0441\u0438\u0446\u044F"
+  - _word: aigle
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 00000000
+    _translations:
+    - _language: 0
+      _translation: eagle
+    - _language: 2
+      _translation: "\u043E\u0440\u0451\u043B"
+    - _language: 3
+      _translation: "\u043E\u0440\u0435\u043B"
+  - _word: pain
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: bread
+    - _language: 2
+      _translation: "\u0445\u043B\u0435\u0431"
+    - _language: 3
+      _translation: "\u0445\u043B\u0456\u0431"
+  - _word: eau
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: water
+    - _language: 2
+      _translation: "\u0432\u043E\u0434\u0430"
+    - _language: 3
+      _translation: "\u0432\u043E\u0434\u0430"
+  - _word: lait
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: milk
+    - _language: 2
+      _translation: "\u043C\u043E\u043B\u043E\u043A\u043E"
+    - _language: 3
+      _translation: "\u043C\u043E\u043B\u043E\u043A\u043E"
+  - _word: pomme
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: apple
+    - _language: 2
+      _translation: "\u044F\u0431\u043B\u043E\u043A\u043E"
+    - _language: 3
+      _translation: "\u044F\u0431\u043B\u0443\u043A\u043E"
+  - _word: fromage
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: cheese
+    - _language: 2
+      _translation: "\u0441\u044B\u0440"
+    - _language: 3
+      _translation: "\u0441\u0438\u0440"
+  - _word: viande
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: meat
+    - _language: 2
+      _translation: "\u043C\u044F\u0441\u043E"
+    - _language: 3
+      _translation: "\u043C'\u044F\u0441\u043E"
+  - _word: vin
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: wine
+    - _language: 2
+      _translation: "\u0432\u0438\u043D\u043E"
+    - _language: 3
+      _translation: "\u0432\u0438\u043D\u043E"
+  - _word: "\u0153uf"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: egg
+    - _language: 2
+      _translation: "\u044F\u0439\u0446\u043E"
+    - _language: 3
+      _translation: "\u044F\u0439\u0446\u0435"
+  - _word: soupe
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: soup
+    - _language: 2
+      _translation: "\u0441\u0443\u043F"
+    - _language: 3
+      _translation: "\u0441\u0443\u043F"
+  - _word: sel
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: salt
+    - _language: 2
+      _translation: "\u0441\u043E\u043B\u044C"
+    - _language: 3
+      _translation: "\u0441\u0456\u043B\u044C"
+  - _word: "bl\xE9"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: wheat
+    - _language: 2
+      _translation: "\u043F\u0448\u0435\u043D\u0438\u0446\u0430"
+    - _language: 3
+      _translation: "\u043F\u0448\u0435\u043D\u0438\u0446\u044F"
+  - _word: raisin
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: grape
+    - _language: 2
+      _translation: "\u0432\u0438\u043D\u043E\u0433\u0440\u0430\u0434"
+    - _language: 3
+      _translation: "\u0432\u0438\u043D\u043E\u0433\u0440\u0430\u0434"
+  - _word: miel
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: honey
+    - _language: 2
+      _translation: "\u043C\u0451\u0434"
+    - _language: 3
+      _translation: "\u043C\u0435\u0434"
+  - _word: farine
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 01000000
+    _translations:
+    - _language: 0
+      _translation: flour
+    - _language: 2
+      _translation: "\u043C\u0443\u043A\u0430"
+    - _language: 3
+      _translation: "\u0431\u043E\u0440\u043E\u0448\u043D\u043E"
+  - _word: "m\xE8re"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: mother
+    - _language: 2
+      _translation: "\u043C\u0430\u0442\u044C/\u043C\u0430\u043C\u0430"
+    - _language: 3
+      _translation: "\u043C\u0430\u0442\u0438/\u043C\u0430\u043C\u0430"
+  - _word: "p\xE8re"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: father
+    - _language: 2
+      _translation: "\u043E\u0442\u0435\u0446/\u043F\u0430\u043F\u0430"
+    - _language: 3
+      _translation: "\u0431\u0430\u0442\u044C\u043A\u043E/\u0442\u0430\u0442\u043E"
+  - _word: "fr\xE8re"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: brother
+    - _language: 2
+      _translation: "\u0431\u0440\u0430\u0442"
+    - _language: 3
+      _translation: "\u0431\u0440\u0430\u0442"
+  - _word: "s\u0153ur"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: sister
+    - _language: 2
+      _translation: "\u0441\u0435\u0441\u0442\u0440\u0430"
+    - _language: 3
+      _translation: "\u0441\u0435\u0441\u0442\u0440\u0430"
+  - _word: fils
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: son
+    - _language: 2
+      _translation: "\u0441\u044B\u043D"
+    - _language: 3
+      _translation: "\u0441\u0438\u043D"
+  - _word: fille
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: daughter
+    - _language: 2
+      _translation: "\u0434\u043E\u0447\u044C"
+    - _language: 3
+      _translation: "\u0434\u043E\u043D\u044C\u043A\u0430"
+  - _word: "grand-m\xE8re"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: grandmother
+    - _language: 2
+      _translation: "\u0431\u0430\u0431\u0443\u0448\u043A\u0430"
+    - _language: 3
+      _translation: "\u0431\u0430\u0431\u0443\u0441\u044F"
+  - _word: "grand-p\xE8re"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: grandfather
+    - _language: 2
+      _translation: "\u0434\u0435\u0434\u0443\u0448\u043A\u0430"
+    - _language: 3
+      _translation: "\u0434\u0456\u0434\u0443\u0441\u044C"
+  - _word: oncle
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: uncle
+    - _language: 2
+      _translation: "\u0434\u044F\u0434\u044F"
+    - _language: 3
+      _translation: "\u0434\u044F\u0434\u044C\u043A\u043E"
+  - _word: tante
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: aunt
+    - _language: 2
+      _translation: "\u0442\u0451\u0442\u044F"
+    - _language: 3
+      _translation: "\u0442\u0456\u0442\u043A\u0430"
+  - _word: cousin
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 02000000
+    _translations:
+    - _language: 0
+      _translation: cousin
+    - _language: 2
+      _translation: "\u0434\u0432\u043E\u044E\u0440\u043E\u0434\u043D\u044B\u0439
+        \u0431\u0440\u0430\u0442/\u043A\u0443\u0437\u0435\u043D"
+    - _language: 3
+      _translation: "\u0434\u0432\u043E\u044E\u0440\u0456\u0434\u043D\u0438\u0439
+        \u0431\u0440\u0430\u0442/\u043A\u0443\u0437\u0435\u043D"
+  - _word: "t\xEAte"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: head
+    - _language: 2
+      _translation: "\u0433\u043E\u043B\u043E\u0432\u0430"
+    - _language: 3
+      _translation: "\u0433\u043E\u043B\u043E\u0432\u0430"
+  - _word: main
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: hand
+    - _language: 2
+      _translation: "\u0440\u0443\u043A\u0430/\u043A\u0438\u0441\u0442\u044C"
+    - _language: 3
+      _translation: "\u0440\u0443\u043A\u0430/\u0434\u043E\u043B\u043E\u043D\u044F"
+  - _word: "\u0153il"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: eye
+    - _language: 2
+      _translation: "\u0433\u043B\u0430\u0437"
+    - _language: 3
+      _translation: "\u043E\u043A\u043E"
+  - _word: bouche
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: mouth
+    - _language: 2
+      _translation: "\u0440\u043E\u0442"
+    - _language: 3
+      _translation: "\u0440\u043E\u0442"
+  - _word: jambe
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: leg
+    - _language: 2
+      _translation: "\u043D\u043E\u0433\u0430"
+    - _language: 3
+      _translation: "\u043D\u043E\u0433\u0430"
+  - _word: bras
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: arm
+    - _language: 2
+      _translation: "\u0440\u0443\u043A\u0430"
+    - _language: 3
+      _translation: "\u0440\u0443\u043A\u0430"
+  - _word: "c\u0153ur"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: heart
+    - _language: 2
+      _translation: "\u0441\u0435\u0440\u0434\u0446\u0435"
+    - _language: 3
+      _translation: "\u0441\u0435\u0440\u0446\u0435"
+  - _word: "\xE9paule"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: shoulder
+    - _language: 2
+      _translation: "\u043F\u043B\u0435\u0447\u043E"
+    - _language: 3
+      _translation: "\u043F\u043B\u0435\u0447\u0435"
+  - _word: genou
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: knee
+    - _language: 2
+      _translation: "\u043A\u043E\u043B\u0435\u043D\u043E"
+    - _language: 3
+      _translation: "\u043A\u043E\u043B\u0456\u043D\u043E"
+  - _word: sourcil
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 03000000
+    _translations:
+    - _language: 0
+      _translation: eyebrow
+    - _language: 2
+      _translation: "\u0431\u0440\u043E\u0432\u044C"
+    - _language: 3
+      _translation: "\u0431\u0440\u043E\u0432\u0430"
+  - _word: arbre
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: tree
+    - _language: 2
+      _translation: "\u0434\u0435\u0440\u0435\u0432\u043E"
+    - _language: 3
+      _translation: "\u0434\u0435\u0440\u0435\u0432\u043E"
+  - _word: soleil
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: sun
+    - _language: 2
+      _translation: "\u0441\u043E\u043B\u043D\u0446\u0435"
+    - _language: 3
+      _translation: "\u0441\u043E\u043D\u0446\u0435"
+  - _word: mer
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: sea
+    - _language: 2
+      _translation: "\u043C\u043E\u0440\u0435"
+    - _language: 3
+      _translation: "\u043C\u043E\u0440\u0435"
+  - _word: "rivi\xE8re"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: river
+    - _language: 2
+      _translation: "\u0440\u0435\u043A\u0430"
+    - _language: 3
+      _translation: "\u0440\u0456\u0447\u043A\u0430"
+  - _word: fleur
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: flower
+    - _language: 2
+      _translation: "\u0446\u0432\u0435\u0442\u043E\u043A"
+    - _language: 3
+      _translation: "\u043A\u0432\u0456\u0442\u043A\u0430"
+  - _word: montagne
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: mountain
+    - _language: 2
+      _translation: "\u0433\u043E\u0440\u0430"
+    - _language: 3
+      _translation: "\u0433\u043E\u0440\u0430"
+  - _word: "for\xEAt"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: forest
+    - _language: 2
+      _translation: "\u043B\u0435\u0441"
+    - _language: 3
+      _translation: "\u043B\u0456\u0441"
+  - _word: pierre
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: stone
+    - _language: 2
+      _translation: "\u043A\u0430\u043C\u0435\u043D\u044C"
+    - _language: 3
+      _translation: "\u043A\u0430\u043C\u0456\u043D\u044C"
+  - _word: colline
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: hill
+    - _language: 2
+      _translation: "\u0445\u043E\u043B\u043C"
+    - _language: 3
+      _translation: "\u043F\u0430\u0433\u043E\u0440\u0431"
+  - _word: "\xEEle"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: island
+    - _language: 2
+      _translation: "\u043E\u0441\u0442\u0440\u043E\u0432"
+    - _language: 3
+      _translation: "\u043E\u0441\u0442\u0440\u0456\u0432"
+  - _word: champ
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: field
+    - _language: 2
+      _translation: "\u043F\u043E\u043B\u0435"
+    - _language: 3
+      _translation: "\u043F\u043E\u043B\u0435"
+  - _word: prairie
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: meadow
+    - _language: 2
+      _translation: "\u043B\u0443\u0433/\u043F\u043E\u043B\u044F\u043D\u0430"
+    - _language: 3
+      _translation: "\u043B\u0443\u0433/\u0433\u0430\u043B\u044F\u0432\u0438\u043D\u0430"
+  - _word: steppe
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: steppe
+    - _language: 2
+      _translation: "\u0441\u0442\u0435\u043F\u044C"
+    - _language: 3
+      _translation: "\u0441\u0442\u0435\u043F"
+  - _word: rivage
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 04000000
+    _translations:
+    - _language: 0
+      _translation: shore
+    - _language: 2
+      _translation: "\u0431\u0435\u0440\u0435\u0433"
+    - _language: 3
+      _translation: "\u0431\u0435\u0440\u0435\u0433"
+  - _word: rouge
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: red
+    - _language: 2
+      _translation: "\u043A\u0440\u0430\u0441\u043D\u044B\u0439"
+    - _language: 3
+      _translation: "\u0447\u0435\u0440\u0432\u043E\u043D\u0438\u0439"
+  - _word: bleu
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: blue
+    - _language: 2
+      _translation: "\u0441\u0438\u043D\u0438\u0439/\u0433\u043E\u043B\u0443\u0431\u043E\u0439"
+    - _language: 3
+      _translation: "\u0441\u0438\u043D\u0456\u0439/\u0431\u043B\u0430\u043A\u0438\u0442\u043D\u0438\u0439"
+  - _word: vert
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: green
+    - _language: 2
+      _translation: "\u0437\u0435\u043B\u0451\u043D\u044B\u0439"
+    - _language: 3
+      _translation: "\u0437\u0435\u043B\u0435\u043D\u0438\u0439"
+  - _word: blanc
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: white
+    - _language: 2
+      _translation: "\u0431\u0435\u043B\u044B\u0439"
+    - _language: 3
+      _translation: "\u0431\u0456\u043B\u0438\u0439"
+  - _word: noir
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: black
+    - _language: 2
+      _translation: "\u0447\u0451\u0440\u043D\u044B\u0439"
+    - _language: 3
+      _translation: "\u0447\u043E\u0440\u043D\u0438\u0439"
+  - _word: jaune
+    _type: 2
+    _conjugation: []
+    _level: 1
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: yellow
+    - _language: 2
+      _translation: "\u0436\u0451\u043B\u0442\u044B\u0439"
+    - _language: 3
+      _translation: "\u0436\u043E\u0432\u0442\u0438\u0439"
+  - _word: gris
+    _type: 2
+    _conjugation: []
+    _level: 1
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: grey
+    - _language: 2
+      _translation: "\u0441\u0435\u0440\u044B\u0439"
+    - _language: 3
+      _translation: "\u0441\u0456\u0440\u0438\u0439"
+  - _word: marron
+    _type: 2
+    _conjugation: []
+    _level: 2
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: brown
+    - _language: 2
+      _translation: "\u043A\u043E\u0440\u0438\u0447\u043D\u0435\u0432\u044B\u0439"
+    - _language: 3
+      _translation: "\u043A\u043E\u0440\u0438\u0447\u043D\u0435\u0432\u0438\u0439"
+  - _word: violet
+    _type: 2
+    _conjugation: []
+    _level: 2
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: purple
+    - _language: 2
+      _translation: "\u0444\u0438\u043E\u043B\u0435\u0442\u043E\u0432\u044B\u0439"
+    - _language: 3
+      _translation: "\u0444\u0456\u043E\u043B\u0435\u0442\u043E\u0432\u0438\u0439"
+  - _word: "dor\xE9"
+    _type: 2
+    _conjugation: []
+    _level: 3
+    _tags: 05000000
+    _translations:
+    - _language: 0
+      _translation: golden
+    - _language: 2
+      _translation: "\u0437\u043E\u043B\u043E\u0442\u043E\u0439"
+    - _language: 3
+      _translation: "\u0437\u043E\u043B\u043E\u0442\u0438\u0439"
+  - _word: un
+    _type: 6
+    _conjugation: []
+    _level: 0
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: one
+    - _language: 2
+      _translation: "\u043E\u0434\u0438\u043D"
+    - _language: 3
+      _translation: "\u043E\u0434\u0438\u043D"
+  - _word: deux
+    _type: 6
+    _conjugation: []
+    _level: 0
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: two
+    - _language: 2
+      _translation: "\u0434\u0432\u0430"
+    - _language: 3
+      _translation: "\u0434\u0432\u0430"
+  - _word: trois
+    _type: 6
+    _conjugation: []
+    _level: 0
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: three
+    - _language: 2
+      _translation: "\u0442\u0440\u0438"
+    - _language: 3
+      _translation: "\u0442\u0440\u0438"
+  - _word: quatre
+    _type: 6
+    _conjugation: []
+    _level: 0
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: four
+    - _language: 2
+      _translation: "\u0447\u0435\u0442\u044B\u0440\u0435"
+    - _language: 3
+      _translation: "\u0447\u043E\u0442\u0438\u0440\u0438"
+  - _word: cinq
+    _type: 6
+    _conjugation: []
+    _level: 0
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: five
+    - _language: 2
+      _translation: "\u043F\u044F\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F'\u044F\u0442\u044C"
+  - _word: six
+    _type: 6
+    _conjugation: []
+    _level: 0
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: six
+    - _language: 2
+      _translation: "\u0448\u0435\u0441\u0442\u044C"
+    - _language: 3
+      _translation: "\u0448\u0456\u0441\u0442\u044C"
+  - _word: sept
+    _type: 6
+    _conjugation: []
+    _level: 1
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: seven
+    - _language: 2
+      _translation: "\u0441\u0435\u043C\u044C"
+    - _language: 3
+      _translation: "\u0441\u0456\u043C"
+  - _word: huit
+    _type: 6
+    _conjugation: []
+    _level: 1
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: eight
+    - _language: 2
+      _translation: "\u0432\u043E\u0441\u0435\u043C\u044C"
+    - _language: 3
+      _translation: "\u0432\u0456\u0441\u0456\u043C"
+  - _word: neuf
+    _type: 6
+    _conjugation: []
+    _level: 1
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: nine
+    - _language: 2
+      _translation: "\u0434\u0435\u0432\u044F\u0442\u044C"
+    - _language: 3
+      _translation: "\u0434\u0435\u0432'\u044F\u0442\u044C"
+  - _word: dix
+    _type: 6
+    _conjugation: []
+    _level: 1
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: ten
+    - _language: 2
+      _translation: "\u0434\u0435\u0441\u044F\u0442\u044C"
+    - _language: 3
+      _translation: "\u0434\u0435\u0441\u044F\u0442\u044C"
+  - _word: cent
+    _type: 6
+    _conjugation: []
+    _level: 2
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: hundred
+    - _language: 2
+      _translation: "\u0441\u0442\u043E"
+    - _language: 3
+      _translation: "\u0441\u0442\u043E"
+  - _word: mille
+    _type: 6
+    _conjugation: []
+    _level: 2
+    _tags: 06000000
+    _translations:
+    - _language: 0
+      _translation: thousand
+    - _language: 2
+      _translation: "\u0442\u044B\u0441\u044F\u0447\u0430"
+    - _language: 3
+      _translation: "\u0442\u0438\u0441\u044F\u0447\u0430"
+  - _word: maison
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: house
+    - _language: 2
+      _translation: "\u0434\u043E\u043C"
+    - _language: 3
+      _translation: "\u0434\u0456\u043C/\u0431\u0443\u0434\u0438\u043D\u043E\u043A"
+  - _word: porte
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: door
+    - _language: 2
+      _translation: "\u0434\u0432\u0435\u0440\u044C"
+    - _language: 3
+      _translation: "\u0434\u0432\u0435\u0440\u0456"
+  - _word: table
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: table
+    - _language: 2
+      _translation: "\u0441\u0442\u043E\u043B"
+    - _language: 3
+      _translation: "\u0441\u0442\u0456\u043B"
+  - _word: lit
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: bed
+    - _language: 2
+      _translation: "\u043A\u0440\u043E\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043B\u0456\u0436\u043A\u043E"
+  - _word: "fen\xEAtre"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: window
+    - _language: 2
+      _translation: "\u043E\u043A\u043D\u043E"
+    - _language: 3
+      _translation: "\u0432\u0456\u043A\u043D\u043E"
+  - _word: chaise
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: chair
+    - _language: 2
+      _translation: "\u0441\u0442\u0443\u043B"
+    - _language: 3
+      _translation: "\u0441\u0442\u0456\u043B\u0435\u0446\u044C"
+  - _word: cuisine
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: kitchen
+    - _language: 2
+      _translation: "\u043A\u0443\u0445\u043D\u044F"
+    - _language: 3
+      _translation: "\u043A\u0443\u0445\u043D\u044F"
+  - _word: toit
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: roof
+    - _language: 2
+      _translation: "\u043A\u0440\u044B\u0448\u0430"
+    - _language: 3
+      _translation: "\u0434\u0430\u0445"
+  - _word: mur
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: wall
+    - _language: 2
+      _translation: "\u0441\u0442\u0435\u043D\u0430"
+    - _language: 3
+      _translation: "\u0441\u0442\u0456\u043D\u0430"
+  - _word: "chemin\xE9e"
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 07000000
+    _translations:
+    - _language: 0
+      _translation: fireplace
+    - _language: 2
+      _translation: "\u043A\u0430\u043C\u0438\u043D"
+    - _language: 3
+      _translation: "\u043A\u0430\u043C\u0456\u043D"
+  - _word: chemise
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: shirt
+    - _language: 2
+      _translation: "\u0440\u0443\u0431\u0430\u0448\u043A\u0430"
+    - _language: 3
+      _translation: "\u0441\u043E\u0440\u043E\u0447\u043A\u0430"
+  - _word: chapeau
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: hat
+    - _language: 2
+      _translation: "\u0448\u043B\u044F\u043F\u0430/\u0448\u0430\u043F\u043A\u0430"
+    - _language: 3
+      _translation: "\u043A\u0430\u043F\u0435\u043B\u044E\u0445/\u0448\u0430\u043F\u043A\u0430"
+  - _word: chaussure
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: shoe
+    - _language: 2
+      _translation: "\u0431\u043E\u0442\u0438\u043D\u043E\u043A/\u0442\u0443\u0444\u043B\u044F"
+    - _language: 3
+      _translation: "\u0447\u0435\u0440\u0435\u0432\u0438\u043A/\u0442\u0443\u0444\u043B\u044F"
+  - _word: robe
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: dress
+    - _language: 2
+      _translation: "\u043F\u043B\u0430\u0442\u044C\u0435"
+    - _language: 3
+      _translation: "\u0441\u0443\u043A\u043D\u044F"
+  - _word: manteau
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: coat
+    - _language: 2
+      _translation: "\u043F\u0430\u043B\u044C\u0442\u043E"
+    - _language: 3
+      _translation: "\u043F\u0430\u043B\u044C\u0442\u043E"
+  - _word: gant
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: glove
+    - _language: 2
+      _translation: "\u043F\u0435\u0440\u0447\u0430\u0442\u043A\u0430"
+    - _language: 3
+      _translation: "\u0440\u0443\u043A\u0430\u0432\u0438\u0447\u043A\u0430"
+  - _word: ceinture
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: belt
+    - _language: 2
+      _translation: "\u0440\u0435\u043C\u0435\u043D\u044C/\u043F\u043E\u044F\u0441"
+    - _language: 3
+      _translation: "\u0440\u0435\u043C\u0456\u043D\u044C/\u043F\u0430\u0441\u043E\u043A"
+  - _word: cape
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 08000000
+    _translations:
+    - _language: 0
+      _translation: cloak
+    - _language: 2
+      _translation: "\u043F\u043B\u0430\u0449"
+    - _language: 3
+      _translation: "\u043F\u043B\u0430\u0449"
+  - _word: pluie
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 09000000
+    _translations:
+    - _language: 0
+      _translation: rain
+    - _language: 2
+      _translation: "\u0434\u043E\u0436\u0434\u044C"
+    - _language: 3
+      _translation: "\u0434\u043E\u0449"
+  - _word: neige
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 09000000
+    _translations:
+    - _language: 0
+      _translation: snow
+    - _language: 2
+      _translation: "\u0441\u043D\u0435\u0433"
+    - _language: 3
+      _translation: "\u0441\u043D\u0456\u0433"
+  - _word: vent
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 09000000
+    _translations:
+    - _language: 0
+      _translation: wind
+    - _language: 2
+      _translation: "\u0432\u0435\u0442\u0435\u0440"
+    - _language: 3
+      _translation: "\u0432\u0456\u0442\u0435\u0440"
+  - _word: nuage
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 09000000
+    _translations:
+    - _language: 0
+      _translation: cloud
+    - _language: 2
+      _translation: "\u043E\u0431\u043B\u0430\u043A\u043E/\u0442\u0443\u0447\u0430"
+    - _language: 3
+      _translation: "\u0445\u043C\u0430\u0440\u0430"
+  - _word: "temp\xEAte"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 09000000
+    _translations:
+    - _language: 0
+      _translation: storm
+    - _language: 2
+      _translation: "\u0431\u0443\u0440\u044F/\u0448\u0442\u043E\u0440\u043C"
+    - _language: 3
+      _translation: "\u0431\u0443\u0440\u044F/\u0448\u0442\u043E\u0440\u043C"
+  - _word: brouillard
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 09000000
+    _translations:
+    - _language: 0
+      _translation: fog
+    - _language: 2
+      _translation: "\u0442\u0443\u043C\u0430\u043D"
+    - _language: 3
+      _translation: "\u0442\u0443\u043C\u0430\u043D"
+  - _word: tonnerre
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 09000000
+    _translations:
+    - _language: 0
+      _translation: thunder
+    - _language: 2
+      _translation: "\u0433\u0440\u043E\u043C"
+    - _language: 3
+      _translation: "\u0433\u0440\u0456\u043C"
+  - _word: professeur
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: teacher
+    - _language: 2
+      _translation: "\u0443\u0447\u0438\u0442\u0435\u043B\u044C"
+    - _language: 3
+      _translation: "\u0432\u0447\u0438\u0442\u0435\u043B\u044C"
+  - _word: "m\xE9decin"
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: doctor
+    - _language: 2
+      _translation: "\u0432\u0440\u0430\u0447"
+    - _language: 3
+      _translation: "\u043B\u0456\u043A\u0430\u0440"
+  - _word: fermier
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: farmer
+    - _language: 2
+      _translation: "\u0444\u0435\u0440\u043C\u0435\u0440"
+    - _language: 3
+      _translation: "\u0444\u0435\u0440\u043C\u0435\u0440"
+  - _word: boulanger
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: baker
+    - _language: 2
+      _translation: "\u043F\u0435\u043A\u0430\u0440\u044C"
+    - _language: 3
+      _translation: "\u043F\u0435\u043A\u0430\u0440"
+  - _word: marchand
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: merchant
+    - _language: 2
+      _translation: "\u043A\u0443\u043F\u0435\u0446/\u0442\u043E\u0440\u0433\u043E\u0432\u0435\u0446"
+    - _language: 3
+      _translation: "\u043A\u0443\u043F\u0435\u0446\u044C/\u0442\u043E\u0440\u0433\u043E\u0432\u0435\u0446\u044C"
+  - _word: forgeron
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: blacksmith
+    - _language: 2
+      _translation: "\u043A\u0443\u0437\u043D\u0435\u0446"
+    - _language: 3
+      _translation: "\u043A\u043E\u0432\u0430\u043B\u044C"
+  - _word: "p\xEAcheur"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: fisherman
+    - _language: 2
+      _translation: "\u0440\u044B\u0431\u0430\u043A"
+    - _language: 3
+      _translation: "\u0440\u0438\u0431\u0430\u043B\u043A\u0430"
+  - _word: charpentier
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 0a000000
+    _translations:
+    - _language: 0
+      _translation: carpenter
+    - _language: 2
+      _translation: "\u043F\u043B\u043E\u0442\u043D\u0438\u043A"
+    - _language: 3
+      _translation: "\u0442\u0435\u0441\u043B\u044F\u0440"
+  - _word: roi
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: king
+    - _language: 2
+      _translation: "\u043A\u043E\u0440\u043E\u043B\u044C"
+    - _language: 3
+      _translation: "\u043A\u043E\u0440\u043E\u043B\u044C"
+  - _word: reine
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: queen
+    - _language: 2
+      _translation: "\u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0430"
+    - _language: 3
+      _translation: "\u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0430"
+  - _word: soldat
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: soldier
+    - _language: 2
+      _translation: "\u0441\u043E\u043B\u0434\u0430\u0442"
+    - _language: 3
+      _translation: "\u0441\u043E\u043B\u0434\u0430\u0442"
+  - _word: "\xE9p\xE9e"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: sword
+    - _language: 2
+      _translation: "\u043C\u0435\u0447"
+    - _language: 3
+      _translation: "\u043C\u0435\u0447"
+  - _word: "ch\xE2teau"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: castle
+    - _language: 2
+      _translation: "\u0437\u0430\u043C\u043E\u043A"
+    - _language: 3
+      _translation: "\u0437\u0430\u043C\u043E\u043A"
+  - _word: "arm\xE9e"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: army
+    - _language: 2
+      _translation: "\u0430\u0440\u043C\u0438\u044F"
+    - _language: 3
+      _translation: "\u0430\u0440\u043C\u0456\u044F"
+  - _word: bouclier
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: shield
+    - _language: 2
+      _translation: "\u0449\u0438\u0442"
+    - _language: 3
+      _translation: "\u0449\u0438\u0442"
+  - _word: arc
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: bow
+    - _language: 2
+      _translation: "\u043B\u0443\u043A"
+    - _language: 3
+      _translation: "\u043B\u0443\u043A"
+  - _word: "fl\xE8che"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: arrow
+    - _language: 2
+      _translation: "\u0441\u0442\u0440\u0435\u043B\u0430"
+    - _language: 3
+      _translation: "\u0441\u0442\u0440\u0456\u043B\u0430"
+  - _word: bataille
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: battle
+    - _language: 2
+      _translation: "\u0431\u0438\u0442\u0432\u0430"
+    - _language: 3
+      _translation: "\u0431\u0438\u0442\u0432\u0430"
+  - _word: ennemi
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: enemy
+    - _language: 2
+      _translation: "\u0432\u0440\u0430\u0433"
+    - _language: 3
+      _translation: "\u0432\u043E\u0440\u043E\u0433"
+  - _word: victoire
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: victory
+    - _language: 2
+      _translation: "\u043F\u043E\u0431\u0435\u0434\u0430"
+    - _language: 3
+      _translation: "\u043F\u0435\u0440\u0435\u043C\u043E\u0433\u0430"
+  - _word: chevalier
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: knight
+    - _language: 2
+      _translation: "\u0440\u044B\u0446\u0430\u0440\u044C"
+    - _language: 3
+      _translation: "\u043B\u0438\u0446\u0430\u0440"
+  - _word: "banni\xE8re"
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: banner
+    - _language: 2
+      _translation: "\u0437\u043D\u0430\u043C\u044F/\u0444\u043B\u0430\u0433"
+    - _language: 3
+      _translation: "\u043F\u0440\u0430\u043F\u043E\u0440/\u0437\u043D\u0430\u043C\u0435\u043D\u043E"
+  - _word: "si\xE8ge"
+    _type: 0
+    _conjugation: []
+    _level: 4
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: siege
+    - _language: 2
+      _translation: "\u043E\u0441\u0430\u0434\u0430"
+    - _language: 3
+      _translation: "\u043E\u0431\u043B\u043E\u0433\u0430"
+  - _word: "tr\xEAve"
+    _type: 0
+    _conjugation: []
+    _level: 4
+    _tags: 0b000000
+    _translations:
+    - _language: 0
+      _translation: truce
+    - _language: 2
+      _translation: "\u043F\u0435\u0440\u0435\u043C\u0438\u0440\u0438\u0435"
+    - _language: 3
+      _translation: "\u043F\u0435\u0440\u0435\u043C\u0438\u0440'\u044F"
+  - _word: route
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0c000000
+    _translations:
+    - _language: 0
+      _translation: road
+    - _language: 2
+      _translation: "\u0434\u043E\u0440\u043E\u0433\u0430"
+    - _language: 3
+      _translation: "\u0434\u043E\u0440\u043E\u0433\u0430"
+  - _word: bateau
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0c000000
+    _translations:
+    - _language: 0
+      _translation: boat
+    - _language: 2
+      _translation: "\u043B\u043E\u0434\u043A\u0430/\u043A\u043E\u0440\u0430\u0431\u043B\u044C"
+    - _language: 3
+      _translation: "\u0447\u043E\u0432\u0435\u043D/\u043A\u043E\u0440\u0430\u0431\u0435\u043B\u044C"
+  - _word: pont
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0c000000
+    _translations:
+    - _language: 0
+      _translation: bridge
+    - _language: 2
+      _translation: "\u043C\u043E\u0441\u0442"
+    - _language: 3
+      _translation: "\u043C\u0456\u0441\u0442"
+  - _word: carte
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0c000000
+    _translations:
+    - _language: 0
+      _translation: map
+    - _language: 2
+      _translation: "\u043A\u0430\u0440\u0442\u0430"
+    - _language: 3
+      _translation: "\u043C\u0430\u043F\u0430/\u043A\u0430\u0440\u0442\u0430"
+  - _word: port
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0c000000
+    _translations:
+    - _language: 0
+      _translation: port
+    - _language: 2
+      _translation: "\u043F\u043E\u0440\u0442"
+    - _language: 3
+      _translation: "\u043F\u043E\u0440\u0442"
+  - _word: voyage
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0c000000
+    _translations:
+    - _language: 0
+      _translation: journey
+    - _language: 2
+      _translation: "\u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435"
+    - _language: 3
+      _translation: "\u043F\u043E\u0434\u043E\u0440\u043E\u0436"
+  - _word: boussole
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 0c000000
+    _translations:
+    - _language: 0
+      _translation: compass
+    - _language: 2
+      _translation: "\u043A\u043E\u043C\u043F\u0430\u0441"
+    - _language: 3
+      _translation: "\u043A\u043E\u043C\u043F\u0430\u0441"
+  - _word: jour
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: day
+    - _language: 2
+      _translation: "\u0434\u0435\u043D\u044C"
+    - _language: 3
+      _translation: "\u0434\u0435\u043D\u044C"
+  - _word: nuit
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: night
+    - _language: 2
+      _translation: "\u043D\u043E\u0447\u044C"
+    - _language: 3
+      _translation: "\u043D\u0456\u0447"
+  - _word: matin
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: morning
+    - _language: 2
+      _translation: "\u0443\u0442\u0440\u043E"
+    - _language: 3
+      _translation: "\u0440\u0430\u043D\u043E\u043A"
+  - _word: soir
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: evening
+    - _language: 2
+      _translation: "\u0432\u0435\u0447\u0435\u0440"
+    - _language: 3
+      _translation: "\u0432\u0435\u0447\u0456\u0440"
+  - _word: semaine
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: week
+    - _language: 2
+      _translation: "\u043D\u0435\u0434\u0435\u043B\u044F"
+    - _language: 3
+      _translation: "\u0442\u0438\u0436\u0434\u0435\u043D\u044C"
+  - _word: "ann\xE9e"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: year
+    - _language: 2
+      _translation: "\u0433\u043E\u0434"
+    - _language: 3
+      _translation: "\u0440\u0456\u043A"
+  - _word: heure
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: hour
+    - _language: 2
+      _translation: "\u0447\u0430\u0441"
+    - _language: 3
+      _translation: "\u0433\u043E\u0434\u0438\u043D\u0430"
+  - _word: "si\xE8cle"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: century
+    - _language: 2
+      _translation: "\u0432\u0435\u043A/\u0441\u0442\u043E\u043B\u0435\u0442\u0438\u0435"
+    - _language: 3
+      _translation: "\u0441\u0442\u043E\u043B\u0456\u0442\u0442\u044F"
+  - _word: hiver
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: winter
+    - _language: 2
+      _translation: "\u0437\u0438\u043C\u0430"
+    - _language: 3
+      _translation: "\u0437\u0438\u043C\u0430"
+  - _word: "\xE9t\xE9"
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: summer
+    - _language: 2
+      _translation: "\u043B\u0435\u0442\u043E"
+    - _language: 3
+      _translation: "\u043B\u0456\u0442\u043E"
+  - _word: heureux
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 0e000000
+    _translations:
+    - _language: 0
+      _translation: happy
+    - _language: 2
+      _translation: "\u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B\u0439"
+    - _language: 3
+      _translation: "\u0449\u0430\u0441\u043B\u0438\u0432\u0438\u0439"
+  - _word: triste
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 0e000000
+    _translations:
+    - _language: 0
+      _translation: sad
+    - _language: 2
+      _translation: "\u0433\u0440\u0443\u0441\u0442\u043D\u044B\u0439"
+    - _language: 3
+      _translation: "\u0441\u0443\u043C\u043D\u0438\u0439"
+  - _word: "f\xE2ch\xE9"
+    _type: 2
+    _conjugation: []
+    _level: 1
+    _tags: 0e000000
+    _translations:
+    - _language: 0
+      _translation: angry
+    - _language: 2
+      _translation: "\u0437\u043B\u043E\u0439/\u0441\u0435\u0440\u0434\u0438\u0442\u044B\u0439"
+    - _language: 3
+      _translation: "\u0437\u043B\u0438\u0439/\u0441\u0435\u0440\u0434\u0438\u0442\u0438\u0439"
+  - _word: "fatigu\xE9"
+    _type: 2
+    _conjugation: []
+    _level: 1
+    _tags: 0e000000
+    _translations:
+    - _language: 0
+      _translation: tired
+    - _language: 2
+      _translation: "\u0443\u0441\u0442\u0430\u0432\u0448\u0438\u0439"
+    - _language: 3
+      _translation: "\u0432\u0442\u043E\u043C\u043B\u0435\u043D\u0438\u0439"
+  - _word: courageux
+    _type: 2
+    _conjugation: []
+    _level: 2
+    _tags: 0e000000
+    _translations:
+    - _language: 0
+      _translation: brave
+    - _language: 2
+      _translation: "\u0445\u0440\u0430\u0431\u0440\u044B\u0439"
+    - _language: 3
+      _translation: "\u0445\u043E\u0440\u043E\u0431\u0440\u0438\u0439"
+  - _word: "effray\xE9"
+    _type: 2
+    _conjugation: []
+    _level: 2
+    _tags: 0e000000
+    _translations:
+    - _language: 0
+      _translation: afraid
+    - _language: 2
+      _translation: "\u0438\u0441\u043F\u0443\u0433\u0430\u043D\u043D\u044B\u0439"
+    - _language: 3
+      _translation: "\u043D\u0430\u043B\u044F\u043A\u0430\u043D\u0438\u0439"
+  - _word: fier
+    _type: 2
+    _conjugation: []
+    _level: 3
+    _tags: 0e000000
+    _translations:
+    - _language: 0
+      _translation: proud
+    - _language: 2
+      _translation: "\u0433\u043E\u0440\u0434\u044B\u0439"
+    - _language: 3
+      _translation: "\u0433\u043E\u0440\u0434\u0438\u0439"
+  - _word: rue
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: street
+    - _language: 2
+      _translation: "\u0443\u043B\u0438\u0446\u0430"
+    - _language: 3
+      _translation: "\u0432\u0443\u043B\u0438\u0446\u044F"
+  - _word: magasin
+    _type: 0
+    _conjugation: []
+    _level: 0
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: shop
+    - _language: 2
+      _translation: "\u043C\u0430\u0433\u0430\u0437\u0438\u043D"
+    - _language: 3
+      _translation: "\u043C\u0430\u0433\u0430\u0437\u0438\u043D"
+  - _word: "march\xE9"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: market
+    - _language: 2
+      _translation: "\u0440\u044B\u043D\u043E\u043A"
+    - _language: 3
+      _translation: "\u0440\u0438\u043D\u043E\u043A"
+  - _word: "\xE9glise"
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: church
+    - _language: 2
+      _translation: "\u0446\u0435\u0440\u043A\u043E\u0432\u044C"
+    - _language: 3
+      _translation: "\u0446\u0435\u0440\u043A\u0432\u0430"
+  - _word: village
+    _type: 0
+    _conjugation: []
+    _level: 1
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: village
+    - _language: 2
+      _translation: "\u0434\u0435\u0440\u0435\u0432\u043D\u044F"
+    - _language: 3
+      _translation: "\u0441\u0435\u043B\u043E"
+  - _word: tour
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: tower
+    - _language: 2
+      _translation: "\u0431\u0430\u0448\u043D\u044F"
+    - _language: 3
+      _translation: "\u0432\u0435\u0436\u0430"
+  - _word: moulin
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: mill
+    - _language: 2
+      _translation: "\u043C\u0435\u043B\u044C\u043D\u0438\u0446\u0430"
+    - _language: 3
+      _translation: "\u043C\u043B\u0438\u043D"
+  - _word: place
+    _type: 0
+    _conjugation: []
+    _level: 2
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: square
+    - _language: 2
+      _translation: "\u043F\u043B\u043E\u0449\u0430\u0434\u044C"
+    - _language: 3
+      _translation: "\u043F\u043B\u043E\u0449\u0430"
+  - _word: caserne
+    _type: 0
+    _conjugation: []
+    _level: 3
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: barracks
+    - _language: 2
+      _translation: "\u043A\u0430\u0437\u0430\u0440\u043C\u044B"
+    - _language: 3
+      _translation: "\u043A\u0430\u0437\u0430\u0440\u043C\u0430"
+  - _word: forteresse
+    _type: 0
+    _conjugation: []
+    _level: 4
+    _tags: 0f000000
+    _translations:
+    - _language: 0
+      _translation: fortress
+    - _language: 2
+      _translation: "\u043A\u0440\u0435\u043F\u043E\u0441\u0442\u044C"
+    - _language: 3
+      _translation: "\u0444\u043E\u0440\u0442\u0435\u0446\u044F"
+  - _word: grand
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: big
+    - _language: 2
+      _translation: "\u0431\u043E\u043B\u044C\u0448\u043E\u0439"
+    - _language: 3
+      _translation: "\u0432\u0435\u043B\u0438\u043A\u0438\u0439"
+  - _word: petit
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: small
+    - _language: 2
+      _translation: "\u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439"
+    - _language: 3
+      _translation: "\u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439"
+  - _word: bon
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: good
+    - _language: 2
+      _translation: "\u0445\u043E\u0440\u043E\u0448\u0438\u0439"
+    - _language: 3
+      _translation: "\u0434\u043E\u0431\u0440\u0438\u0439"
+  - _word: mauvais
+    _type: 2
+    _conjugation: []
+    _level: 0
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: bad
+    - _language: 2
+      _translation: "\u043F\u043B\u043E\u0445\u043E\u0439"
+    - _language: 3
+      _translation: "\u043F\u043E\u0433\u0430\u043D\u0438\u0439"
+  - _word: vieux
+    _type: 2
+    _conjugation: []
+    _level: 1
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: old
+    - _language: 2
+      _translation: "\u0441\u0442\u0430\u0440\u044B\u0439"
+    - _language: 3
+      _translation: "\u0441\u0442\u0430\u0440\u0438\u0439"
+  - _word: nouveau
+    _type: 2
+    _conjugation: []
+    _level: 1
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: new
+    - _language: 2
+      _translation: "\u043D\u043E\u0432\u044B\u0439"
+    - _language: 3
+      _translation: "\u043D\u043E\u0432\u0438\u0439"
+  - _word: fort
+    _type: 2
+    _conjugation: []
+    _level: 1
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: strong
+    - _language: 2
+      _translation: "\u0441\u0438\u043B\u044C\u043D\u044B\u0439"
+    - _language: 3
+      _translation: "\u0441\u0438\u043B\u044C\u043D\u0438\u0439"
+  - _word: faible
+    _type: 2
+    _conjugation: []
+    _level: 2
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: weak
+    - _language: 2
+      _translation: "\u0441\u043B\u0430\u0431\u044B\u0439"
+    - _language: 3
+      _translation: "\u0441\u043B\u0430\u0431\u043A\u0438\u0439"
+  - _word: rapide
+    _type: 2
+    _conjugation: []
+    _level: 2
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: fast
+    - _language: 2
+      _translation: "\u0431\u044B\u0441\u0442\u0440\u044B\u0439"
+    - _language: 3
+      _translation: "\u0448\u0432\u0438\u0434\u043A\u0438\u0439"
+  - _word: lent
+    _type: 2
+    _conjugation: []
+    _level: 2
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: slow
+    - _language: 2
+      _translation: "\u043C\u0435\u0434\u043B\u0435\u043D\u043D\u044B\u0439"
+    - _language: 3
+      _translation: "\u043F\u043E\u0432\u0456\u043B\u044C\u043D\u0438\u0439"
+  - _word: sage
+    _type: 2
+    _conjugation: []
+    _level: 3
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: wise
+    - _language: 2
+      _translation: "\u043C\u0443\u0434\u0440\u044B\u0439"
+    - _language: 3
+      _translation: "\u043C\u0443\u0434\u0440\u0438\u0439"
+  - _word: "f\xE9roce"
+    _type: 2
+    _conjugation: []
+    _level: 4
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: fierce
+    - _language: 2
+      _translation: "\u0441\u0432\u0438\u0440\u0435\u043F\u044B\u0439"
+    - _language: 3
+      _translation: "\u043B\u044E\u0442\u0438\u0439"
+  - _word: aujourd'hui
+    _type: 3
+    _conjugation: []
+    _level: 0
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: today
+    - _language: 2
+      _translation: "\u0441\u0435\u0433\u043E\u0434\u043D\u044F"
+    - _language: 3
+      _translation: "\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456"
+  - _word: demain
+    _type: 3
+    _conjugation: []
+    _level: 0
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: tomorrow
+    - _language: 2
+      _translation: "\u0437\u0430\u0432\u0442\u0440\u0430"
+    - _language: 3
+      _translation: "\u0437\u0430\u0432\u0442\u0440\u0430"
+  - _word: hier
+    _type: 3
+    _conjugation: []
+    _level: 1
+    _tags: 0d000000
+    _translations:
+    - _language: 0
+      _translation: yesterday
+    - _language: 2
+      _translation: "\u0432\u0447\u0435\u0440\u0430"
+    - _language: 3
+      _translation: "\u0432\u0447\u043E\u0440\u0430"
+  - _word: toujours
+    _type: 3
+    _conjugation: []
+    _level: 1
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: always
+    - _language: 2
+      _translation: "\u0432\u0441\u0435\u0433\u0434\u0430"
+    - _language: 3
+      _translation: "\u0437\u0430\u0432\u0436\u0434\u0438"
+  - _word: jamais
+    _type: 3
+    _conjugation: []
+    _level: 2
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: never
+    - _language: 2
+      _translation: "\u043D\u0438\u043A\u043E\u0433\u0434\u0430"
+    - _language: 3
+      _translation: "\u043D\u0456\u043A\u043E\u043B\u0438"
+  - _word: vite
+    _type: 3
+    _conjugation: []
+    _level: 2
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: quickly
+    - _language: 2
+      _translation: "\u0431\u044B\u0441\u0442\u0440\u043E"
+    - _language: 3
+      _translation: "\u0448\u0432\u0438\u0434\u043A\u043E"
+  - _word: "n\xE9anmoins"
+    _type: 3
+    _conjugation: []
+    _level: 4
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: nevertheless
+    - _language: 2
+      _translation: "\u0442\u0435\u043C \u043D\u0435 \u043C\u0435\u043D\u0435\u0435"
+    - _language: 3
+      _translation: "\u043F\u0440\u043E\u0442\u0435"
+  - _word: sagesse
+    _type: 0
+    _conjugation: []
+    _level: 4
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: wisdom
+    - _language: 2
+      _translation: "\u043C\u0443\u0434\u0440\u043E\u0441\u0442\u044C"
+    - _language: 3
+      _translation: "\u043C\u0443\u0434\u0440\u0456\u0441\u0442\u044C"
+  - _word: "trait\xE9"
+    _type: 0
+    _conjugation: []
+    _level: 4
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: treaty
+    - _language: 2
+      _translation: "\u0434\u043E\u0433\u043E\u0432\u043E\u0440"
+    - _language: 3
+      _translation: "\u0434\u043E\u0433\u043E\u0432\u0456\u0440"
+  - _word: "all\xE9geance"
+    _type: 0
+    _conjugation: []
+    _level: 5
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: allegiance
+    - _language: 2
+      _translation: "\u0432\u0435\u0440\u043D\u043E\u0441\u0442\u044C/\u043F\u0440\u0438\u0441\u044F\u0433\u0430"
+    - _language: 3
+      _translation: "\u0432\u0456\u0440\u043D\u0456\u0441\u0442\u044C/\u043F\u0440\u0438\u0441\u044F\u0433\u0430"
+  - _word: usurpateur
+    _type: 0
+    _conjugation: []
+    _level: 5
+    _tags: 
+    _translations:
+    - _language: 0
+      _translation: usurper
+    - _language: 2
+      _translation: "\u0443\u0437\u0443\u0440\u043F\u0430\u0442\u043E\u0440"
+    - _language: 3
+      _translation: "\u0443\u0437\u0443\u0440\u043F\u0430\u0442\u043E\u0440"
+  - _word: "\xEAtre"
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - suis
+      - es
+      - est
+      - sommes
+      - "\xEAtes"
+      - sont
+    - _tense: 2
+      _forms:
+      - serai
+      - seras
+      - sera
+      - serons
+      - serez
+      - seront
+    - _tense: 1
+      _forms:
+      - "\xE9tais"
+      - "\xE9tais"
+      - "\xE9tait"
+      - "\xE9tions"
+      - "\xE9tiez"
+      - "\xE9taient"
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: be
+    - _language: 2
+      _translation: "\u0431\u044B\u0442\u044C"
+    - _language: 3
+      _translation: "\u0431\u0443\u0442\u0438"
+  - _word: avoir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - ai
+      - as
+      - a
+      - avons
+      - avez
+      - ont
+    - _tense: 2
+      _forms:
+      - aurai
+      - auras
+      - aura
+      - aurons
+      - aurez
+      - auront
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: have
+    - _language: 2
+      _translation: "\u0438\u043C\u0435\u0442\u044C"
+    - _language: 3
+      _translation: "\u043C\u0430\u0442\u0438"
+  - _word: aller
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - vais
+      - vas
+      - va
+      - allons
+      - allez
+      - vont
+    - _tense: 2
+      _forms:
+      - irai
+      - iras
+      - ira
+      - irons
+      - irez
+      - iront
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: go
+    - _language: 2
+      _translation: "\u0438\u0434\u0442\u0438"
+    - _language: 3
+      _translation: "\u0439\u0442\u0438"
+  - _word: faire
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - fais
+      - fais
+      - fait
+      - faisons
+      - faites
+      - font
+    - _tense: 2
+      _forms:
+      - ferai
+      - feras
+      - fera
+      - ferons
+      - ferez
+      - feront
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: do
+    - _language: 2
+      _translation: "\u0434\u0435\u043B\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0440\u043E\u0431\u0438\u0442\u0438"
+  - _word: manger
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 1000000001000000
+    _translations:
+    - _language: 0
+      _translation: eat
+    - _language: 2
+      _translation: "\u0435\u0441\u0442\u044C/\u043A\u0443\u0448\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0457\u0441\u0442\u0438"
+  - _word: boire
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - bois
+      - bois
+      - boit
+      - buvons
+      - buvez
+      - boivent
+    _level: 0
+    _tags: 1000000001000000
+    _translations:
+    - _language: 0
+      _translation: drink
+    - _language: 2
+      _translation: "\u043F\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u0438\u0442\u0438"
+  - _word: parler
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: speak
+    - _language: 2
+      _translation: "\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u0438/\u0440\u043E\u0437\u043C\u043E\u0432\u043B\u044F\u0442\u0438"
+  - _word: voir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - vois
+      - vois
+      - voit
+      - voyons
+      - voyez
+      - voient
+    - _tense: 2
+      _forms:
+      - verrai
+      - verras
+      - verra
+      - verrons
+      - verrez
+      - verront
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: see
+    - _language: 2
+      _translation: "\u0432\u0438\u0434\u0435\u0442\u044C"
+    - _language: 3
+      _translation: "\u0431\u0430\u0447\u0438\u0442\u0438"
+  - _word: venir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - viens
+      - viens
+      - vient
+      - venons
+      - venez
+      - viennent
+    - _tense: 2
+      _forms:
+      - viendrai
+      - viendras
+      - viendra
+      - viendrons
+      - viendrez
+      - viendront
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: come
+    - _language: 2
+      _translation: "\u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0438"
+  - _word: vouloir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - veux
+      - veux
+      - veut
+      - voulons
+      - voulez
+      - veulent
+    - _tense: 2
+      _forms:
+      - voudrai
+      - voudras
+      - voudra
+      - voudrons
+      - voudrez
+      - voudront
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: want
+    - _language: 2
+      _translation: "\u0445\u043E\u0442\u0435\u0442\u044C"
+    - _language: 3
+      _translation: "\u0445\u043E\u0442\u0456\u0442\u0438"
+  - _word: habiter
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 1000000007000000
+    _translations:
+    - _language: 0
+      _translation: live
+    - _language: 2
+      _translation: "\u0436\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u0436\u0438\u0442\u0438"
+  - _word: aimer
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 100000000e000000
+    _translations:
+    - _language: 0
+      _translation: love
+    - _language: 2
+      _translation: "\u043B\u044E\u0431\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u043B\u044E\u0431\u0438\u0442\u0438"
+  - _word: jouer
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: play
+    - _language: 2
+      _translation: "\u0438\u0433\u0440\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0433\u0440\u0430\u0442\u0438"
+  - _word: travailler
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: work
+    - _language: 2
+      _translation: "\u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u0440\u0430\u0446\u044E\u0432\u0430\u0442\u0438"
+  - _word: marcher
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: walk
+    - _language: 2
+      _translation: "\u0445\u043E\u0434\u0438\u0442\u044C/\u0433\u0443\u043B\u044F\u0442\u044C"
+    - _language: 3
+      _translation: "\u0445\u043E\u0434\u0438\u0442\u0438/\u0433\u0443\u043B\u044F\u0442\u0438"
+  - _word: dormir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - dors
+      - dors
+      - dort
+      - dormons
+      - dormez
+      - dorment
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: sleep
+    - _language: 2
+      _translation: "\u0441\u043F\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0441\u043F\u0430\u0442\u0438"
+  - _word: "\xE9crire"
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - "\xE9cris"
+      - "\xE9cris"
+      - "\xE9crit"
+      - "\xE9crivons"
+      - "\xE9crivez"
+      - "\xE9crivent"
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: write
+    - _language: 2
+      _translation: "\u043F\u0438\u0441\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u0438\u0441\u0430\u0442\u0438"
+  - _word: fermer
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: close
+    - _language: 2
+      _translation: "\u0437\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0437\u0430\u043A\u0440\u0438\u0432\u0430\u0442\u0438"
+  - _word: donner
+    _type: 1
+    _conjugation: []
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: give
+    - _language: 2
+      _translation: "\u0434\u0430\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0434\u0430\u0432\u0430\u0442\u0438"
+  - _word: prendre
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - prends
+      - prends
+      - prend
+      - prenons
+      - prenez
+      - prennent
+    _level: 0
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: take
+    - _language: 2
+      _translation: "\u0431\u0440\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0431\u0440\u0430\u0442\u0438"
+  - _word: dire
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - dis
+      - dis
+      - dit
+      - disons
+      - dites
+      - disent
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: say
+    - _language: 2
+      _translation: "\u0441\u043A\u0430\u0437\u0430\u0442\u044C/\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u0441\u043A\u0430\u0437\u0430\u0442\u0438/\u043A\u0430\u0437\u0430\u0442\u0438"
+  - _word: regarder
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: look
+    - _language: 2
+      _translation: "\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C"
+    - _language: 3
+      _translation: "\u0434\u0438\u0432\u0438\u0442\u0438\u0441\u044F"
+  - _word: "\xE9couter"
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: listen
+    - _language: 2
+      _translation: "\u0441\u043B\u0443\u0448\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0441\u043B\u0443\u0445\u0430\u0442\u0438"
+  - _word: trouver
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: find
+    - _language: 2
+      _translation: "\u043D\u0430\u0445\u043E\u0434\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u0437\u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0438"
+  - _word: penser
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: think
+    - _language: 2
+      _translation: "\u0434\u0443\u043C\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0434\u0443\u043C\u0430\u0442\u0438"
+  - _word: chanter
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: sing
+    - _language: 2
+      _translation: "\u043F\u0435\u0442\u044C"
+    - _language: 3
+      _translation: "\u0441\u043F\u0456\u0432\u0430\u0442\u0438"
+  - _word: acheter
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - "ach\xE8te"
+      - "ach\xE8tes"
+      - "ach\xE8te"
+      - achetons
+      - achetez
+      - "ach\xE8tent"
+    - _tense: 2
+      _forms:
+      - "ach\xE8terai"
+      - "ach\xE8teras"
+      - "ach\xE8tera"
+      - "ach\xE8terons"
+      - "ach\xE8terez"
+      - "ach\xE8teront"
+    _level: 1
+    _tags: 100000000f000000
+    _translations:
+    - _language: 0
+      _translation: buy
+    - _language: 2
+      _translation: "\u043F\u043E\u043A\u0443\u043F\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043A\u0443\u043F\u0443\u0432\u0430\u0442\u0438"
+  - _word: appeler
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - appelle
+      - appelles
+      - appelle
+      - appelons
+      - appelez
+      - appellent
+    - _tense: 2
+      _forms:
+      - appellerai
+      - appelleras
+      - appellera
+      - appellerons
+      - appellerez
+      - appelleront
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: call
+    - _language: 2
+      _translation: "\u0437\u0432\u0430\u0442\u044C/\u0437\u0432\u043E\u043D\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u043A\u043B\u0438\u043A\u0430\u0442\u0438/\u0434\u0437\u0432\u043E\u043D\u0438\u0442\u0438"
+  - _word: attendre
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: wait
+    - _language: 2
+      _translation: "\u0436\u0434\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0447\u0435\u043A\u0430\u0442\u0438"
+  - _word: vendre
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 100000000f000000
+    _translations:
+    - _language: 0
+      _translation: sell
+    - _language: 2
+      _translation: "\u043F\u0440\u043E\u0434\u0430\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u0440\u043E\u0434\u0430\u0432\u0430\u0442\u0438"
+  - _word: "r\xE9pondre"
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: answer
+    - _language: 2
+      _translation: "\u043E\u0442\u0432\u0435\u0447\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u0430\u0442\u0438"
+  - _word: finir
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: finish
+    - _language: 2
+      _translation: "\u0437\u0430\u043A\u0430\u043D\u0447\u0438\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0437\u0430\u043A\u0456\u043D\u0447\u0443\u0432\u0430\u0442\u0438"
+  - _word: ouvrir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - ouvre
+      - ouvres
+      - ouvre
+      - ouvrons
+      - ouvrez
+      - ouvrent
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: open
+    - _language: 2
+      _translation: "\u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0432\u0456\u0434\u043A\u0440\u0438\u0432\u0430\u0442\u0438"
+  - _word: voyager
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 100000000c000000
+    _translations:
+    - _language: 0
+      _translation: travel
+    - _language: 2
+      _translation: "\u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u043E\u0434\u043E\u0440\u043E\u0436\u0443\u0432\u0430\u0442\u0438"
+  - _word: commencer
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: begin
+    - _language: 2
+      _translation: "\u043D\u0430\u0447\u0438\u043D\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u043E\u0447\u0438\u043D\u0430\u0442\u0438"
+  - _word: aider
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: help
+    - _language: 2
+      _translation: "\u043F\u043E\u043C\u043E\u0433\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0434\u043E\u043F\u043E\u043C\u0430\u0433\u0430\u0442\u0438"
+  - _word: arriver
+    _type: 1
+    _conjugation: []
+    _level: 1
+    _tags: 100000000c000000
+    _translations:
+    - _language: 0
+      _translation: arrive
+    - _language: 2
+      _translation: "\u043F\u0440\u0438\u0431\u044B\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u0440\u0438\u0431\u0443\u0432\u0430\u0442\u0438"
+  - _word: choisir
+    _type: 1
+    _conjugation: []
+    _level: 2
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: choose
+    - _language: 2
+      _translation: "\u0432\u044B\u0431\u0438\u0440\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0432\u0438\u0431\u0438\u0440\u0430\u0442\u0438"
+  - _word: perdre
+    _type: 1
+    _conjugation: []
+    _level: 2
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: lose
+    - _language: 2
+      _translation: "\u0442\u0435\u0440\u044F\u0442\u044C/\u043F\u0440\u043E\u0438\u0433\u0440\u044B\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0432\u0442\u0440\u0430\u0447\u0430\u0442\u0438/\u043F\u0440\u043E\u0433\u0440\u0430\u0432\u0430\u0442\u0438"
+  - _word: gagner
+    _type: 1
+    _conjugation: []
+    _level: 2
+    _tags: 100000000b000000
+    _translations:
+    - _language: 0
+      _translation: win
+    - _language: 2
+      _translation: "\u043F\u043E\u0431\u0435\u0436\u0434\u0430\u0442\u044C/\u0432\u044B\u0438\u0433\u0440\u044B\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u0435\u0440\u0435\u043C\u0430\u0433\u0430\u0442\u0438/\u0432\u0438\u0433\u0440\u0430\u0432\u0430\u0442\u0438"
+  - _word: combattre
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - combats
+      - combats
+      - combat
+      - combattons
+      - combattez
+      - combattent
+    _level: 2
+    _tags: 100000000b000000
+    _translations:
+    - _language: 0
+      _translation: fight
+    - _language: 2
+      _translation: "\u0441\u0440\u0430\u0436\u0430\u0442\u044C\u0441\u044F"
+    - _language: 3
+      _translation: "\u0431\u0438\u0442\u0438\u0441\u044F"
+  - _word: attaquer
+    _type: 1
+    _conjugation: []
+    _level: 2
+    _tags: 100000000b000000
+    _translations:
+    - _language: 0
+      _translation: attack
+    - _language: 2
+      _translation: "\u0430\u0442\u0430\u043A\u043E\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0430\u0442\u0430\u043A\u0443\u0432\u0430\u0442\u0438"
+  - _word: "d\xE9fendre"
+    _type: 1
+    _conjugation: []
+    _level: 2
+    _tags: 100000000b000000
+    _translations:
+    - _language: 0
+      _translation: defend
+    - _language: 2
+      _translation: "\u0437\u0430\u0449\u0438\u0449\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0437\u0430\u0445\u0438\u0449\u0430\u0442\u0438"
+  - _word: courir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - cours
+      - cours
+      - court
+      - courons
+      - courez
+      - courent
+    - _tense: 2
+      _forms:
+      - courrai
+      - courras
+      - courra
+      - courrons
+      - courrez
+      - courront
+    _level: 2
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: run
+    - _language: 2
+      _translation: "\u0431\u0435\u0436\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0431\u0456\u0433\u0442\u0438"
+  - _word: savoir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - sais
+      - sais
+      - sait
+      - savons
+      - savez
+      - savent
+    - _tense: 2
+      _forms:
+      - saurai
+      - sauras
+      - saura
+      - saurons
+      - saurez
+      - sauront
+    _level: 2
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: know
+    - _language: 2
+      _translation: "\u0437\u043D\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0437\u043D\u0430\u0442\u0438"
+  - _word: partir
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - pars
+      - pars
+      - part
+      - partons
+      - partez
+      - partent
+    _level: 2
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: leave
+    - _language: 2
+      _translation: "\u0443\u0445\u043E\u0434\u0438\u0442\u044C/\u0443\u0435\u0437\u0436\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0456\u0442\u0438/\u0432\u0438\u0457\u0436\u0434\u0436\u0430\u0442\u0438"
+  - _word: construire
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - construis
+      - construis
+      - construit
+      - construisons
+      - construisez
+      - construisent
+    _level: 2
+    _tags: 100000000f000000
+    _translations:
+    - _language: 0
+      _translation: build
+    - _language: 2
+      _translation: "\u0441\u0442\u0440\u043E\u0438\u0442\u044C"
+    - _language: 3
+      _translation: "\u0431\u0443\u0434\u0443\u0432\u0430\u0442\u0438"
+  - _word: apprendre
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - apprends
+      - apprends
+      - apprend
+      - apprenons
+      - apprenez
+      - apprennent
+    _level: 2
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: learn
+    - _language: 2
+      _translation: "\u0443\u0447\u0438\u0442\u044C/\u0438\u0437\u0443\u0447\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0432\u0447\u0438\u0442\u0438/\u0432\u0438\u0432\u0447\u0430\u0442\u0438"
+  - _word: nager
+    _type: 1
+    _conjugation: []
+    _level: 2
+    _tags: 1000000004000000
+    _translations:
+    - _language: 0
+      _translation: swim
+    - _language: 2
+      _translation: "\u043F\u043B\u0430\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u043F\u043B\u0430\u0432\u0430\u0442\u0438"
+  - _word: comprendre
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - comprends
+      - comprends
+      - comprend
+      - comprenons
+      - comprenez
+      - comprennent
+    _level: 3
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: understand
+    - _language: 2
+      _translation: "\u043F\u043E\u043D\u0438\u043C\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0440\u043E\u0437\u0443\u043C\u0456\u0442\u0438"
+  - _word: "prot\xE9ger"
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - "prot\xE8ge"
+      - "prot\xE8ges"
+      - "prot\xE8ge"
+      - "prot\xE9geons"
+      - "prot\xE9gez"
+      - "prot\xE8gent"
+    _level: 3
+    _tags: 100000000b000000
+    _translations:
+    - _language: 0
+      _translation: protect
+    - _language: 2
+      _translation: "\u0437\u0430\u0449\u0438\u0449\u0430\u0442\u044C/\u043E\u0445\u0440\u0430\u043D\u044F\u0442\u044C"
+    - _language: 3
+      _translation: "\u0437\u0430\u0445\u0438\u0449\u0430\u0442\u0438/\u043E\u0445\u043E\u0440\u043E\u043D\u044F\u0442\u0438"
+  - _word: retourner
+    _type: 1
+    _conjugation: []
+    _level: 3
+    _tags: 100000000c000000
+    _translations:
+    - _language: 0
+      _translation: return
+    - _language: 2
+      _translation: "\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C\u0441\u044F"
+    - _language: 3
+      _translation: "\u043F\u043E\u0432\u0435\u0440\u0442\u0430\u0442\u0438\u0441\u044F"
+  - _word: porter
+    _type: 1
+    _conjugation: []
+    _level: 3
+    _tags: 10000000
+    _translations:
+    - _language: 0
+      _translation: carry
+    - _language: 2
+      _translation: "\u043D\u0435\u0441\u0442\u0438"
+    - _language: 3
+      _translation: "\u043D\u0435\u0441\u0442\u0438"
+  - _word: "conqu\xE9rir"
+    _type: 1
+    _conjugation:
+    - _tense: 0
+      _forms:
+      - conquiers
+      - conquiers
+      - conquiert
+      - "conqu\xE9rons"
+      - "conqu\xE9rez"
+      - "conqui\xE8rent"
+    - _tense: 2
+      _forms:
+      - conquerrai
+      - conquerras
+      - conquerra
+      - conquerrons
+      - conquerrez
+      - conquerront
+    _level: 4
+    _tags: 100000000b000000
+    _translations:
+    - _language: 0
+      _translation: conquer
+    - _language: 2
+      _translation: "\u0437\u0430\u0432\u043E\u0451\u0432\u044B\u0432\u0430\u0442\u044C"
+    - _language: 3
+      _translation: "\u0437\u0430\u0432\u043E\u0439\u043E\u0432\u0443\u0432\u0430\u0442\u0438"
+  - _word: capituler
+    _type: 1
+    _conjugation: []
+    _level: 4
+    _tags: 100000000b000000
+    _translations:
+    - _language: 0
+      _translation: surrender
+    - _language: 2
+      _translation: "\u0441\u0434\u0430\u0432\u0430\u0442\u044C\u0441\u044F"
+    - _language: 3
+      _translation: "\u0437\u0434\u0430\u0432\u0430\u0442\u0438\u0441\u044F"

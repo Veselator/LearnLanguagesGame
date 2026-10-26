@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1df8df11bea7a4439d452ba1adfd7e6, type: 3}
+  m_Name: GameConfigsInstaller
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Installers.GameConfigsInstaller
+  _localization: {fileID: 11400000, guid: 9c9809e7a6dc4aa49a58fb4f00bd7c2b, type: 2}
+  _languages: {fileID: 11400000, guid: eb1fd077de7b09f4f918c63fd330c78b, type: 2}
+  _maps: {fileID: 11400000, guid: 595e42d6c418ae347bf955382fce6baa, type: 2}
+  _economy: {fileID: 11400000, guid: 3d12b207439acd54692252084fe9716c, type: 2}
+  _upgrades: {fileID: 11400000, guid: ae5a7ffaee7119d4ea833d4c97dde4d0, type: 2}
+  _units: {fileID: 11400000, guid: 1a4ce3c0fafb681428a170ba14dbbc4b, type: 2}
+  _players: {fileID: 11400000, guid: 3548846a65289fb43851a802539f9e9d, type: 2}
+  _battle: {fileID: 11400000, guid: bcc3ecc309d3f594aa364d283f8c3e26, type: 2}
+  _battleTiles: {fileID: 11400000, guid: 1636901b2d791444baa97e7225ba7ee4, type: 2}
+  _camera: {fileID: 11400000, guid: 14eacee5e47e85641b8319e4f4b54f36, type: 2}

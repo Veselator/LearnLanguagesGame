@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b897d072683d6fb4e9e3ff8ca7ee2bdc, type: 3}
+  m_Name: BattlefieldMapsConfig
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Battle.Data.BattlefieldMapsConfig
+  _entries:
+  - _targetLandscape: 1
+    _possibilities:
+    - _battlefieldMapData: {fileID: 11400000, guid: e3535d672c0ac284891b1a59bbfed6d8, type: 2}
+      _probability: 3
+    - _battlefieldMapData: {fileID: 11400000, guid: 20dbd81fe6a259b40946ed716bb2b3ab, type: 2}
+      _probability: 1
+  - _targetLandscape: 0
+    _possibilities:
+    - _battlefieldMapData: {fileID: 11400000, guid: 291558c16b7fdb14287d8a82c1a1b7db, type: 2}
+      _probability: 3
+    - _battlefieldMapData: {fileID: 11400000, guid: e3535d672c0ac284891b1a59bbfed6d8, type: 2}
+      _probability: 1
+  - _targetLandscape: 2
+    _possibilities:
+    - _battlefieldMapData: {fileID: 11400000, guid: 266550a40f91dd649b8023df1769dfed, type: 2}
+      _probability: 2
+    - _battlefieldMapData: {fileID: 11400000, guid: 6842689d5c45db642aa20d4eda9ec7a1, type: 2}
+      _probability: 2
+  - _targetLandscape: 3
+    _possibilities:
+    - _battlefieldMapData: {fileID: 11400000, guid: 131c08c651e6fcd418c956629fc610d4, type: 2}
+      _probability: 3
+    - _battlefieldMapData: {fileID: 11400000, guid: 20dbd81fe6a259b40946ed716bb2b3ab, type: 2}
+      _probability: 1
+  - _targetLandscape: 4
+    _possibilities:
+    - _battlefieldMapData: {fileID: 11400000, guid: e6db46c91363161429fffb65e1df9041, type: 2}
+      _probability: 3
+    - _battlefieldMapData: {fileID: 11400000, guid: 131c08c651e6fcd418c956629fc610d4, type: 2}
+      _probability: 1
+  - _targetLandscape: 5
+    _possibilities:
+    - _battlefieldMapData: {fileID: 11400000, guid: 9cdbd183618b4b046a5cfa1b2d1d6002, type: 2}
+      _probability: 1
+  _fallback: {fileID: 11400000, guid: e3535d672c0ac284891b1a59bbfed6d8, type: 2}

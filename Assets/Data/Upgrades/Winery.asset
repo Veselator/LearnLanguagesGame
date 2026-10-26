@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5669c9f92431a894c9d0b0debf664ce1, type: 3}
+  m_Name: Winery
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Gameplay.Economy.UpgradeDefinition
+  _id: winery
+  _nameKey: upgrade.winery
+  _descriptionKey: upgrade.winery.desc
+  _cost:
+    _gold: 25
+    _food: 0
+    _wood: 15
+    _stone: 10
+  _allowedSettlements: 7
+  _baseYield:
+    _gold: 1
+    _food: 0
+    _wood: 0
+    _stone: 0
+  _matchingProduction: 2
+  _matchingBonusYield:
+    _gold: 3
+    _food: 0
+    _wood: 0
+    _stone: 0
+  _requiredLandscape: 5
+  _neighbourBonusPerProvince: 0.25
+  _isPort: 0
+  _unlocksAdvancedUnits: 0
+  _recruitDiscountPercent: 0
+  _healingBonus: 0
+  _moraleBonus: 0

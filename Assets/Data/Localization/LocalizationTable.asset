@@ -1,0 +1,1007 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4427d4f8fb1549c439f5a4150d210625, type: 3}
+  m_Name: LocalizationTable
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Localization.LocalizationTable
+  _entries:
+  - _key: task.choose_translation
+    _values:
+    - Choose the translation
+    - Choisissez la traduction
+    - "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0434"
+    - "\u041E\u0431\u0435\u0440\u0456\u0442\u044C \u043F\u0435\u0440\u0435\u043A\u043B\u0430\u0434"
+  - _key: task.type_translation
+    _values:
+    - Type the word in the language you learn
+    - "\xC9crivez le mot dans la langue \xE9tudi\xE9e"
+    - "\u041D\u0430\u043F\u0438\u0448\u0438\u0442\u0435 \u0441\u043B\u043E\u0432\u043E
+      \u043D\u0430 \u0438\u0437\u0443\u0447\u0430\u0435\u043C\u043E\u043C \u044F\u0437\u044B\u043A\u0435"
+    - "\u041D\u0430\u043F\u0438\u0448\u0456\u0442\u044C \u0441\u043B\u043E\u0432\u043E
+      \u043C\u043E\u0432\u043E\u044E, \u044F\u043A\u0443 \u0432\u0438\u0432\u0447\u0430\u0454\u0442\u0435"
+  - _key: task.odd_word_out
+    _values:
+    - Find the odd word out
+    - Trouvez l'intrus
+    - "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043B\u0438\u0448\u043D\u0435\u0435
+      \u0441\u043B\u043E\u0432\u043E"
+    - "\u0417\u043D\u0430\u0439\u0434\u0456\u0442\u044C \u0437\u0430\u0439\u0432\u0435
+      \u0441\u043B\u043E\u0432\u043E"
+  - _key: task.choose_tense
+    _values:
+    - Which tense is it?
+    - Quel est ce temps ?
+    - "\u041A\u0430\u043A\u043E\u0435 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u044F?"
+    - "\u042F\u043A\u0438\u0439 \u0446\u0435 \u0447\u0430\u0441?"
+  - _key: task.conjugate
+    _values:
+    - Conjugate the verb
+    - Conjuguez le verbe
+    - "\u041F\u0440\u043E\u0441\u043F\u0440\u044F\u0433\u0430\u0439\u0442\u0435 \u0433\u043B\u0430\u0433\u043E\u043B"
+    - "\u0412\u0456\u0434\u043C\u0456\u043D\u0456\u0442\u044C \u0434\u0456\u0454\u0441\u043B\u043E\u0432\u043E"
+  - _key: task.correct
+    _values:
+    - Correct!
+    - Correct !
+    - "\u0412\u0435\u0440\u043D\u043E!"
+    - "\u041F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E!"
+  - _key: task.wrong
+    _values:
+    - 'Wrong. Answer: {0}'
+    - "Faux. R\xE9ponse : {0}"
+    - "\u041D\u0435\u0432\u0435\u0440\u043D\u043E. \u041E\u0442\u0432\u0435\u0442:
+      {0}"
+    - "\u041D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E. \u0412\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C:
+      {0}"
+  - _key: task.submit
+    _values:
+    - Answer
+    - "R\xE9pondre"
+    - "\u041E\u0442\u0432\u0435\u0442\u0438\u0442\u044C"
+    - "\u0412\u0456\u0434\u043F\u043E\u0432\u0456\u0441\u0442\u0438"
+  - _key: tense.present
+    _values:
+    - Present
+    - "Pr\xE9sent"
+    - "\u041D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435"
+    - "\u0422\u0435\u043F\u0435\u0440\u0456\u0448\u043D\u0456\u0439"
+  - _key: tense.past
+    _values:
+    - Past
+    - "Pass\xE9 (imparfait)"
+    - "\u041F\u0440\u043E\u0448\u0435\u0434\u0448\u0435\u0435"
+    - "\u041C\u0438\u043D\u0443\u043B\u0438\u0439"
+  - _key: tense.future
+    _values:
+    - Future
+    - Futur
+    - "\u0411\u0443\u0434\u0443\u0449\u0435\u0435"
+    - "\u041C\u0430\u0439\u0431\u0443\u0442\u043D\u0456\u0439"
+  - _key: tense.conditional
+    _values:
+    - Conditional
+    - Conditionnel
+    - "\u0423\u0441\u043B\u043E\u0432\u043D\u043E\u0435 \u043D\u0430\u043A\u043B\u043E\u043D\u0435\u043D\u0438\u0435"
+    - "\u0423\u043C\u043E\u0432\u043D\u0438\u0439 \u0441\u043F\u043E\u0441\u0456\u0431"
+  - _key: duel.shout
+    _values:
+    - '{0}: war cry!'
+    - '{0} : cri de guerre !'
+    - "{0}: \u0431\u043E\u0435\u0432\u043E\u0439 \u043A\u043B\u0438\u0447!"
+    - "{0}: \u0431\u043E\u0439\u043E\u0432\u0438\u0439 \u043A\u043B\u0438\u0447!"
+  - _key: duel.shoot
+    _values:
+    - '{0} shoot at {1}'
+    - '{0} tirent sur {1}'
+    - "{0} \u0441\u0442\u0440\u0435\u043B\u044F\u044E\u0442 \u043F\u043E: {1}"
+    - "{0} \u0441\u0442\u0440\u0456\u043B\u044F\u044E\u0442\u044C \u043F\u043E: {1}"
+  - _key: duel.under_fire
+    _values:
+    - '{0} under fire from {1}'
+    - '{0} sous le feu de {1}'
+    - "{0} \u043F\u043E\u0434 \u043E\u0431\u0441\u0442\u0440\u0435\u043B\u043E\u043C:
+      {1}"
+    - "{0} \u043F\u0456\u0434 \u043E\u0431\u0441\u0442\u0440\u0456\u043B\u043E\u043C:
+      {1}"
+  - _key: duel.attack
+    _values:
+    - '{0} attack {1}'
+    - '{0} attaquent {1}'
+    - "{0} \u0430\u0442\u0430\u043A\u0443\u044E\u0442: {1}"
+    - "{0} \u0430\u0442\u0430\u043A\u0443\u044E\u0442\u044C: {1}"
+  - _key: duel.defend
+    _values:
+    - '{0} hold against {1}'
+    - "{0} r\xE9sistent \xE0 {1}"
+    - "{0} \u0434\u0435\u0440\u0436\u0430\u0442 \u043E\u0431\u043E\u0440\u043E\u043D\u0443:
+      {1}"
+    - "{0} \u0442\u0440\u0438\u043C\u0430\u044E\u0442\u044C \u043E\u0431\u043E\u0440\u043E\u043D\u0443:
+      {1}"
+  - _key: player.human
+    _values:
+    - You
+    - Vous
+    - "\u0412\u044B"
+    - "\u0412\u0438"
+  - _key: player.ai_1
+    _values:
+    - Kingdom of Whiskers
+    - Royaume des Moustaches
+    - "\u041A\u043E\u0440\u043E\u043B\u0435\u0432\u0441\u0442\u0432\u043E \u0423\u0441\u043E\u0432"
+    - "\u041A\u043E\u0440\u043E\u043B\u0456\u0432\u0441\u0442\u0432\u043E \u0412\u0443\u0441\u0456\u0432"
+  - _key: player.ai_2
+    _values:
+    - Purrland Duchy
+    - "Duch\xE9 de Ronron"
+    - "\u0413\u0435\u0440\u0446\u043E\u0433\u0441\u0442\u0432\u043E \u041C\u0443\u0440\u043B\u044B\u043A\u0438"
+    - "\u0413\u0435\u0440\u0446\u043E\u0433\u0441\u0442\u0432\u043E \u041C\u0443\u0440\u043A\u043E\u0442\u0456\u043D\u043D\u044F"
+  - _key: player.ai_3
+    _values:
+    - Clawmark Empire
+    - Empire des Griffes
+    - "\u0418\u043C\u043F\u0435\u0440\u0438\u044F \u041A\u043E\u0433\u0442\u0435\u0439"
+    - "\u0406\u043C\u043F\u0435\u0440\u0456\u044F \u041F\u0430\u0437\u0443\u0440\u0456\u0432"
+  - _key: player.neutral
+    _values:
+    - Neutral
+    - Neutre
+    - "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0435"
+    - "\u041D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u0456"
+  - _key: notify.eliminated
+    _values:
+    - '{0} lost the capital and is defeated by {1}!'
+    - '{0} a perdu sa capitale, vaincu par {1} !'
+    - "{0} \u0442\u0435\u0440\u044F\u0435\u0442 \u0441\u0442\u043E\u043B\u0438\u0446\u0443
+      \u0438 \u043F\u043E\u0432\u0435\u0440\u0436\u0435\u043D(\u0430): {1}!"
+    - "{0} \u0432\u0442\u0440\u0430\u0447\u0430\u0454 \u0441\u0442\u043E\u043B\u0438\u0446\u044E,
+      \u043F\u0435\u0440\u0435\u043C\u043E\u0436\u0435\u0446\u044C: {1}!"
+  - _key: notify.crushing_victory
+    _values:
+    - Crushing victory! {0} takes {1} without a fight.
+    - "Victoire \xE9crasante ! {0} prend {1} sans combat."
+    - "\u041E\u0433\u043B\u0443\u0448\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F
+      \u043F\u043E\u0431\u0435\u0434\u0430! {0} \u0431\u0435\u0440\u0451\u0442 {1}
+      \u0431\u0435\u0437 \u0431\u043E\u044F."
+    - "\u041D\u0438\u0449\u0456\u0432\u043D\u0430 \u043F\u0435\u0440\u0435\u043C\u043E\u0433\u0430!
+      {0} \u0431\u0435\u0440\u0435 {1} \u0431\u0435\u0437 \u0431\u043E\u044E."
+  - _key: notify.battle_won
+    _values:
+    - '{0} defeated {1} at {2}.'
+    - "{0} a vaincu {1} \xE0 {2}."
+    - "{0} \u043F\u043E\u0431\u0435\u0436\u0434\u0430\u0435\u0442 {1} \u0443 {2}."
+    - "{0} \u043F\u0435\u0440\u0435\u043C\u0430\u0433\u0430\u0454 {1} \u0431\u0456\u043B\u044F
+      {2}."
+  - _key: notify.battle_lost
+    _values:
+    - '{0} was repelled by {1} at {2}.'
+    - "{0} a \xE9t\xE9 repouss\xE9 par {1} \xE0 {2}."
+    - "{0} \u043E\u0442\u0431\u0438\u0442(\u0430): {1} \u0443 {2}."
+    - "{0} \u0432\u0456\u0434\u0431\u0438\u0442\u043E: {1} \u0431\u0456\u043B\u044F
+      {2}."
+  - _key: notify.saved
+    _values:
+    - Game saved.
+    - "Partie sauvegard\xE9e."
+    - "\u0418\u0433\u0440\u0430 \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0430."
+    - "\u0413\u0440\u0443 \u0437\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u043E."
+  - _key: reason.not_owner
+    _values:
+    - not yours
+    - "pas \xE0 vous"
+    - "\u043D\u0435 \u0432\u0430\u0448\u0430"
+    - "\u043D\u0435 \u0432\u0430\u0448\u0430"
+  - _key: reason.wrong_settlement
+    _values:
+    - wrong settlement
+    - mauvaise colonie
+    - "\u043D\u0435 \u0442\u043E\u0442 \u0442\u0438\u043F \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u044F"
+    - "\u043D\u0435 \u0442\u043E\u0439 \u0442\u0438\u043F \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u043D\u044F"
+  - _key: reason.already_built
+    _values:
+    - already built
+    - "d\xE9j\xE0 construit"
+    - "\u0443\u0436\u0435 \u043F\u043E\u0441\u0442\u0440\u043E\u0435\u043D\u043E"
+    - "\u0432\u0436\u0435 \u0437\u0431\u0443\u0434\u043E\u0432\u0430\u043D\u043E"
+  - _key: reason.no_slots
+    _values:
+    - no free slots
+    - pas de place
+    - "\u043D\u0435\u0442 \u043C\u0435\u0441\u0442"
+    - "\u043D\u0435\u043C\u0430\u0454 \u043C\u0456\u0441\u0446\u044C"
+  - _key: reason.wrong_landscape
+    _values:
+    - wrong landscape
+    - mauvais terrain
+    - "\u043D\u0435 \u0442\u043E\u0442 \u043B\u0430\u043D\u0434\u0448\u0430\u0444\u0442"
+    - "\u043D\u0435 \u0442\u043E\u0439 \u043B\u0430\u043D\u0434\u0448\u0430\u0444\u0442"
+  - _key: reason.not_coastal
+    _values:
+    - not coastal
+    - "pas c\xF4tier"
+    - "\u043D\u0435 \u0443 \u043C\u043E\u0440\u044F"
+    - "\u043D\u0435 \u0431\u0456\u043B\u044F \u043C\u043E\u0440\u044F"
+  - _key: reason.no_resources
+    _values:
+    - not enough resources
+    - ressources insuffisantes
+    - "\u043D\u0435 \u0445\u0432\u0430\u0442\u0430\u0435\u0442 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432"
+    - "\u0431\u0440\u0430\u043A\u0443\u0454 \u0440\u0435\u0441\u0443\u0440\u0441\u0456\u0432"
+  - _key: reason.not_recruitable
+    _values:
+    - cannot be recruited
+    - non recrutable
+    - "\u043D\u0435\u043B\u044C\u0437\u044F \u043D\u0430\u043D\u044F\u0442\u044C"
+    - "\u043D\u0435 \u043C\u043E\u0436\u043D\u0430 \u043D\u0430\u0439\u043D\u044F\u0442\u0438"
+  - _key: reason.needs_barracks
+    _values:
+    - needs barracks
+    - caserne requise
+    - "\u043D\u0443\u0436\u043D\u044B \u043A\u0430\u0437\u0430\u0440\u043C\u044B"
+    - "\u043F\u043E\u0442\u0440\u0456\u0431\u043D\u0456 \u043A\u0430\u0437\u0430\u0440\u043C\u0438"
+  - _key: res.gold
+    _values:
+    - Gold
+    - Or
+    - "\u0417\u043E\u043B\u043E\u0442\u043E"
+    - "\u0417\u043E\u043B\u043E\u0442\u043E"
+  - _key: res.food
+    _values:
+    - Food
+    - Nourriture
+    - "\u0415\u0434\u0430"
+    - "\u0407\u0436\u0430"
+  - _key: res.wood
+    _values:
+    - Wood
+    - Bois
+    - "\u0414\u0435\u0440\u0435\u0432\u043E"
+    - "\u0414\u0435\u0440\u0435\u0432\u0438\u043D\u0430"
+  - _key: res.stone
+    _values:
+    - Stone
+    - Pierre
+    - "\u041A\u0430\u043C\u0435\u043D\u044C"
+    - "\u041A\u0430\u043C\u0456\u043D\u044C"
+  - _key: res.gold.short
+    _values:
+    - Gold
+    - Or
+    - "\u0417\u043E\u043B"
+    - "\u0417\u043E\u043B"
+  - _key: res.food.short
+    _values:
+    - Food
+    - Nour
+    - "\u0415\u0434\u0430"
+    - "\u0407\u0436\u0430"
+  - _key: res.wood.short
+    _values:
+    - Wood
+    - Bois
+    - "\u0414\u0435\u0440"
+    - "\u0414\u0435\u0440"
+  - _key: res.stone.short
+    _values:
+    - Stone
+    - Pier
+    - "\u041A\u0430\u043C"
+    - "\u041A\u0430\u043C"
+  - _key: ui.turn_info
+    _values:
+    - "Round {0} \u2014 {1}"
+    - "Tour {0} \u2014 {1}"
+    - "\u0420\u0430\u0443\u043D\u0434 {0} \u2014 {1}"
+    - "\u0420\u0430\u0443\u043D\u0434 {0} \u2014 {1}"
+  - _key: ui.statistics
+    _values:
+    - 'Answers: {0}/{1}'
+    - "R\xE9ponses : {0}/{1}"
+    - "\u041E\u0442\u0432\u0435\u0442\u044B: {0}/{1}"
+    - "\u0412\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u0456: {0}/{1}"
+  - _key: ui.turn_banner
+    _values:
+    - 'Turn: {0}'
+    - 'Tour de : {0}'
+    - "\u0425\u043E\u0434: {0}"
+    - "\u0425\u0456\u0434: {0}"
+  - _key: ui.ai_thinking
+    _values:
+    - '{0} is thinking...'
+    - "{0} r\xE9fl\xE9chit..."
+    - "{0} \u0434\u0443\u043C\u0430\u0435\u0442..."
+    - "{0} \u0434\u0443\u043C\u0430\u0454..."
+  - _key: ui.end_turn
+    _values:
+    - End turn
+    - Fin du tour
+    - "\u041A\u043E\u043D\u0435\u0446 \u0445\u043E\u0434\u0430"
+    - "\u041A\u0456\u043D\u0435\u0446\u044C \u0445\u043E\u0434\u0443"
+  - _key: ui.save
+    _values:
+    - Save
+    - Sauver
+    - "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+    - "\u0417\u0431\u0435\u0440\u0435\u0433\u0442\u0438"
+  - _key: ui.menu
+    _values:
+    - Menu
+    - Menu
+    - "\u041C\u0435\u043D\u044E"
+    - "\u041C\u0435\u043D\u044E"
+  - _key: ui.build
+    _values:
+    - Build
+    - Construire
+    - "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E"
+    - "\u0411\u0443\u0434\u0456\u0432\u043D\u0438\u0446\u0442\u0432\u043E"
+  - _key: ui.recruit
+    _values:
+    - Recruit
+    - Recruter
+    - "\u041D\u0430\u0439\u043C"
+    - "\u041D\u0430\u0439\u043C"
+  - _key: ui.armies
+    _values:
+    - Armies here
+    - "Arm\xE9es ici"
+    - "\u0410\u0440\u043C\u0438\u0438 \u0437\u0434\u0435\u0441\u044C"
+    - "\u0410\u0440\u043C\u0456\u0457 \u0442\u0443\u0442"
+  - _key: ui.merge
+    _values:
+    - Merge
+    - Fusionner
+    - "\u041E\u0431\u044A\u0435\u0434\u0438\u043D\u0438\u0442\u044C"
+    - "\u041E\u0431'\u0454\u0434\u043D\u0430\u0442\u0438"
+  - _key: ui.controls
+    _values:
+    - "LMB: select \xB7 RMB: move \xB7 WASD/arrows/edges: camera \xB7 wheel: zoom
+      \xB7 Space: end turn"
+    - "Clic G : choisir \xB7 Clic D : d\xE9placer \xB7 ZQSD/fl\xE8ches : cam\xE9ra
+      \xB7 molette : zoom \xB7 Espace : fin du tour"
+    - "\u041B\u041A\u041C: \u0432\u044B\u0431\u043E\u0440 \xB7 \u041F\u041A\u041C:
+      \u0445\u043E\u0434 \xB7 WASD/\u0441\u0442\u0440\u0435\u043B\u043A\u0438/\u043A\u0440\u0430\u044F:
+      \u043A\u0430\u043C\u0435\u0440\u0430 \xB7 \u043A\u043E\u043B\u0435\u0441\u043E:
+      \u0437\u0443\u043C \xB7 \u041F\u0440\u043E\u0431\u0435\u043B: \u043A\u043E\u043D\u0435\u0446
+      \u0445\u043E\u0434\u0430"
+    - "\u041B\u041A\u041C: \u0432\u0438\u0431\u0456\u0440 \xB7 \u041F\u041A\u041C:
+      \u0445\u0456\u0434 \xB7 WASD/\u0441\u0442\u0440\u0456\u043B\u043A\u0438/\u043A\u0440\u0430\u0457:
+      \u043A\u0430\u043C\u0435\u0440\u0430 \xB7 \u043A\u043E\u043B\u0456\u0449\u0430\u0442\u043A\u043E:
+      \u0437\u0443\u043C \xB7 \u041F\u0440\u043E\u0431\u0456\u043B: \u043A\u0456\u043D\u0435\u0446\u044C
+      \u0445\u043E\u0434\u0443"
+  - _key: province.unnamed
+    _values:
+    - Province
+    - Province
+    - "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F"
+    - "\u041F\u0440\u043E\u0432\u0456\u043D\u0446\u0456\u044F"
+  - _key: province.owner
+    _values:
+    - 'Owner: {0}'
+    - "Propri\xE9taire : {0}"
+    - "\u0412\u043B\u0430\u0434\u0435\u043B\u0435\u0446: {0}"
+    - "\u0412\u043B\u0430\u0441\u043D\u0438\u043A: {0}"
+  - _key: province.landscape
+    _values:
+    - 'Landscape: {0}'
+    - 'Terrain : {0}'
+    - "\u041B\u0430\u043D\u0434\u0448\u0430\u0444\u0442: {0}"
+    - "\u041B\u0430\u043D\u0434\u0448\u0430\u0444\u0442: {0}"
+  - _key: province.settlement
+    _values:
+    - 'Settlement: {0}'
+    - 'Colonie : {0}'
+    - "\u041F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0435: {0}"
+    - "\u041F\u043E\u0441\u0435\u043B\u0435\u043D\u043D\u044F: {0}"
+  - _key: province.production
+    _values:
+    - 'Production: {0}'
+    - 'Production : {0}'
+    - "\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u043E:
+      {0}"
+    - "\u0412\u0438\u0440\u043E\u0431\u043D\u0438\u0446\u0442\u0432\u043E: {0}"
+  - _key: province.income
+    _values:
+    - 'Income: {0}'
+    - 'Revenu : {0}'
+    - "\u0414\u043E\u0445\u043E\u0434: {0}"
+    - "\u0414\u043E\u0445\u0456\u0434: {0}"
+  - _key: province.buildings
+    _values:
+    - 'Buildings:'
+    - "B\xE2timents :"
+    - "\u041F\u043E\u0441\u0442\u0440\u043E\u0439\u043A\u0438:"
+    - "\u0411\u0443\u0434\u0456\u0432\u043B\u0456:"
+  - _key: province.sea
+    _values:
+    - Sea. Armies may cross it from a port.
+    - "Mer. Les arm\xE9es la traversent depuis un port."
+    - "\u041C\u043E\u0440\u0435. \u0410\u0440\u043C\u0438\u0438 \u0432\u044B\u0445\u043E\u0434\u044F\u0442
+      \u0432 \u043D\u0435\u0433\u043E \u0438\u0437 \u043F\u043E\u0440\u0442\u0430."
+    - "\u041C\u043E\u0440\u0435. \u0410\u0440\u043C\u0456\u0457 \u0432\u0438\u0445\u043E\u0434\u044F\u0442\u044C
+      \u0443 \u043D\u044C\u043E\u0433\u043E \u0437 \u043F\u043E\u0440\u0442\u0443."
+  - _key: landscape.steppe
+    _values:
+    - Steppe
+    - Steppe
+    - "\u0421\u0442\u0435\u043F\u044C"
+    - "\u0421\u0442\u0435\u043F"
+  - _key: landscape.meadow
+    _values:
+    - Meadow
+    - Prairie
+    - "\u041F\u043E\u043B\u044F\u043D\u0430"
+    - "\u0413\u0430\u043B\u044F\u0432\u0438\u043D\u0430"
+  - _key: landscape.forest
+    _values:
+    - Forest
+    - "For\xEAt"
+    - "\u041B\u0435\u0441"
+    - "\u041B\u0456\u0441"
+  - _key: landscape.hill
+    _values:
+    - Hill
+    - Colline
+    - "\u0425\u043E\u043B\u043C"
+    - "\u041F\u0430\u0433\u043E\u0440\u0431"
+  - _key: landscape.mountain
+    _values:
+    - Mountain
+    - Montagne
+    - "\u0413\u043E\u0440\u0430"
+    - "\u0413\u043E\u0440\u0430"
+  - _key: landscape.sea
+    _values:
+    - Sea
+    - Mer
+    - "\u041C\u043E\u0440\u0435"
+    - "\u041C\u043E\u0440\u0435"
+  - _key: settlement.none
+    _values:
+    - none
+    - aucune
+    - "\u043D\u0435\u0442"
+    - "\u043D\u0435\u043C\u0430\u0454"
+  - _key: settlement.village
+    _values:
+    - Village
+    - Village
+    - "\u0414\u0435\u0440\u0435\u0432\u043D\u044F"
+    - "\u0421\u0435\u043B\u043E"
+  - _key: settlement.castle
+    _values:
+    - Castle
+    - "Ch\xE2teau"
+    - "\u0417\u0430\u043C\u043E\u043A"
+    - "\u0417\u0430\u043C\u043E\u043A"
+  - _key: settlement.city
+    _values:
+    - City
+    - Ville
+    - "\u0413\u043E\u0440\u043E\u0434"
+    - "\u041C\u0456\u0441\u0442\u043E"
+  - _key: production.none
+    _values:
+    - none
+    - aucune
+    - "\u043D\u0435\u0442"
+    - "\u043D\u0435\u043C\u0430\u0454"
+  - _key: production.wheat
+    _values:
+    - Wheat
+    - "Bl\xE9"
+    - "\u041F\u0448\u0435\u043D\u0438\u0446\u0430"
+    - "\u041F\u0448\u0435\u043D\u0438\u0446\u044F"
+  - _key: production.vineyard
+    _values:
+    - Vineyard
+    - Vigne
+    - "\u0412\u0438\u043D\u043E\u0433\u0440\u0430\u0434"
+    - "\u0412\u0438\u043D\u043E\u0433\u0440\u0430\u0434"
+  - _key: production.pasture
+    _values:
+    - Pasture
+    - "P\xE2turage"
+    - "\u041F\u0430\u0441\u0442\u0431\u0438\u0449\u0435"
+    - "\u041F\u0430\u0441\u043E\u0432\u0438\u0449\u0435"
+  - _key: production.quarry
+    _values:
+    - Quarry
+    - "Carri\xE8re"
+    - "\u041A\u0430\u043C\u0435\u043D\u043E\u043B\u043E\u043C\u043D\u044F"
+    - "\u041A\u0430\u043C\u0435\u043D\u043E\u043B\u043E\u043C\u043D\u044F"
+  - _key: army.title
+    _values:
+    - '{0}: army, {1} cohorts'
+    - "{0} : arm\xE9e, {1} cohortes"
+    - "{0}: \u043E\u0442\u0440\u044F\u0434, \u043A\u043E\u0433\u043E\u0440\u0442:
+      {1}"
+    - "{0}: \u0437\u0430\u0433\u0456\u043D, \u043A\u043E\u0433\u043E\u0440\u0442:
+      {1}"
+  - _key: army.morale
+    _values:
+    - morale {0}
+    - moral {0}
+    - "\u043C\u043E\u0440\u0430\u043B\u044C {0}"
+    - "\u043C\u043E\u0440\u0430\u043B\u044C {0}"
+  - _key: army.wounded
+    _values:
+    - (+{0} wounded)
+    - "(+{0} bless\xE9s)"
+    - "(+{0} \u0440\u0430\u043D\u0435\u043D\u043E)"
+    - "(+{0} \u043F\u043E\u0440\u0430\u043D\u0435\u043D\u043E)"
+  - _key: army.organization
+    _values:
+    - org. {0}
+    - org. {0}
+    - "\u043E\u0440\u0433. {0}"
+    - "\u043E\u0440\u0433. {0}"
+  - _key: army.moved
+    _values:
+    - This army has already moved this turn.
+    - "Cette arm\xE9e a d\xE9j\xE0 boug\xE9 ce tour."
+    - "\u041E\u0442\u0440\u044F\u0434 \u0443\u0436\u0435 \u0445\u043E\u0434\u0438\u043B
+      \u0432 \u044D\u0442\u043E\u043C \u0445\u043E\u0434\u0443."
+    - "\u0417\u0430\u0433\u0456\u043D \u0443\u0436\u0435 \u0445\u043E\u0434\u0438\u0432
+      \u0446\u044C\u043E\u0433\u043E \u0445\u043E\u0434\u0443."
+  - _key: army.move_hint
+    _values:
+    - Right-click a highlighted neighbour to move or attack.
+    - Clic droit sur une province voisine pour bouger ou attaquer.
+    - "\u041F\u041A\u041C \u043F\u043E \u043F\u043E\u0434\u0441\u0432\u0435\u0447\u0435\u043D\u043D\u043E\u0439
+      \u0441\u043E\u0441\u0435\u0434\u043D\u0435\u0439 \u043F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u0438
+      \u2014 \u0445\u043E\u0434 \u0438\u043B\u0438 \u0430\u0442\u0430\u043A\u0430."
+    - "\u041F\u041A\u041C \u043F\u043E \u043F\u0456\u0434\u0441\u0432\u0456\u0447\u0435\u043D\u0456\u0439
+      \u0441\u0443\u0441\u0456\u0434\u043D\u0456\u0439 \u043F\u0440\u043E\u0432\u0456\u043D\u0446\u0456\u0457
+      \u2014 \u0445\u0456\u0434 \u0430\u0431\u043E \u0430\u0442\u0430\u043A\u0430."
+  - _key: army.reinforce
+    _values:
+    - Replenish ({0})
+    - Renforcer ({0})
+    - "\u041F\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u044C ({0})"
+    - "\u041F\u043E\u043F\u043E\u0432\u043D\u0438\u0442\u0438 ({0})"
+  - _key: gameover.victory
+    _values:
+    - Victory!
+    - Victoire !
+    - "\u041F\u043E\u0431\u0435\u0434\u0430!"
+    - "\u041F\u0435\u0440\u0435\u043C\u043E\u0433\u0430!"
+  - _key: gameover.defeat
+    _values:
+    - Defeat
+    - "D\xE9faite"
+    - "\u041F\u043E\u0440\u0430\u0436\u0435\u043D\u0438\u0435"
+    - "\u041F\u043E\u0440\u0430\u0437\u043A\u0430"
+  - _key: gameover.statistics
+    _values:
+    - 'Correct answers: {0} of {1}'
+    - "Bonnes r\xE9ponses : {0} sur {1}"
+    - "\u041F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0445 \u043E\u0442\u0432\u0435\u0442\u043E\u0432:
+      {0} \u0438\u0437 {1}"
+    - "\u041F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u0438\u0445 \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u0435\u0439:
+      {0} \u0437 {1}"
+  - _key: gameover.main_menu
+    _values:
+    - Main menu
+    - Menu principal
+    - "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E"
+    - "\u0413\u043E\u043B\u043E\u0432\u043D\u0435 \u043C\u0435\u043D\u044E"
+  - _key: battle.title
+    _values:
+    - Battle of {0}
+    - Bataille de {0}
+    - "\u0411\u0438\u0442\u0432\u0430 \u0443 {0}"
+    - "\u0411\u0438\u0442\u0432\u0430 \u0431\u0456\u043B\u044F {0}"
+  - _key: battle.phase
+    _values:
+    - 'Turn {0}: {1} {2}'
+    - 'Tour {0} : {1} {2}'
+    - "\u0425\u043E\u0434 {0}: {1} {2}"
+    - "\u0425\u0456\u0434 {0}: {1} {2}"
+  - _key: battle.phase.deployment
+    _values:
+    - deployment
+    - "d\xE9ploiement"
+    - "\u0440\u0430\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430"
+    - "\u0440\u043E\u0437\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430"
+  - _key: battle.phase.command
+    _values:
+    - orders
+    - ordres
+    - "\u043F\u0440\u0438\u043A\u0430\u0437\u044B"
+    - "\u043D\u0430\u043A\u0430\u0437\u0438"
+  - _key: battle.phase.action
+    _values:
+    - action
+    - action
+    - "\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435"
+    - "\u0434\u0456\u044F"
+  - _key: battle.phase.finished
+    _values:
+    - finished
+    - "termin\xE9e"
+    - "\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430"
+    - "\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0430"
+  - _key: battle.victory
+    _values:
+    - Victory in battle!
+    - Victoire !
+    - "\u041F\u043E\u0431\u0435\u0434\u0430 \u0432 \u0431\u0438\u0442\u0432\u0435!"
+    - "\u041F\u0435\u0440\u0435\u043C\u043E\u0433\u0430 \u0432 \u0431\u0438\u0442\u0432\u0456!"
+  - _key: battle.defeat
+    _values:
+    - The battle is lost
+    - La bataille est perdue
+    - "\u0411\u0438\u0442\u0432\u0430 \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043D\u0430"
+    - "\u0411\u0438\u0442\u0432\u0443 \u043F\u0440\u043E\u0433\u0440\u0430\u043D\u043E"
+  - _key: battle.hint.deploy
+    _values:
+    - 'Place your cohorts in the first three columns: click a cohort, then a cell.'
+    - "Placez vos cohortes dans les trois premi\xE8res colonnes : cliquez une cohorte
+      puis une case."
+    - "\u0420\u0430\u0441\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u043A\u043E\u0433\u043E\u0440\u0442\u044B
+      \u0432 \u043F\u0435\u0440\u0432\u044B\u0445 \u0442\u0440\u0451\u0445 \u0441\u0442\u043E\u043B\u0431\u0446\u0430\u0445:
+      \u043A\u043B\u0438\u043A \u043F\u043E \u043A\u043E\u0433\u043E\u0440\u0442\u0435,
+      \u0437\u0430\u0442\u0435\u043C \u043F\u043E \u043A\u043B\u0435\u0442\u043A\u0435."
+    - "\u0420\u043E\u0437\u0441\u0442\u0430\u0432\u0442\u0435 \u043A\u043E\u0433\u043E\u0440\u0442\u0438
+      \u0432 \u043F\u0435\u0440\u0448\u0438\u0445 \u0442\u0440\u044C\u043E\u0445
+      \u0441\u0442\u043E\u0432\u043F\u0446\u044F\u0445: \u043A\u043B\u0456\u043A
+      \u043F\u043E \u043A\u043E\u0433\u043E\u0440\u0442\u0456, \u043F\u043E\u0442\u0456\u043C
+      \u043F\u043E \u043A\u043B\u0456\u0442\u0438\u043D\u0446\u0456."
+  - _key: battle.hint.command
+    _values:
+    - Select a cohort and click a cell to move or an enemy to attack, or use the
+      buttons. Then press Execute.
+    - "Choisissez une cohorte, cliquez une case ou un ennemi, ou utilisez les boutons.
+      Puis Ex\xE9cuter."
+    - "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043A\u043E\u0433\u043E\u0440\u0442\u0443:
+      \u043A\u043B\u0438\u043A \u043F\u043E \u043A\u043B\u0435\u0442\u043A\u0435
+      \u2014 \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0435, \u043F\u043E \u0432\u0440\u0430\u0433\u0443
+      \u2014 \u0430\u0442\u0430\u043A\u0430, \u0438\u043B\u0438 \u043A\u043D\u043E\u043F\u043A\u0438.
+      \u0417\u0430\u0442\u0435\u043C \xAB\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C\xBB."
+    - "\u041E\u0431\u0435\u0440\u0456\u0442\u044C \u043A\u043E\u0433\u043E\u0440\u0442\u0443:
+      \u043A\u043B\u0456\u043A \u043F\u043E \u043A\u043B\u0456\u0442\u0438\u043D\u0446\u0456
+      \u2014 \u0440\u0443\u0445, \u043F\u043E \u0432\u043E\u0440\u043E\u0433\u0443
+      \u2014 \u0430\u0442\u0430\u043A\u0430, \u0430\u0431\u043E \u043A\u043D\u043E\u043F\u043A\u0438.
+      \u041F\u043E\u0442\u0456\u043C \xAB\u0412\u0438\u043A\u043E\u043D\u0430\u0442\u0438\xBB."
+  - _key: battle.hint.shoot
+    _values:
+    - Click an enemy within range to shoot.
+    - "Cliquez un ennemi \xE0 port\xE9e pour tirer."
+    - "\u041A\u043B\u0438\u043A\u043D\u0438\u0442\u0435 \u043F\u043E \u0432\u0440\u0430\u0433\u0443
+      \u0432 \u0440\u0430\u0434\u0438\u0443\u0441\u0435 \u0441\u0442\u0440\u0435\u043B\u044C\u0431\u044B."
+    - "\u041A\u043B\u0430\u0446\u043D\u0456\u0442\u044C \u043F\u043E \u0432\u043E\u0440\u043E\u0433\u0443
+      \u0432 \u0440\u0430\u0434\u0456\u0443\u0441\u0456 \u0441\u0442\u0440\u0456\u043B\u044C\u0431\u0438."
+  - _key: battle.hint.action
+    _values:
+    - The armies act...
+    - "Les arm\xE9es agissent..."
+    - "\u0410\u0440\u043C\u0438\u0438 \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u044E\u0442..."
+    - "\u0410\u0440\u043C\u0456\u0457 \u0434\u0456\u044E\u0442\u044C..."
+  - _key: battle.cohort_info
+    _values:
+    - "{0}/{1} \xB7 org. {2} \xB7 {3}"
+    - "{0}/{1} \xB7 org. {2} \xB7 {3}"
+    - "{0}/{1} \xB7 \u043E\u0440\u0433. {2} \xB7 {3}"
+    - "{0}/{1} \xB7 \u043E\u0440\u0433. {2} \xB7 {3}"
+  - _key: battle.start
+    _values:
+    - Start battle
+    - Commencer
+    - "\u041D\u0430\u0447\u0430\u0442\u044C \u0431\u043E\u0439"
+    - "\u041F\u043E\u0447\u0430\u0442\u0438 \u0431\u0456\u0439"
+  - _key: battle.execute
+    _values:
+    - Execute
+    - "Ex\xE9cuter"
+    - "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C"
+    - "\u0412\u0438\u043A\u043E\u043D\u0430\u0442\u0438"
+  - _key: battle.hold
+    _values:
+    - Hold
+    - Tenir
+    - "\u0421\u0442\u043E\u044F\u0442\u044C"
+    - "\u0421\u0442\u043E\u044F\u0442\u0438"
+  - _key: battle.defend
+    _values:
+    - Defend
+    - "D\xE9fendre"
+    - "\u041E\u0431\u043E\u0440\u043E\u043D\u0430"
+    - "\u041E\u0431\u043E\u0440\u043E\u043D\u0430"
+  - _key: battle.shout
+    _values:
+    - War cry
+    - Cri de guerre
+    - "\u0411\u043E\u0435\u0432\u043E\u0439 \u043A\u043B\u0438\u0447"
+    - "\u0411\u043E\u0439\u043E\u0432\u0438\u0439 \u043A\u043B\u0438\u0447"
+  - _key: battle.shoot
+    _values:
+    - Shoot
+    - Tirer
+    - "\u0421\u0442\u0440\u0435\u043B\u044F\u0442\u044C"
+    - "\u0421\u0442\u0440\u0456\u043B\u044F\u0442\u0438"
+  - _key: battle.retreat
+    _values:
+    - Retreat
+    - Retraite
+    - "\u041E\u0442\u0441\u0442\u0443\u043F\u0438\u0442\u044C"
+    - "\u0412\u0456\u0434\u0441\u0442\u0443\u043F\u0438\u0442\u0438"
+  - _key: battle.continue
+    _values:
+    - Continue
+    - Continuer
+    - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    - "\u041F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438"
+  - _key: order.hold
+    _values:
+    - holding
+    - en position
+    - "\u0441\u0442\u043E\u0438\u0442"
+    - "\u0441\u0442\u043E\u0457\u0442\u044C"
+  - _key: order.move
+    _values:
+    - moving
+    - en marche
+    - "\u0434\u0432\u0438\u0436\u0435\u0442\u0441\u044F"
+    - "\u0440\u0443\u0445\u0430\u0454\u0442\u044C\u0441\u044F"
+  - _key: order.defend
+    _values:
+    - defending
+    - "en d\xE9fense"
+    - "\u043E\u0431\u043E\u0440\u043E\u043D\u044F\u0435\u0442\u0441\u044F"
+    - "\u043E\u0431\u043E\u0440\u043E\u043D\u044F\u0454\u0442\u044C\u0441\u044F"
+  - _key: order.shout
+    _values:
+    - war cry
+    - cri de guerre
+    - "\u0431\u043E\u0435\u0432\u043E\u0439 \u043A\u043B\u0438\u0447"
+    - "\u0431\u043E\u0439\u043E\u0432\u0438\u0439 \u043A\u043B\u0438\u0447"
+  - _key: order.shoot
+    _values:
+    - shooting
+    - tir
+    - "\u0441\u0442\u0440\u0435\u043B\u044F\u0435\u0442"
+    - "\u0441\u0442\u0440\u0456\u043B\u044F\u0454"
+  - _key: lang.English
+    _values:
+    - English
+    - Anglais
+    - "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439"
+    - "\u0410\u043D\u0433\u043B\u0456\u0439\u0441\u044C\u043A\u0430"
+  - _key: lang.French
+    _values:
+    - French
+    - "Fran\xE7ais"
+    - "\u0424\u0440\u0430\u043D\u0446\u0443\u0437\u0441\u043A\u0438\u0439"
+    - "\u0424\u0440\u0430\u043D\u0446\u0443\u0437\u044C\u043A\u0430"
+  - _key: lang.Russian
+    _values:
+    - Russian
+    - Russe
+    - "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+    - "\u0420\u043E\u0441\u0456\u0439\u0441\u044C\u043A\u0430"
+  - _key: lang.Ukrainian
+    _values:
+    - Ukrainian
+    - Ukrainien
+    - "\u0423\u043A\u0440\u0430\u0438\u043D\u0441\u043A\u0438\u0439"
+    - "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430"
+  - _key: difficulty.easy
+    _values:
+    - Easy
+    - Facile
+    - "\u041B\u0451\u0433\u043A\u0430\u044F"
+    - "\u041B\u0435\u0433\u043A\u0430"
+  - _key: difficulty.medium
+    _values:
+    - Medium
+    - Moyenne
+    - "\u0421\u0440\u0435\u0434\u043D\u044F\u044F"
+    - "\u0421\u0435\u0440\u0435\u0434\u043D\u044F"
+  - _key: difficulty.hard
+    _values:
+    - Hard
+    - Difficile
+    - "\u0421\u043B\u043E\u0436\u043D\u0430\u044F"
+    - "\u0421\u043A\u043B\u0430\u0434\u043D\u0430"
+  - _key: unit.swordsmen
+    _values:
+    - Swordsmen
+    - "\xC9p\xE9istes"
+    - "\u041C\u0435\u0447\u043D\u0438\u043A\u0438"
+    - "\u041C\u0435\u0447\u043D\u0438\u043A\u0438"
+  - _key: unit.archers
+    _values:
+    - Archers
+    - Archers
+    - "\u041B\u0443\u0447\u043D\u0438\u043A\u0438"
+    - "\u041B\u0443\u0447\u043D\u0438\u043A\u0438"
+  - _key: unit.cavalry
+    _values:
+    - Cavalry
+    - Cavalerie
+    - "\u041A\u0430\u0432\u0430\u043B\u0435\u0440\u0438\u044F"
+    - "\u041A\u0430\u0432\u0430\u043B\u0435\u0440\u0456\u044F"
+  - _key: unit.commander
+    _values:
+    - Commander
+    - Commandant
+    - "\u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440"
+    - "\u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440"
+  - _key: upgrade.mill
+    _values:
+    - Mill
+    - Moulin
+    - "\u041C\u0435\u043B\u044C\u043D\u0438\u0446\u0430"
+    - "\u041C\u043B\u0438\u043D"
+  - _key: upgrade.pigsty
+    _values:
+    - Pigsty
+    - Porcherie
+    - "\u0421\u0432\u0438\u043D\u0430\u0440\u043D\u0438\u043A"
+    - "\u0421\u0432\u0438\u043D\u0430\u0440\u043D\u0438\u043A"
+  - _key: upgrade.winery
+    _values:
+    - Winery
+    - "Cave \xE0 vin"
+    - "\u0412\u0438\u043D\u043E\u0434\u0435\u043B\u044C\u043D\u044F"
+    - "\u0412\u0438\u043D\u043E\u0440\u043E\u0431\u043D\u044F"
+  - _key: upgrade.mine
+    _values:
+    - Mine
+    - Mine
+    - "\u0428\u0430\u0445\u0442\u0430"
+    - "\u0428\u0430\u0445\u0442\u0430"
+  - _key: upgrade.sawmill
+    _values:
+    - Sawmill
+    - Scierie
+    - "\u041B\u0435\u0441\u043E\u043F\u0438\u043B\u043A\u0430"
+    - "\u041B\u0456\u0441\u043E\u043F\u0438\u043B\u043A\u0430"
+  - _key: upgrade.temple
+    _values:
+    - Temple
+    - Temple
+    - "\u0425\u0440\u0430\u043C"
+    - "\u0425\u0440\u0430\u043C"
+  - _key: upgrade.barracks
+    _values:
+    - Barracks
+    - Caserne
+    - "\u041A\u0430\u0437\u0430\u0440\u043C\u044B"
+    - "\u041A\u0430\u0437\u0430\u0440\u043C\u0438"
+  - _key: upgrade.port
+    _values:
+    - Port
+    - Port
+    - "\u041F\u043E\u0440\u0442"
+    - "\u041F\u043E\u0440\u0442"
+  - _key: upgrade.market
+    _values:
+    - Market
+    - "March\xE9"
+    - "\u0420\u044B\u043D\u043E\u043A"
+    - "\u0420\u0438\u043D\u043E\u043A"
+  - _key: menu.title
+    _values:
+    - L'Apprendeur
+    - L'Apprendeur
+    - L'Apprendeur
+    - L'Apprendeur
+  - _key: menu.subtitle
+    _values:
+    - Conquer kingdoms, learn languages
+    - "Conqu\xE9rez des royaumes, apprenez des langues"
+    - "\u0417\u0430\u0432\u043E\u0451\u0432\u044B\u0432\u0430\u0439 \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0441\u0442\u0432\u0430
+      \u2014 \u0443\u0447\u0438 \u044F\u0437\u044B\u043A\u0438"
+    - "\u0417\u0430\u0432\u043E\u0439\u043E\u0432\u0443\u0439 \u043A\u043E\u0440\u043E\u043B\u0456\u0432\u0441\u0442\u0432\u0430
+      \u2014 \u0432\u0447\u0438 \u043C\u043E\u0432\u0438"
+  - _key: menu.new_game
+    _values:
+    - New game
+    - Nouvelle partie
+    - "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430"
+    - "\u041D\u043E\u0432\u0430 \u0433\u0440\u0430"
+  - _key: menu.continue
+    _values:
+    - Continue
+    - Continuer
+    - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    - "\u041F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438"
+  - _key: menu.quit
+    _values:
+    - Quit
+    - Quitter
+    - "\u0412\u044B\u0445\u043E\u0434"
+    - "\u0412\u0438\u0445\u0456\u0434"
+  - _key: menu.language
+    _values:
+    - Interface
+    - Interface
+    - "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441"
+    - "\u0406\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441"
+  - _key: menu.map
+    _values:
+    - Map
+    - Carte
+    - "\u041A\u0430\u0440\u0442\u0430"
+    - "\u041C\u0430\u043F\u0430"
+  - _key: menu.target_language
+    _values:
+    - Language to learn
+    - "Langue \xE9tudi\xE9e"
+    - "\u0418\u0437\u0443\u0447\u0430\u0435\u043C\u044B\u0439 \u044F\u0437\u044B\u043A"
+    - "\u041C\u043E\u0432\u0430 \u0434\u043B\u044F \u0432\u0438\u0432\u0447\u0435\u043D\u043D\u044F"
+  - _key: menu.interface_language
+    _values:
+    - Interface language
+    - Langue de l'interface
+    - "\u042F\u0437\u044B\u043A \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430"
+    - "\u041C\u043E\u0432\u0430 \u0456\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0443"
+  - _key: menu.level
+    _values:
+    - Language level
+    - Niveau de langue
+    - "\u0423\u0440\u043E\u0432\u0435\u043D\u044C \u044F\u0437\u044B\u043A\u0430"
+    - "\u0420\u0456\u0432\u0435\u043D\u044C \u043C\u043E\u0432\u0438"
+  - _key: menu.difficulty
+    _values:
+    - Game difficulty
+    - "Difficult\xE9"
+    - "\u0421\u043B\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0438\u0433\u0440\u044B"
+    - "\u0421\u043A\u043B\u0430\u0434\u043D\u0456\u0441\u0442\u044C \u0433\u0440\u0438"
+  - _key: menu.ai_players
+    _values:
+    - Opponents
+    - Adversaires
+    - "\u041F\u0440\u043E\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
+    - "\u0421\u0443\u043F\u0435\u0440\u043D\u0438\u043A\u0438"
+  - _key: menu.start
+    _values:
+    - Start
+    - Commencer
+    - "\u041D\u0430\u0447\u0430\u0442\u044C"
+    - "\u041F\u043E\u0447\u0430\u0442\u0438"
+  - _key: menu.back
+    _values:
+    - Back
+    - Retour
+    - "\u041D\u0430\u0437\u0430\u0434"
+    - "\u041D\u0430\u0437\u0430\u0434"
+  - _key: pause.title
+    _values:
+    - Pause
+    - Pause
+    - "\u041F\u0430\u0443\u0437\u0430"
+    - "\u041F\u0430\u0443\u0437\u0430"
+  - _key: pause.resume
+    _values:
+    - Resume
+    - Reprendre
+    - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    - "\u041F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438"
+  - _key: pause.save
+    _values:
+    - Save
+    - Sauvegarder
+    - "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+    - "\u0417\u0431\u0435\u0440\u0435\u0433\u0442\u0438"
+  - _key: pause.main_menu
+    _values:
+    - Main menu
+    - Menu principal
+    - "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E"
+    - "\u0413\u043E\u043B\u043E\u0432\u043D\u0435 \u043C\u0435\u043D\u044E"
+  - _key: pause.quit
+    _values:
+    - Quit game
+    - Quitter le jeu
+    - "\u0412\u044B\u0439\u0442\u0438 \u0438\u0437 \u0438\u0433\u0440\u044B"
+    - "\u0412\u0438\u0439\u0442\u0438 \u0437 \u0433\u0440\u0438"

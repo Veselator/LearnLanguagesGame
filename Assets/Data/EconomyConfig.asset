@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c021600f3a1bd247a45f53704287026, type: 3}
+  m_Name: EconomyConfig
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Gameplay.Economy.EconomyConfig
+  _startingResources:
+    _gold: 150
+    _food: 60
+    _wood: 40
+    _stone: 30
+  _wheatYield:
+    _gold: 0
+    _food: 3
+    _wood: 0
+    _stone: 0
+  _vineyardYield:
+    _gold: 2
+    _food: 1
+    _wood: 0
+    _stone: 0
+  _pastureYield:
+    _gold: 1
+    _food: 2
+    _wood: 0
+    _stone: 0
+  _quarryYield:
+    _gold: 0
+    _food: 0
+    _wood: 0
+    _stone: 3
+  _forestYield:
+    _gold: 0
+    _food: 0
+    _wood: 2
+    _stone: 0
+  _emptyProvinceYield:
+    _gold: 1
+    _food: 0
+    _wood: 0
+    _stone: 0
+  _villageIncome:
+    _gold: 2
+    _food: 1
+    _wood: 0
+    _stone: 0
+  _castleIncome:
+    _gold: 3
+    _food: 0
+    _wood: 1
+    _stone: 1
+  _cityIncome:
+    _gold: 6
+    _food: 0
+    _wood: 0
+    _stone: 0
+  _fieldHealing: 0.1
+  _settlementHealing: 0.3
+  _organizationRecovery: 0.15
+  _unpaidUpkeepPenalty: 0.1

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479dcac22c8480e4683b0f74596c9c75, type: 3}
+  m_Name: PlayersConfig
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Gameplay.Players.PlayersConfig
+  _playerColors:
+  - {r: 0.15, g: 0.35, b: 0.95, a: 1}
+  - {r: 0.85, g: 0.15, b: 0.15, a: 1}
+  - {r: 0.6, g: 0.2, b: 0.8, a: 1}
+  - {r: 0.95, g: 0.5, b: 0.1, a: 1}
+  _aiNameKeys:
+  - player.ai_1
+  - player.ai_2
+  - player.ai_3
+  _neutralColor: {r: 0.55, g: 0.55, b: 0.55, a: 1}
+  _aiDuelSuccess:
+  - 0.4
+  - 0.55
+  - 0.7
+  _maxAiPlayers: 3
