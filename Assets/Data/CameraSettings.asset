@@ -20,10 +20,9 @@ MonoBehaviour:
   _mapStartHeight: 70
   _edgePanBorder: 8
   _dragSpeed: 0.15
-  _battlePitch: 12
-  _battlePanSpeed: 14
-  _battleZoomSpeed: 6
-  _battleHeight: 0.3
-  _battleMinDistance: 7
-  _battleMaxDistance: 15
+  _battlePanSpeed: 10
+  _battleZoomSpeed: 4
+  _battleMinZoom: 3.2
+  _battleMaxZoom: 6.5
+  _battleVerticalOffset: 0.22
   _smoothing: 10

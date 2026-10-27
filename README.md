@@ -1,36 +1,37 @@
 # L'Apprendeur
 
-Пошаговая стратегия с изучением английского/французского: глобальная карта (3D-террейн Unity), битвы на 6 линиях × 30 клеток и языковые мини-игры в каждой стычке.
+A turn-based strategy game for learning English or French: a global map (Unity 3D terrain), 2D battles on 6 lines × 30 cells, and a language mini-game in every clash.
 
-## Запуск
+## Running
 
-- `Assets/Scenes/MainMenu.unity` — точка входа (новая игра, продолжение, язык интерфейса).
-- `Assets/Scenes/Game.unity` — можно запускать напрямую: партия стартует с настройками по умолчанию (французский, интерфейс на русском, A1).
-- `Assets/Scenes/MapCreator.unity` — редактор провинций (только в редакторе Unity).
+- `Assets/Scenes/MainMenu.unity` — entry point (new game, continue, interface language).
+- `Assets/Scenes/Game.unity` — can be started directly: the match begins with default settings (French, Russian interface, A1).
+- `Assets/Scenes/MapCreator.unity` — province editor (Unity Editor only).
 
-Управление на карте: ЛКМ — выбор провинции/армии, ПКМ — ход/атака выделенной армией, WASD/стрелки/края экрана/средняя кнопка — камера, колесо — зум, Пробел — конец хода, Esc — пауза.
-В битве: клик по своей когорте, затем по клетке (движение) или врагу (атака/выстрел), кнопки «Оборона», «Боевой клич», «Стрелять», «Выполнить». Работает и в сцене, и на сетке внизу. Пробел — начать бой / выполнить приказы / продолжить. A/D и стрелки — вдоль линий, W/S и колесо — ближе/дальше. Путь отданных приказов показан точками, цель — крестиком, цель стрельбы — кольцом.
+Map controls: LMB — select a province/army, RMB — move/attack with the selected army, WASD/arrows/screen edges/middle mouse — camera, wheel — zoom, Space — end turn, Esc — pause.
 
-## Архитектура
+Battle: click one of your cohorts, then a cell (move) or an enemy (attack/shoot); the buttons give Defend, War cry, Shoot and Execute. Works both in the scene and on the grid below. Space — start the battle / execute orders / continue. A/D and arrows pan along the lines, W/S and the wheel zoom. Planned paths are shown with dots, the destination with a cross, a shooting target with a ring.
 
-- **DI** — Extenject (Zenject): `ProjectInstaller` + `GameConfigsInstaller` (Resources/ProjectContext) и `GameInstaller` (сцена Game).
-- **EventBus** (`Core/Events`) связывает логику и визуал; логика (`Gameplay`, `Battle/Logic`, `Learning`) не знает о MonoBehaviour.
-- **Command** — `MapCommand` на карте (ходы игрока и ИИ идут через `MapCommandProcessor`), `BattleOrder` в бою.
-- **Strategy** — грамматика языков (`IConjugator`), генераторы заданий (`ILanguageTaskGenerator`), ИИ (`BaseAILogic`: Easy/Medium/Hard, минимакс; `IBattleAI`), участники дуэлей, режимы камеры (`ICurrentCameraMethod`).
-- **Factory / Pool** — `ArmyFactory`, Zenject-фабрики и `MonoMemoryPool` для всех runtime-объектов; все визуальные объекты — префабы в `Assets/Prefabs`.
-- **Данные** — ScriptableObject в `Assets/Data` (словари, локализация, юниты, постройки, экономика, карты, поля боя).
-- **Сохранения** — JSON в `Application.persistentDataPath/savegame.json`, автосейв в начале хода игрока.
+## Architecture
+
+- **DI** — Extenject (Zenject): `ProjectInstaller` + `GameConfigsInstaller` (Resources/ProjectContext) and `GameInstaller` (Game scene).
+- **EventBus** (`Core/Events`) connects logic and visuals; the logic (`Gameplay`, `Battle/Logic`, `Learning`) knows nothing about MonoBehaviours.
+- **Command** — `MapCommand` on the map (player and AI moves both go through `MapCommandProcessor`), `BattleOrder` in battle.
+- **Strategy** — language grammar (`IConjugator`), exercise generators (`ILanguageTaskGenerator`), AI (`BaseAILogic`: Easy/Medium/Hard, minimax; `IBattleAI`), duel participants, camera modes (`ICurrentCameraMethod`).
+- **Factory / Pool** — `ArmyFactory`, Zenject factories and `MonoMemoryPool` for every runtime object; all visual objects are prefabs in `Assets/Prefabs`.
+- **Data** — ScriptableObjects in `Assets/Data` (vocabularies, localization, units, buildings, economy, maps, battlefields).
+- **Saves** — JSON in `Application.persistentDataPath/savegame.json`, autosave at the start of the player's turn.
 
 ## MapCreator
 
-Выберите объект `MapCreator` в одноимённой сцене:
-1. *Configure texture import settings* — делает картинки карты читаемыми.
-2. *Sync provinces with image* — создаёт/обновляет провинции по цветам `Provinces.png` (мелкие артефакты сглаживания сливаются с соседями), соседей, позиции.
-3. Клик по провинции в Scene View выделяет её; в инспекторе — тип, ландшафт, поселение, производство, точки старта; ручки в сцене двигают позиции поселения, порта и армии.
-4. *Generate map icon* — иконка для меню.
+Select the `MapCreator` object in the scene of the same name:
+1. *Configure texture import settings* — makes the map images readable.
+2. *Sync provinces with image* — creates/updates provinces from the colors of `Provinces.png` (tiny anti-aliasing slivers merge into neighbours), neighbours and positions.
+3. Clicking a province in the Scene view selects it; the inspector edits type, landscape, settlement, production and spawn points; handles in the scene move the settlement, port and army positions.
+4. *Generate map icon* — the icon for the menu.
 
-Поля боя (`Assets/Data/Battle/Battlefields`) рисуются кистью прямо в инспекторе, вероятности по ландшафтам — в `BattlefieldMapsConfig`.
+Battlefields (`Assets/Data/Battle/Battlefields`) are painted with a brush right in the inspector; probabilities per landscape live in `BattlefieldMapsConfig`.
 
-## Тесты
+## Tests
 
-`Window → General → Test Runner → EditMode` — грамматика, генерация заданий, симуляция битв, граф карты.
+`Window → General → Test Runner → EditMode` — grammar, exercise generation, battle simulation, map graph.

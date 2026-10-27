@@ -17,8 +17,8 @@ namespace LearnLanguages.Battle.Visual
         [SerializeField] private Transform _tilesRoot;
         [SerializeField] private Transform _cohortsRoot;
         [SerializeField] private float _cellWidth = 1.6f;
-        [Tooltip("Vertical distance between lines; smaller than the tile height so the lines overlap without gaps.")]
-        [SerializeField] private float _rowStep = 0.55f;
+        [Tooltip("Vertical distance between lines: the full tile height, so lines never overlap.")]
+        [SerializeField] private float _rowStep = 0.8f;
         [SerializeField] private Vector3 _unitOffset = new Vector3(0f, 0.15f, -0.005f);
         [SerializeField] private Vector3 _textOffset = new Vector3(0f, 1f, -0.01f);
         [SerializeField] private Color _lossColor = new Color(1f, 0.3f, 0.25f);
@@ -90,9 +90,8 @@ namespace LearnLanguages.Battle.Visual
         public float FieldWidth => BattleGrid.Columns * _cellWidth;
         public float RowsCenterY => (BattleGrid.Rows - 1) * _rowStep * 0.5f;
 
-        // Front lines are lower and slightly closer to the camera, so their colliders win clicks.
         public Vector3 CellToWorld(Vector2Int cell) =>
-            transform.position + new Vector3((cell.x + 0.5f) * _cellWidth, (BattleGrid.Rows - 1 - cell.y) * _rowStep, -cell.y * 0.01f);
+            transform.position + new Vector3((cell.x + 0.5f) * _cellWidth, (BattleGrid.Rows - 1 - cell.y) * _rowStep, 0f);
 
         private static int SortingOrderOf(int row) => row * 20;
 
