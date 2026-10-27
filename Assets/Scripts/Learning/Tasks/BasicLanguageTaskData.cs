@@ -75,12 +75,8 @@ namespace LearnLanguages.Learning.Tasks
         public bool IsCorrect(string answer)
         {
             var normalized = AnswerNormalizer.Normalize(answer);
-            var withoutAccents = AnswerNormalizer.StripAccents(normalized);
             foreach (var accepted in _acceptedAnswers)
-            {
-                var expected = AnswerNormalizer.Normalize(accepted);
-                if (normalized == expected || withoutAccents == AnswerNormalizer.StripAccents(expected)) return true;
-            }
+                if (normalized == AnswerNormalizer.Normalize(accepted)) return true;
             return false;
         }
 

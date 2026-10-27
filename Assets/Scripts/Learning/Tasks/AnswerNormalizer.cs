@@ -1,8 +1,10 @@
-using System.Globalization;
 using System.Text;
 
 namespace LearnLanguages.Learning.Tasks
 {
+    /// <summary>
+    /// Makes typed answers comparable: case, spaces and apostrophe variants are ignored, accents are not.
+    /// </summary>
     public static class AnswerNormalizer
     {
         public static string Normalize(string text)
@@ -10,7 +12,8 @@ namespace LearnLanguages.Learning.Tasks
             if (string.IsNullOrEmpty(text)) return string.Empty;
             var builder = new StringBuilder(text.Length);
             var previousSpace = true;
-            foreach (var raw in text.Trim().ToLowerInvariant())
+            // FormC: "é" typed as one character or as "e" + combining accent is the same letter.
+            foreach (var raw in text.Normalize(NormalizationForm.FormC).Trim().ToLowerInvariant())
             {
                 var c = raw == '’' || raw == '`' ? '\'' : raw;
                 if (char.IsWhiteSpace(c))
@@ -23,15 +26,6 @@ namespace LearnLanguages.Learning.Tasks
                 previousSpace = false;
             }
             return builder.ToString().TrimEnd();
-        }
-
-        public static string StripAccents(string text)
-        {
-            var decomposed = text.Normalize(NormalizationForm.FormD);
-            var builder = new StringBuilder(decomposed.Length);
-            foreach (var c in decomposed)
-                if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark) builder.Append(c);
-            return builder.ToString().Normalize(NormalizationForm.FormC);
         }
     }
 

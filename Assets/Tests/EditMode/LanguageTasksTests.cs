@@ -72,11 +72,14 @@ namespace LearnLanguages.Tests
         }
 
         [Test]
-        public void AccentsAreForgivenInTypedAnswers()
+        public void AccentsAreRequiredInTypedAnswers()
         {
-            var task = new TextInputTaskData(LanguageTaskType.TypeTranslation, "k", "p", 10f, new[] { "épée" });
-            Assert.IsTrue(task.IsCorrect("epee"));
+            var task = new TextInputTaskData(LanguageTaskType.TypeTranslation, "k", "p", 10f, new[] { "épée", "où" });
             Assert.IsTrue(task.IsCorrect("ÉPÉE"));
+            Assert.IsTrue(task.IsCorrect("épée"), "Decomposed accents are the same letters");
+            Assert.IsFalse(task.IsCorrect("epee"));
+            Assert.IsFalse(task.IsCorrect("ou"));
+            Assert.IsTrue(task.IsCorrect("où"));
         }
     }
 }
