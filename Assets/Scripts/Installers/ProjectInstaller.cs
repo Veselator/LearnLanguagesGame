@@ -1,6 +1,7 @@
 using LearnLanguages.Core.Events;
 using LearnLanguages.Core.Input;
 using LearnLanguages.Core.Randomness;
+using LearnLanguages.Gameplay.AI;
 using LearnLanguages.Learning.Grammar;
 using LearnLanguages.Learning.Tasks;
 using LearnLanguages.Learning.Tasks.Generators;
@@ -27,6 +28,10 @@ namespace LearnLanguages.Installers
             Container.Bind<ISaveService>().To<FileSaveService>().AsSingle();
             Container.Bind<ISceneLoader>().To<SceneLoader>().AsSingle();
             Container.Bind<ILocalizationService>().To<LocalizationService>().AsSingle();
+            Container.BindInterfacesTo<InterfaceLanguagePreference>().AsSingle();
+            Container.Bind<IGameOptions>().To<GameOptions>().AsSingle();
+            Container.Bind<IAIProfilesStorage>().To<FileAIProfilesStorage>().AsSingle();
+            Container.Bind<IAIProfilesStore>().To<AIProfilesStore>().AsSingle();
             Container.Bind<UiFormat>().AsSingle();
 
             // Language rules (strategy per trained language) and exercise generators (strategy per task type).

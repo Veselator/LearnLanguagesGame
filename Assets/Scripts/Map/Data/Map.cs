@@ -18,6 +18,11 @@ namespace LearnLanguages.Map.Data
         [Tooltip("World units per map pixel.")]
         [SerializeField] private float _worldUnitsPerPixel = 0.1f;
         [SerializeField] private float _maxHeight = 16f;
+        [Tooltip("Normalized height of the water surface. Terrain below it is a flat seabed.")]
+        [Range(0f, 0.2f)]
+        [SerializeField] private float _waterLevel = 0.012f;
+        [Tooltip("Mirrored maps get twin provinces with identical gameplay data and paired spawn points.")]
+        [SerializeField] private MapSymmetry _symmetry;
 
         public string Id => _id;
         public string Name => _name;
@@ -29,6 +34,9 @@ namespace LearnLanguages.Map.Data
         public BattlefieldMapsConfig BattlefieldMapsConfig => _battlefieldMapsConfig;
         public float WorldUnitsPerPixel => _worldUnitsPerPixel;
         public float MaxHeight => _maxHeight;
+        public float WaterLevel => _waterLevel;
+        public float WaterHeight => _waterLevel * _maxHeight;
+        public MapSymmetry Symmetry => _symmetry;
         public Vector2Int PixelSize => _provinces != null ? new Vector2Int(_provinces.width, _provinces.height) : Vector2Int.one;
         public Vector2 WorldSize => (Vector2)PixelSize * _worldUnitsPerPixel;
 

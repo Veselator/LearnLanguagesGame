@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using LearnLanguages.Core.Randomness;
+using LearnLanguages.Gameplay.AI;
 using LearnLanguages.Gameplay.Economy;
 using LearnLanguages.Gameplay.Players;
 using LearnLanguages.Gameplay.Units;
@@ -33,6 +34,7 @@ namespace LearnLanguages.Gameplay.World
         private readonly ArmiesRegistry _armies;
         private readonly IArmyFactory _armyFactory;
         private readonly PlayersConfig _playersConfig;
+        private readonly IAIProfilesStore _aiProfiles;
         private readonly EconomyConfig _economy;
         private readonly UnitsConfig _units;
         private readonly UpgradesConfig _upgrades;
@@ -40,7 +42,7 @@ namespace LearnLanguages.Gameplay.World
         private readonly ILocalizationService _localization;
 
         public GameWorldBuilder(MapsConfig maps, CurrentMap currentMap, GameMap gameMap, PlayersRegistry players,
-            ArmiesRegistry armies, IArmyFactory armyFactory, PlayersConfig playersConfig, EconomyConfig economy,
+            ArmiesRegistry armies, IArmyFactory armyFactory, PlayersConfig playersConfig, IAIProfilesStore aiProfiles, EconomyConfig economy,
             UnitsConfig units, UpgradesConfig upgrades, IRandomService random, ILocalizationService localization)
         {
             _maps = maps;
@@ -50,6 +52,7 @@ namespace LearnLanguages.Gameplay.World
             _armies = armies;
             _armyFactory = armyFactory;
             _playersConfig = playersConfig;
+            _aiProfiles = aiProfiles;
             _economy = economy;
             _units = units;
             _upgrades = upgrades;
@@ -68,11 +71,16 @@ namespace LearnLanguages.Gameplay.World
         public void CreateNew(GameSettings settings)
         {
             var map = _currentMap.Map;
+            var provinces = map.ProvincesData;
             foreach (var tile in _gameMap.Tiles)
-                tile.SetBattlefield(map.BattlefieldMapsConfig.Pick(tile.Data.Landscape, _random));
+            {
+                var twin = provinces.GetMirror(tile.Id);
+                tile.SetBattlefield(twin < tile.Id
+                    ? _gameMap.Get(twin).Battlefield
+                    : map.BattlefieldMapsConfig.Pick(tile.Data.Landscape, _random));
+            }
 
-            var spawnPoints = new List<int>(map.ProvincesData.PossibleSpawnPoints);
-            _random.Shuffle(spawnPoints);
+            var spawnPoints = OrderSpawnPoints(provinces);
             var aiCount = UnityEngine.Mathf.Clamp(settings.AiPlayersCount, 1,
                 UnityEngine.Mathf.Min(_playersConfig.MaxAiPlayers, spawnPoints.Count - 1));
 
@@ -81,8 +89,12 @@ namespace LearnLanguages.Gameplay.World
             {
                 var isHuman = i == HumanPlayerId;
                 var name = isHuman ? _localization.Get("player.human") : _localization.Get(_playersConfig.GetAiNameKey(i - 1));
-                var player = new PlayerData(i, name, _playersConfig.GetColor(i), isHuman, settings.Difficulty, spawnPoints[i]);
+                // The strength of an AI player in battles and duels follows from its model.
+                var profile = isHuman ? null : _aiProfiles.Pick(settings.Difficulty, _random);
+                var difficulty = profile != null ? profile.Difficulty : settings.Difficulty;
+                var player = new PlayerData(i, name, _playersConfig.GetColor(i), isHuman, difficulty, spawnPoints[i]);
                 player.SetResources(_economy.StartingResources);
+                if (profile != null) player.SetAiProfile(profile.Id);
                 players.Add(player);
             }
             _players.Initialize(players, CreateNeutral(settings));
@@ -106,6 +118,7 @@ namespace LearnLanguages.Gameplay.World
             {
                 var player = new PlayerData(p.Id, p.Name, p.Color, p.IsHuman, p.Difficulty, p.CapitalTileId);
                 player.SetResources(p.Resources);
+                player.SetAiProfile(p.AiProfileId);
                 player.SetAlive(p.IsAlive);
                 players.Add(player);
             }
@@ -154,7 +167,7 @@ namespace LearnLanguages.Gameplay.World
                 save.Players.Add(new PlayerSave
                 {
                     Id = data.Id, Name = data.Name, Color = data.Color, IsHuman = data.IsHuman,
-                    Difficulty = data.AiDifficulty, CapitalTileId = data.CapitalTileId, IsAlive = data.IsAlive,
+                    Difficulty = data.AiDifficulty, AiProfileId = data.AiProfileId, CapitalTileId = data.CapitalTileId, IsAlive = data.IsAlive,
                     Resources = data.Resources
                 });
             }
@@ -183,6 +196,40 @@ namespace LearnLanguages.Gameplay.World
                 save.Armies.Add(armySave);
             }
             return save;
+        }
+
+        /// <summary>
+        /// Random order of the spawn points. On a mirrored map they stay in twin pairs, so a duel is always
+        /// played from mirrored capitals.
+        /// </summary>
+        private List<int> OrderSpawnPoints(ProvincesData provinces)
+        {
+            var spawnPoints = new List<int>(provinces.PossibleSpawnPoints);
+            if (!provinces.IsMirrored)
+            {
+                _random.Shuffle(spawnPoints);
+                return spawnPoints;
+            }
+
+            var pairs = new List<int>();
+            foreach (var spawn in spawnPoints)
+            {
+                var twin = provinces.GetMirror(spawn);
+                if (spawn < twin && spawnPoints.Contains(twin)) pairs.Add(spawn);
+            }
+            _random.Shuffle(pairs);
+
+            var ordered = new List<int>();
+            foreach (var first in pairs)
+            {
+                var twin = provinces.GetMirror(first);
+                var swap = _random.Range(0, 2) == 1;
+                ordered.Add(swap ? twin : first);
+                ordered.Add(swap ? first : twin);
+            }
+            foreach (var spawn in spawnPoints)
+                if (!ordered.Contains(spawn)) ordered.Add(spawn);
+            return ordered;
         }
 
         private PlayerData CreateNeutral(GameSettings settings) =>

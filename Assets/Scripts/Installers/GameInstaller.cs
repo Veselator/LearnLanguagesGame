@@ -15,6 +15,7 @@ using LearnLanguages.Learning.Tasks;
 using LearnLanguages.Map.Logic;
 using LearnLanguages.Map.Visual;
 using LearnLanguages.Save;
+using LearnLanguages.UI.AI;
 using LearnLanguages.UI.Battle;
 using LearnLanguages.UI.Common;
 using LearnLanguages.UI.Global;
@@ -35,6 +36,7 @@ namespace LearnLanguages.Installers
         [SerializeField] private BattleView _battleView;
         [SerializeField] private LanguageTaskVisual _languageTaskVisual;
         [SerializeField] private ScreenFader _screenFader;
+        [SerializeField] private AIDecisionTreeView _aiDecisionView;
 
         [Header("Prefabs")]
         [SerializeField] private VisualGameTile _tilePrefab;
@@ -46,6 +48,8 @@ namespace LearnLanguages.Installers
         [SerializeField] private ActionButtonView _actionButtonPrefab;
         [SerializeField] private NotificationItemView _notificationPrefab;
         [SerializeField] private BattleGridCellView _gridCellPrefab;
+        [SerializeField] private AITreeNodeView _aiTreeNodePrefab;
+        [SerializeField] private AITreeLineView _aiTreeLinePrefab;
 
         public override void InstallBindings()
         {
@@ -86,9 +90,7 @@ namespace LearnLanguages.Installers
             Container.BindInterfacesTo<MapCommandProcessor>().AsSingle();
             Container.Bind<IHumanTurnState>().To<HumanTurnState>().AsSingle();
 
-            Container.Bind<BaseAILogic>().To<EasyAI>().AsSingle();
-            Container.Bind<BaseAILogic>().To<MediumAI>().AsSingle();
-            Container.Bind<BaseAILogic>().To<HardAI>().AsSingle();
+            Container.Bind<IAIDecisionViewer>().FromInstance(_aiDecisionView);
             Container.BindInterfacesAndSelfTo<AIHandler>().AsSingle();
         }
 
@@ -102,6 +104,7 @@ namespace LearnLanguages.Installers
             Container.Bind<BattleTurnsManager>().AsSingle();
             Container.BindInterfacesTo<BattleController>().AsSingle();
             Container.Bind<IBattleSimulator>().To<BattleSimulator>().AsSingle();
+            Container.Bind<ISimplifiedBattleRunner>().To<SimplifiedBattleRunner>().AsSingle();
             Container.Bind<IBattleService>().To<BattleService>().AsSingle();
             Container.Bind<IBattleSelection>().To<BattleSelection>().AsSingle();
         }
@@ -142,6 +145,10 @@ namespace LearnLanguages.Installers
                 .FromComponentInNewPrefab(_notificationPrefab).UnderTransformGroup("UiNotificationsPool");
             Container.BindMemoryPool<BattleGridCellView, BattleGridCellView.Pool>().WithInitialSize(180)
                 .FromComponentInNewPrefab(_gridCellPrefab).UnderTransformGroup("UiGridCellsPool");
+            Container.BindMemoryPool<AITreeNodeView, AITreeNodeView.Pool>().WithInitialSize(16).FromComponentInNewPrefab(_aiTreeNodePrefab)
+                .UnderTransformGroup("AITreeNodes");
+            Container.BindMemoryPool<AITreeLineView, AITreeLineView.Pool>().WithInitialSize(16).FromComponentInNewPrefab(_aiTreeLinePrefab)
+                .UnderTransformGroup("AITreeLines");
         }
     }
 }

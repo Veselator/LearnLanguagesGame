@@ -4,8 +4,8 @@ using UnityEngine;
 namespace LearnLanguages.Map.Visual
 {
     /// <summary>
-    /// Unity terrain of the global map: heights from the height map, painted texture from <see cref="ProvinceOverlayPainter"/>.
-    /// Also converts between map pixels and world positions.
+    /// Unity terrain of the global map: heights from the height map (a flat seabed below the water level),
+    /// painted texture from <see cref="ProvinceOverlayPainter"/>. Also converts between map pixels and world positions.
     /// </summary>
     public sealed class MapTerrainView : MonoBehaviour
     {
@@ -33,7 +33,7 @@ namespace LearnLanguages.Map.Visual
             var data = Instantiate(_terrainDataTemplate);
             data.heightmapResolution = _heightmapResolution;
             data.size = new Vector3(worldSize.x, map.MaxHeight, worldSize.y);
-            data.SetHeights(0, 0, SampleHeights(map.HeightMap, data.heightmapResolution));
+            data.SetHeights(0, 0, SampleHeights(map.HeightMap, data.heightmapResolution, map.WaterLevel));
 
             _paintedTexture = new Texture2D(lookup.Width, lookup.Height, TextureFormat.RGBA32, true)
             {
@@ -54,12 +54,12 @@ namespace LearnLanguages.Map.Visual
             transform.position = Vector3.zero;
         }
 
-        /// <summary>World position on the terrain surface for a pixel of the map images.</summary>
+        /// <summary>World position on the terrain surface (or the water surface at sea) for a pixel of the map images.</summary>
         public Vector3 PixelToWorld(Vector2 pixel)
         {
             var scale = _map.WorldUnitsPerPixel;
             var position = new Vector3(pixel.x * scale, 0f, pixel.y * scale) + transform.position;
-            position.y = _terrain.SampleHeight(position) + transform.position.y;
+            position.y = Mathf.Max(_terrain.SampleHeight(position), _map.WaterHeight) + transform.position.y;
             return position;
         }
 
@@ -79,13 +79,16 @@ namespace LearnLanguages.Map.Visual
             return provinceId >= 0;
         }
 
-        private static float[,] SampleHeights(Texture2D heightMap, int resolution)
+        private static float[,] SampleHeights(Texture2D heightMap, int resolution, float waterLevel)
         {
             var heights = new float[resolution, resolution];
             var step = 1f / (resolution - 1);
             for (var y = 0; y < resolution; y++)
             for (var x = 0; x < resolution; x++)
-                heights[y, x] = heightMap.GetPixelBilinear(x * step, y * step).grayscale;
+            {
+                var height = heightMap.GetPixelBilinear(x * step, y * step).r;
+                heights[y, x] = height > waterLevel ? height : 0f;
+            }
             return heights;
         }
 

@@ -3,6 +3,28 @@ using UnityEngine;
 
 namespace LearnLanguages.Battle.Data
 {
+    /// <summary>
+    /// The battle as a series of questions. Index of the losses: the number of correct answers.
+    /// </summary>
+    [Serializable]
+    public sealed class SimplifiedBattleSettings
+    {
+        [SerializeField] private int _questions = 3;
+        [SerializeField] private int _correctToWin = 2;
+        [SerializeField] private float[] _humanLoss = { 0.85f, 0.6f, 0.25f, 0.05f };
+        [SerializeField] private float[] _enemyLoss = { 0.05f, 0.25f, 0.6f, 0.85f };
+        [Tooltip("The part of the losses that die; the rest are wounded.")]
+        [Range(0f, 1f)]
+        [SerializeField] private float _killedShare = 0.6f;
+
+        public int Questions => _questions;
+        public int CorrectToWin => _correctToWin;
+        public float KilledShare => _killedShare;
+
+        public float GetHumanLoss(int correct) => _humanLoss[Mathf.Clamp(correct, 0, _humanLoss.Length - 1)];
+        public float GetEnemyLoss(int correct) => _enemyLoss[Mathf.Clamp(correct, 0, _enemyLoss.Length - 1)];
+    }
+
     [Serializable]
     public struct BattleTileRules
     {
@@ -28,6 +50,10 @@ namespace LearnLanguages.Battle.Data
     [CreateAssetMenu(menuName = "LearnLanguages/Battle/Battle Config", fileName = "BattleConfig")]
     public sealed class BattleConfig : ScriptableObject
     {
+        [SerializeField] private SimplifiedBattleSettings _simplified = new SimplifiedBattleSettings();
+
+        public SimplifiedBattleSettings Simplified => _simplified;
+
         [Header("Flow")]
         [SerializeField] private int _ticksPerTurn = 5;
         [SerializeField] private int _deploymentColumns = 3;

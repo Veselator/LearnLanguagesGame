@@ -19,6 +19,7 @@ MonoBehaviour:
   _upgrades: {fileID: 11400000, guid: ae5a7ffaee7119d4ea833d4c97dde4d0, type: 2}
   _units: {fileID: 11400000, guid: 1a4ce3c0fafb681428a170ba14dbbc4b, type: 2}
   _players: {fileID: 11400000, guid: 3548846a65289fb43851a802539f9e9d, type: 2}
+  _aiProfiles: {fileID: 11400000, guid: 687276848e54744498175f3f233ae949, type: 2}
   _battle: {fileID: 11400000, guid: bcc3ecc309d3f594aa364d283f8c3e26, type: 2}
   _battleTiles: {fileID: 11400000, guid: 1636901b2d791444baa97e7225ba7ee4, type: 2}
   _camera: {fileID: 11400000, guid: 14eacee5e47e85641b8319e4f4b54f36, type: 2}

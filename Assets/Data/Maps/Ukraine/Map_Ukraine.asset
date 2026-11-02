@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb06dfb597242ea41ab3c9510f5b24e5, type: 3}
+  m_Name: Map_Ukraine
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Map.Data.Map
+  _id: ukraine
+  _name: Ukraine
+  _icon: {fileID: 2800000, guid: 72fb8db7e31b2274e99155d981149157, type: 3}
+  _visualLandscape: {fileID: 2800000, guid: e99dda0bb95505d4fbaf497d932bec15, type: 3}
+  _provinces: {fileID: 2800000, guid: cc17bed38d6d2854fa16980e25a1463f, type: 3}
+  _heightMap: {fileID: 2800000, guid: 8bfdcdaf165df654b8e918c71cdc4b05, type: 3}
+  _provincesData: {fileID: 11400000, guid: 74508ba67e4ce3d4d915c2221f1f3640, type: 2}
+  _battlefieldMapsConfig: {fileID: 11400000, guid: 38da6db47e2d1c44dbde364b88c94e0d, type: 2}
+  _worldUnitsPerPixel: 0.1
+  _maxHeight: 16
+  _waterLevel: 0.012
+  _symmetry: 0

@@ -4,7 +4,7 @@ A turn-based strategy game for learning English or French: a global map (Unity 3
 
 ## Running
 
-- `Assets/Scenes/MainMenu.unity` — entry point (new game, continue, interface language).
+- `Assets/Scenes/MainMenu.unity` — entry point (new game, continue, AI models, settings: interface language, debug mode).
 - `Assets/Scenes/Game.unity` — can be started directly: the match begins with default settings (French, Russian interface, A1).
 - `Assets/Scenes/MapCreator.unity` — province editor (Unity Editor only).
 
@@ -17,10 +17,25 @@ Battle: click one of your cohorts, then a cell (move) or an enemy (attack/shoot)
 - **DI** — Extenject (Zenject): `ProjectInstaller` + `GameConfigsInstaller` (Resources/ProjectContext) and `GameInstaller` (Game scene).
 - **EventBus** (`Core/Events`) connects logic and visuals; the logic (`Gameplay`, `Battle/Logic`, `Learning`) knows nothing about MonoBehaviours.
 - **Command** — `MapCommand` on the map (player and AI moves both go through `MapCommandProcessor`), `BattleOrder` in battle.
-- **Strategy** — language grammar (`IConjugator`), exercise generators (`ILanguageTaskGenerator`), AI (`BaseAILogic`: Easy/Medium/Hard, minimax; `IBattleAI`), duel participants, camera modes (`ICurrentCameraMethod`).
+- **Strategy** — language grammar (`IConjugator`), exercise generators (`ILanguageTaskGenerator`), battle AI (`IBattleAI`), duel participants, camera modes (`ICurrentCameraMethod`).
 - **Factory / Pool** — `ArmyFactory`, Zenject factories and `MonoMemoryPool` for every runtime object; all visual objects are prefabs in `Assets/Prefabs`.
 - **Data** — ScriptableObjects in `Assets/Data` (vocabularies, localization, units, buildings, economy, maps, battlefields).
 - **Saves** — JSON in `Application.persistentDataPath/savegame.json`, autosave at the start of the player's turn.
+
+## Simplified battles
+
+An option of a new game. Instead of the battlefield, a battle of the human is a series of three questions (`SimplifiedBattleRunner`): two correct answers win, and the number of correct answers sets the losses of both sides (`SimplifiedBattleSettings` in `BattleConfig`). Battles without a human are auto-resolved as usual.
+
+## Map AI
+
+The turn of a computer player is a loop in `AIPlanner`: `AIMinimax` picks one action (move, build, recruit, reinforce, merge or end the turn) on a simulated position (`AISimulation`), the action is applied, and so on until the AI ends the turn.
+
+- **Evaluation** — `AIEvaluator` scores a position by 10 fixed criteria (`AICriterion`): territory, settlements, income, treasury, buildings, army strength, cohorts, capital safety, enemy capitals, advance. Each value is in [-1; 1].
+- **Models** — `AIProfile`: a priority per criterion (normalized at runtime: number / sum), search depth, options per node, and decision probabilities: index 0 is the chance of playing the best option, index 1 the second best, and so on. The difficulty of a model is not set by hand: `AIDifficultyRating` derives it from the depth and the probabilities. A player gets a random model of the difficulty chosen for the match, or the closest one. The shipped models live in `Assets/Data/AI/AIProfilesConfig.asset`.
+- **AI models window** — in the main menu: view, edit, add and duplicate models. `AIProfilesStore` saves every change at once to `Application.persistentDataPath/ai_profiles.json`.
+- **Debug mode** — a checkbox in the settings, on by default in the editor. `AIMinimax` reports each step to `IAIDecisionObserver`; `AIDecisionTrace` records them and `AIDecisionTreeView` replays them during the AI turn: step back, step forward, to the end of the tree, or skip to the next AI.
+
+Every option of the root is searched with a full alpha-beta window, so the ranking used by the probabilities consists of exact values; pruning applies below the root.
 
 ## MapCreator
 
@@ -34,4 +49,4 @@ Battlefields (`Assets/Data/Battle/Battlefields`) are painted with a brush right 
 
 ## Tests
 
-`Window → General → Test Runner → EditMode` — grammar, exercise generation, battle simulation, map graph.
+`Window → General → Test Runner → EditMode` — grammar, exercise generation, battle simulation, map graph, map AI.

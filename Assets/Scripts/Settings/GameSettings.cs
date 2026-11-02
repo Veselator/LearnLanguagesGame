@@ -16,12 +16,13 @@ namespace LearnLanguages.Settings
         [SerializeField] private GameDifficulty _difficulty;
         [SerializeField] private int _aiPlayersCount;
         [SerializeField] private int _seed;
+        [SerializeField] private bool _simplifiedBattles;
 
         // Used by the serializer.
         private GameSettings() { }
 
         public GameSettings(string mapId, Language targetLanguage, Language interfaceLanguage,
-            LanguageLevel languageLevel, GameDifficulty difficulty, int aiPlayersCount, int seed)
+            LanguageLevel languageLevel, GameDifficulty difficulty, int aiPlayersCount, int seed, bool simplifiedBattles = false)
         {
             if (targetLanguage == interfaceLanguage)
                 throw new ArgumentException("Interface language must differ from the trained language.");
@@ -33,6 +34,7 @@ namespace LearnLanguages.Settings
             _difficulty = difficulty;
             _aiPlayersCount = aiPlayersCount;
             _seed = seed;
+            _simplifiedBattles = simplifiedBattles;
         }
 
         public string MapId => _mapId;
@@ -42,5 +44,7 @@ namespace LearnLanguages.Settings
         public GameDifficulty Difficulty => _difficulty;
         public int AiPlayersCount => _aiPlayersCount;
         public int Seed => _seed;
+        /// <summary>Battles of the human are a series of questions instead of the battlefield.</summary>
+        public bool SimplifiedBattles => _simplifiedBattles;
     }
 }

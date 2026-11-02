@@ -1,6 +1,7 @@
 using LearnLanguages.Battle.Data;
 using LearnLanguages.Battle.Visual;
 using LearnLanguages.Cameras;
+using LearnLanguages.Gameplay.AI;
 using LearnLanguages.Gameplay.Economy;
 using LearnLanguages.Gameplay.Players;
 using LearnLanguages.Gameplay.Units;
@@ -25,6 +26,7 @@ namespace LearnLanguages.Installers
         [SerializeField] private UpgradesConfig _upgrades;
         [SerializeField] private UnitsConfig _units;
         [SerializeField] private PlayersConfig _players;
+        [SerializeField] private AIProfilesConfig _aiProfiles;
         [SerializeField] private BattleConfig _battle;
         [SerializeField] private BattleTileVisualConfig _battleTiles;
         [SerializeField] private CameraSettings _camera;
@@ -38,6 +40,7 @@ namespace LearnLanguages.Installers
             Container.BindInstance(_upgrades);
             Container.BindInstance(_units);
             Container.BindInstance(_players);
+            Container.BindInstance(_aiProfiles);
             Container.BindInstance(_battle);
             Container.BindInstance(_battleTiles);
             Container.BindInstance(_camera);

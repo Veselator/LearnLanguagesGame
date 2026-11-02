@@ -10,6 +10,9 @@ namespace LearnLanguages.Gameplay.Economy
     public interface IEconomyService
     {
         ResourceBundle CalculateTileIncome(GameTile tile);
+        /// <summary>What the land tile would bring its owner, whoever owns it now.</summary>
+        ResourceBundle CalculateTileYield(GameTile tile);
+        ResourceBundle CalculateUpgradeYield(GameTile tile, UpgradeDefinition upgrade);
         ResourceBundle CalculateIncome(int playerId);
         ResourceBundle CalculateUpkeep(int playerId);
         void ProcessTurnStart(PlayerData player);
@@ -30,9 +33,12 @@ namespace LearnLanguages.Gameplay.Economy
             _eventBus = eventBus;
         }
 
-        public ResourceBundle CalculateTileIncome(GameTile tile)
+        public ResourceBundle CalculateTileIncome(GameTile tile) =>
+            tile.IsLand && !tile.IsNeutral ? CalculateTileYield(tile) : ResourceBundle.Zero;
+
+        public ResourceBundle CalculateTileYield(GameTile tile)
         {
-            if (!tile.IsLand || tile.IsNeutral) return ResourceBundle.Zero;
+            if (!tile.IsLand) return ResourceBundle.Zero;
 
             var data = tile.Data;
             var income = data.Production == ProductionType.None
@@ -42,14 +48,16 @@ namespace LearnLanguages.Gameplay.Economy
             income += _config.GetSettlementIncome(tile.Settlement);
 
             foreach (var upgrade in tile.Upgrades)
-            {
-                if (!upgrade.IsProducing) continue;
-                var yield = upgrade.BaseYield;
-                if (upgrade.MatchingProduction != ProductionType.None && upgrade.MatchingProduction == data.Production)
-                    yield += upgrade.MatchingBonusYield;
-                income += yield.Scale(1f + upgrade.NeighbourBonusPerProvince * CountProducingNeighbours(tile));
-            }
+                if (upgrade.IsProducing) income += CalculateUpgradeYield(tile, upgrade);
             return income;
+        }
+
+        public ResourceBundle CalculateUpgradeYield(GameTile tile, UpgradeDefinition upgrade)
+        {
+            var yield = upgrade.BaseYield;
+            if (upgrade.MatchingProduction != ProductionType.None && upgrade.MatchingProduction == tile.Data.Production)
+                yield += upgrade.MatchingBonusYield;
+            return yield.Scale(1f + upgrade.NeighbourBonusPerProvince * CountProducingNeighbours(tile));
         }
 
         public ResourceBundle CalculateIncome(int playerId)

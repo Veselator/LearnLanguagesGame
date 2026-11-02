@@ -17,6 +17,7 @@ namespace LearnLanguages.Map.Visual
     public sealed class GameMapView : MonoBehaviour
     {
         [SerializeField] private MapTerrainView _terrain;
+        [SerializeField] private MapWaterView _water;
         [SerializeField] private Transform _tilesRoot;
         [SerializeField] private float _spriteFacingPitch = 55f;
         [SerializeField] private float _armySpacing = 2.2f;
@@ -90,6 +91,7 @@ namespace LearnLanguages.Map.Visual
             var map = _currentMap.Map;
             _lookup.Build(map.Provinces, map.ProvincesData);
             _terrain.Build(map, _lookup);
+            _water.Build(map, _terrain.transform.position);
 
             foreach (var tile in _map.Tiles)
             {

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using LearnLanguages.Battle.AI;
 using LearnLanguages.Battle.Logic;
+using LearnLanguages.Core.Events;
 using LearnLanguages.Core.Randomness;
 using LearnLanguages.Gameplay.Players;
 using LearnLanguages.Gameplay.Units;
@@ -108,6 +109,49 @@ namespace LearnLanguages.Tests
             model.AutoDeploy(BattleSideId.Defender);
             foreach (var cohort in model.Cohorts)
                 Assert.IsTrue(model.IsDeploymentCell(cohort.Side, cohort.Cell), $"{cohort.Type.Id} at {cohort.Cell}");
+        }
+
+        [TestCase(0, false)]
+        [TestCase(1, false)]
+        [TestCase(2, true)]
+        [TestCase(3, true)]
+        public void SimplifiedBattleIsDecidedByCorrectAnswers(int correct, bool humanWins)
+        {
+            var map = new GameMap();
+            var data = ScriptableObject.CreateInstance<ProvincesData>();
+            var entry = new ProvinceDataEntry(Color.black);
+            entry.SetNeighbours(new int[0]);
+            data.SetEntries(new[] { entry });
+            map.Build(data);
+
+            var units = TestAssets.Units;
+            var registry = new ArmiesRegistry(map);
+            var factory = new ArmyFactory(units, registry, new EventBus());
+            var humanArmy = factory.CreateArmy(1, 0, units.StartingArmy);
+            var enemyArmy = factory.CreateArmy(2, 0, units.StartingArmy);
+            var human = new PlayerData(1, "H", Color.red, true, GameDifficulty.Medium, -1);
+            var enemy = new PlayerData(2, "E", Color.blue, false, GameDifficulty.Medium, -1);
+            var humanHealthy = Healthy(humanArmy);
+            var enemyHealthy = Healthy(enemyArmy);
+            var setup = new BattleSetup(
+                new BattleSide(BattleSideId.Attacker, human, new List<Army> { humanArmy }, new List<Army>()),
+                new BattleSide(BattleSideId.Defender, enemy, new List<Army> { enemyArmy }, new List<Army>()),
+                null, map.Get(0));
+
+            var result = SimplifiedBattleRules.Resolve(setup, correct, TestAssets.Battle.Simplified);
+
+            Assert.AreEqual(humanWins, result.AttackerWon);
+            var humanLoss = 1f - (float)Healthy(humanArmy) / humanHealthy;
+            var enemyLoss = 1f - (float)Healthy(enemyArmy) / enemyHealthy;
+            if (humanWins) Assert.Less(humanLoss, enemyLoss);
+            else Assert.Greater(humanLoss, enemyLoss);
+        }
+
+        private static int Healthy(Army army)
+        {
+            var healthy = 0;
+            foreach (var cohort in army.Cohorts) healthy += cohort.Healthy;
+            return healthy;
         }
     }
 }

@@ -8,7 +8,8 @@ namespace LearnLanguages.Editor.MapCreator
 {
     /// <summary>
     /// Builds <see cref="ProvincesData"/> from the provinces image: one entry per color, neighbours,
-    /// sea detection from the height map and sensible default positions.
+    /// sea detection from the height map and sensible default positions. On mirrored maps every province gets a
+    /// twin with the same gameplay data, and spawn points come in mirrored pairs.
     /// </summary>
     public sealed class ProvincesGenerator
     {
@@ -24,12 +25,12 @@ namespace LearnLanguages.Editor.MapCreator
 
         public static void ConfigureTextureImport(Map.Data.Map map)
         {
-            Configure(map.Provinces, false, FilterMode.Point);
-            Configure(map.HeightMap, false, FilterMode.Bilinear);
-            Configure(map.VisualLandscape, true, FilterMode.Bilinear);
+            Configure(map, map.Provinces, false, FilterMode.Point);
+            Configure(map, map.HeightMap, false, FilterMode.Bilinear);
+            Configure(map, map.VisualLandscape, true, FilterMode.Bilinear);
         }
 
-        private static void Configure(Texture2D texture, bool mipmaps, FilterMode filter)
+        private static void Configure(Map.Data.Map map, Texture2D texture, bool mipmaps, FilterMode filter)
         {
             if (texture == null) return;
             var importer = (TextureImporter)AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(texture));
@@ -42,6 +43,10 @@ namespace LearnLanguages.Editor.MapCreator
             importer.maxTextureSize = 8192;
             importer.sRGBTexture = texture != null && !AssetDatabase.GetAssetPath(texture).Contains("Height");
             importer.wrapMode = TextureWrapMode.Clamp;
+            // 8-bit heights terrace the relief: keep the full 16-bit precision of the height map.
+            var platform = importer.GetDefaultPlatformTextureSettings();
+            platform.format = texture == map.HeightMap ? TextureImporterFormat.R16 : TextureImporterFormat.Automatic;
+            importer.SetPlatformTextureSettings(platform);
             importer.SaveAndReimport();
         }
 
@@ -88,6 +93,7 @@ namespace LearnLanguages.Editor.MapCreator
             for (var i = 0; i < pixels.Length; i++) ids[i] = provinceOfRaw[rawIds[i]];
 
             var count = entries.Count;
+            var mirrors = map.Symmetry == MapSymmetry.MirrorTopBottom ? FindMirrors(ids, count, width, height) : null;
             var pixelCount = new int[count];
             var heightSum = new float[count];
             var centroid = new Vector2[count];
@@ -126,11 +132,18 @@ namespace LearnLanguages.Editor.MapCreator
                 if (!isNew[p] && !resetGameplay) continue;
                 RollGameplay(entries[p], heightSum[p] / Mathf.Max(1, pixelCount[p]), random, p);
             }
+            if (mirrors != null)
+            {
+                for (var p = 0; p < count; p++)
+                    if (mirrors[p] > p) CopyGameplay(entries[p], entries[mirrors[p]]);
+            }
 
             Undo.RecordObject(data, "Generate provinces");
             data.SetEntries(entries.ToArray());
             data.SetColorAliases(aliases.ToArray());
-            if (resetGameplay || data.PossibleSpawnPoints.Count == 0) data.SetSpawnPoints(PickSpawnPoints(entries, centroid, pixelCount, 4));
+            data.SetMirrors(mirrors);
+            if (resetGameplay || data.PossibleSpawnPoints.Count == 0)
+                data.SetSpawnPoints(PickSpawnPoints(entries, centroid, pixelCount, 4, mirrors, height));
             foreach (var spawn in data.PossibleSpawnPoints)
             {
                 entries[spawn].SetSettlement(SettlementType.City);
@@ -225,6 +238,52 @@ namespace LearnLanguages.Editor.MapCreator
                 if (best >= 0) target[raw] = best;
             }
             return target;
+        }
+
+        /// <summary>
+        /// Twin of every province: the province that covers most of its pixels mirrored top to bottom.
+        /// </summary>
+        private static int[] FindMirrors(int[] ids, int count, int width, int height)
+        {
+            var votes = new Dictionary<int, int>[count];
+            for (var p = 0; p < count; p++) votes[p] = new Dictionary<int, int>();
+            for (var y = 0; y < height; y++)
+            {
+                var mirroredRow = (height - 1 - y) * width;
+                for (var x = 0; x < width; x++)
+                {
+                    var own = ids[y * width + x];
+                    var twin = ids[mirroredRow + x];
+                    votes[own][twin] = votes[own].TryGetValue(twin, out var n) ? n + 1 : 1;
+                }
+            }
+
+            var mirrors = new int[count];
+            for (var p = 0; p < count; p++)
+            {
+                mirrors[p] = p;
+                var best = 0;
+                foreach (var pair in votes[p])
+                {
+                    if (pair.Value <= best) continue;
+                    best = pair.Value;
+                    mirrors[p] = pair.Key;
+                }
+            }
+            for (var p = 0; p < count; p++)
+                if (mirrors[mirrors[p]] != p)
+                    Debug.LogWarning($"Province {p} has no symmetric twin; the provinces image is not mirrored there.");
+            return mirrors;
+        }
+
+        /// <summary>Gameplay data is identical on both halves; names stay different.</summary>
+        private static void CopyGameplay(ProvinceDataEntry source, ProvinceDataEntry target)
+        {
+            target.SetType(source.Type);
+            target.SetImpassable(source.IsImpassable);
+            target.SetLandscape(source.Landscape == LandscapeType.Sea ? LandscapeType.Steppe : source.Landscape);
+            target.SetSettlement(source.Settlement);
+            target.SetProduction(source.Production);
         }
 
         private static float SampleHeight(Color32[] heights, int heightWidth, int heightHeight, int x, int y, int width, int height)
@@ -417,34 +476,42 @@ namespace LearnLanguages.Editor.MapCreator
             return char.ToUpperInvariant(name[0]) + name.Substring(1);
         }
 
-        /// <summary>Farthest-point sampling over province centroids, land provinces of a reasonable size only.</summary>
-        private static int[] PickSpawnPoints(List<ProvinceDataEntry> entries, Vector2[] centroids, int[] pixelCount, int count)
+        /// <summary>
+        /// Farthest-point sampling over province centroids, land provinces of a reasonable size only.
+        /// On a mirrored map points are picked in the upper half and each is followed by its twin, so the first two
+        /// spawn points (and the last two) mirror each other.
+        /// </summary>
+        private static int[] PickSpawnPoints(List<ProvinceDataEntry> entries, Vector2[] centroids, int[] pixelCount, int count,
+            int[] mirrors, int height)
         {
             var candidates = new List<int>();
             for (var p = 0; p < entries.Count; p++)
-                if (entries[p].Type == ProvinceType.Land && !entries[p].IsImpassable && pixelCount[p] > 4000) candidates.Add(p);
+            {
+                if (entries[p].Type != ProvinceType.Land || entries[p].IsImpassable || pixelCount[p] <= 4000) continue;
+                if (mirrors != null && (mirrors[p] == p || centroids[p].y < height * 0.5f)) continue;
+                candidates.Add(p);
+            }
             if (candidates.Count == 0) return new int[0];
 
             var result = new List<int>();
-            var first = candidates[0];
-            foreach (var c in candidates)
-                if (centroids[c].x < centroids[first].x) first = c;
-            result.Add(first);
-
-            while (result.Count < count && result.Count < candidates.Count)
+            while (result.Count < count)
             {
                 var bestCandidate = -1;
-                var bestDistance = -1f;
+                var bestDistance = float.MinValue;
                 foreach (var c in candidates)
                 {
                     if (result.Contains(c)) continue;
-                    var nearest = float.MaxValue;
+                    // The first point of an ordinary map is the westernmost one.
+                    var nearest = mirrors != null ? Vector2.Distance(centroids[c], centroids[mirrors[c]])
+                        : result.Count == 0 ? -centroids[c].x : float.MaxValue;
                     foreach (var chosen in result) nearest = Mathf.Min(nearest, Vector2.Distance(centroids[c], centroids[chosen]));
                     if (nearest <= bestDistance) continue;
                     bestDistance = nearest;
                     bestCandidate = c;
                 }
+                if (bestCandidate < 0) break;
                 result.Add(bestCandidate);
+                if (mirrors != null) result.Add(mirrors[bestCandidate]);
             }
             return result.ToArray();
         }

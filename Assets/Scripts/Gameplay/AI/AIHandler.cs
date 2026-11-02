@@ -11,11 +11,20 @@ using LearnLanguages.Settings;
 namespace LearnLanguages.Gameplay.AI
 {
     /// <summary>
-    /// Listens to the turns of AI players, asks the AI of the matching difficulty for commands and queues them.
+    /// Shows the recorded decisions of an AI turn and reports when the viewer is done with them.
+    /// </summary>
+    public interface IAIDecisionViewer
+    {
+        void Show(AIDecisionTrace trace, Action onClosed);
+    }
+
+    /// <summary>
+    /// Listens to the turns of AI players, asks the planner for commands with the model of that player and queues them.
+    /// In debug mode the planner's decisions are recorded and shown first.
     /// </summary>
     public sealed class AIHandler : IDisposable
     {
-        private readonly Dictionary<GameDifficulty, BaseAILogic> _logics = new Dictionary<GameDifficulty, BaseAILogic>();
+        private readonly AIPlanner _planner = new AIPlanner();
         private readonly List<Player> _subscribed = new List<Player>();
         private readonly IPlayersRegistry _players;
         private readonly IMapCommandProcessor _processor;
@@ -26,12 +35,17 @@ namespace LearnLanguages.Gameplay.AI
         private readonly IMovementRules _movement;
         private readonly UnitsConfig _units;
         private readonly IRandomService _random;
+        private readonly IAIProfilesStore _profiles;
+        private readonly IGameOptions _options;
+        private readonly IAIDecisionViewer _viewer;
 
-        public AIHandler(List<BaseAILogic> logics, IPlayersRegistry players, IMapCommandProcessor processor, IGameMap map,
+        public AIHandler(IAIProfilesStore profiles, IGameOptions options, IAIDecisionViewer viewer, IPlayersRegistry players, IMapCommandProcessor processor, IGameMap map,
             IArmiesRegistry armies, IEconomyService economy, IConstructionRules construction, IMovementRules movement,
             UnitsConfig units, IRandomService random)
         {
-            foreach (var logic in logics) _logics[logic.Difficulty] = logic;
+            _profiles = profiles;
+            _options = options;
+            _viewer = viewer;
             _players = players;
             _processor = processor;
             _map = map;
@@ -67,10 +81,23 @@ namespace LearnLanguages.Gameplay.AI
         {
             var data = player.Data;
             var context = new AIContext(data, _map, _armies, _players, _economy, _construction, _movement, _units, _random);
-            var logic = _logics.TryGetValue(data.AiDifficulty, out var found) ? found : _logics[GameDifficulty.Medium];
+            var profile = _profiles.GetById(data.AiProfileId) ?? _profiles.Pick(data.AiDifficulty, _random);
 
-            foreach (var command in logic.Decide(context)) _processor.Enqueue(command);
-            _processor.Enqueue(new EndTurnCommand(data.Id));
+            if (!_options.DebugMode)
+            {
+                Enqueue(data.Id, _planner.Plan(context, profile, AINullDecisionObserver.Instance));
+                return;
+            }
+
+            var trace = new AIDecisionTrace(data.Name, profile);
+            var commands = _planner.Plan(context, profile, trace);
+            _viewer.Show(trace, () => Enqueue(data.Id, commands));
+        }
+
+        private void Enqueue(int playerId, List<IMapCommand> commands)
+        {
+            foreach (var command in commands) _processor.Enqueue(command);
+            _processor.Enqueue(new EndTurnCommand(playerId));
         }
     }
 }

@@ -23,11 +23,14 @@ namespace LearnLanguages.Gameplay.Units
             _map = map;
         }
 
-        public bool CanStep(int ownerId, GameTile from, GameTile to)
+        public bool CanStep(int ownerId, GameTile from, GameTile to) =>
+            IsStepAllowed(to.IsPassable, from.IsLand, to.IsSea, from.HasPort && from.OwnerId == ownerId);
+
+        /// <summary>The movement rule itself; the AI applies it to its simulated positions too.</summary>
+        public static bool IsStepAllowed(bool targetPassable, bool fromLand, bool targetSea, bool hasOwnPort)
         {
-            if (!to.IsPassable) return false;
-            if (from.IsLand && to.IsSea) return from.HasPort && from.OwnerId == ownerId;
-            return true;
+            if (!targetPassable) return false;
+            return !fromLand || !targetSea || hasOwnPort;
         }
 
         public bool CanMove(Army army, GameTile to)

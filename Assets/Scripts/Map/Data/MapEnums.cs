@@ -35,6 +35,13 @@ namespace LearnLanguages.Map.Data
         Sea = 5
     }
 
+    /// <summary>How the provinces image is built. Mirrored maps give every player an identical half.</summary>
+    public enum MapSymmetry
+    {
+        None = 0,
+        MirrorTopBottom = 1
+    }
+
     public enum ProductionType
     {
         None = 0,

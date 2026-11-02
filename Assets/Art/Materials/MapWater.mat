@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MapWater
+  m_Shader: {fileID: 4800000, guid: 9dfda21fbe5eb9243bc27dc6268f095b, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CoastMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _FoamWidth: 0.08
+    - _ShallowWidth: 0.6
+    - _SpecularIntensity: 0.6
+    - _SpecularPower: 400
+    - _SurfLines: 4
+    - _SurfSpeed: 0.25
+    - _WaveScale: 0.45
+    - _WaveSpeed: 0.35
+    - _WaveStrength: 0.6
+    m_Colors:
+    - _DeepColor: {r: 0.059999965, g: 0.32999998, b: 0.58, a: 0.82}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.9}
+    - _SeabedColor: {r: 0.537, g: 0.886, b: 1, a: 1}
+    - _MapRect: {r: 0, g: 0, b: 1, a: 1}
+    - _ShallowColor: {r: 0.14, g: 0.6, b: 0.7, a: 0.55}
+    - _SkyColor: {r: 0.78, g: 0.9, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

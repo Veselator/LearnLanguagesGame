@@ -27,10 +27,14 @@ namespace LearnLanguages.Gameplay.Players
         public Color Color { get; }
         public bool IsHuman { get; }
         public GameDifficulty AiDifficulty { get; }
+        /// <summary>Id of the AI model playing for this player; empty for humans.</summary>
+        public string AiProfileId { get; private set; } = string.Empty;
         public int CapitalTileId { get; }
         public bool IsAlive { get; private set; }
         public ResourceBundle Resources { get; private set; }
         public bool IsNeutral => Id == NeutralId;
+
+        public void SetAiProfile(string profileId) => AiProfileId = profileId;
 
         public void SetResources(ResourceBundle resources) => Resources = resources;
 

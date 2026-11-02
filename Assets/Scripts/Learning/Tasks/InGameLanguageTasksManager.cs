@@ -37,7 +37,9 @@ namespace LearnLanguages.Learning.Tasks
         void Show(BasicLanguageTaskData task, string contextText, ILanguageTaskAnswerSink answers);
         void SetTimer(float remainingSeconds, float totalSeconds);
         void ShowResult(bool correct, string correctAnswer);
-        void Hide();
+        /// <param name="moreToCome">Another exercise follows right away.</param>
+        /// <param name="onHidden">Called when the panel is gone.</param>
+        void Hide(bool moreToCome, Action onHidden);
     }
 
     public readonly struct LanguageTaskFinishedEvent
@@ -68,7 +70,8 @@ namespace LearnLanguages.Learning.Tasks
         {
             Idle,
             Answering,
-            ShowingResult
+            ShowingResult,
+            Hiding
         }
 
         private readonly Queue<LanguageTaskRequest> _queue = new Queue<LanguageTaskRequest>();
@@ -143,7 +146,6 @@ namespace LearnLanguages.Learning.Tasks
             if (_queue.Count == 0)
             {
                 _state = State.Idle;
-                _view.Hide();
                 return;
             }
 
@@ -171,10 +173,13 @@ namespace LearnLanguages.Learning.Tasks
             var request = _request;
             _request = null;
             _task = null;
-            _state = State.Idle;
-            if (_queue.Count == 0) _view.Hide();
-            request.Completed?.Invoke(_lastResult);
-            if (_state == State.Idle) StartNext();
+            _state = State.Hiding;
+            _view.Hide(_queue.Count > 0, () =>
+            {
+                _state = State.Idle;
+                request.Completed?.Invoke(_lastResult);
+                if (_state == State.Idle) StartNext();
+            });
         }
     }
 }

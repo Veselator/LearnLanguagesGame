@@ -1,3 +1,4 @@
+using System;
 using LearnLanguages.Learning.Tasks;
 using LearnLanguages.Localization;
 using TMPro;
@@ -14,6 +15,7 @@ namespace LearnLanguages.UI.LanguageTasks
     public sealed class LanguageTaskVisual : MonoBehaviour, ILanguageTaskView, ILanguageTaskVisitor
     {
         [SerializeField] private GameObject _root;
+        [SerializeField] private LanguageTaskPanelAnimator _animator;
         [SerializeField] private TMP_Text _context;
         [SerializeField] private TMP_Text _instruction;
         [SerializeField] private TMP_Text _prompt;
@@ -44,6 +46,7 @@ namespace LearnLanguages.UI.LanguageTasks
             _choiceView.Hide();
             _inputView.Hide();
             task.Accept(this);
+            _animator.PlayAppear();
         }
 
         public void Visit(ChoiceTaskData task) => _choiceView.Show(task, _answers);
@@ -65,12 +68,18 @@ namespace LearnLanguages.UI.LanguageTasks
             _resultText.text = correct
                 ? _localization.Get("task.correct")
                 : _localization.Format("task.wrong", correctAnswer);
+            if (correct) _animator.PlayCorrect();
+            else _animator.PlayWrong();
         }
 
-        public void Hide()
+        public void Hide(bool moreToCome, Action onHidden)
         {
             _answers = null;
-            _root.SetActive(false);
+            _animator.PlayDisappear(moreToCome, () =>
+            {
+                if (!moreToCome) _root.SetActive(false);
+                onHidden?.Invoke();
+            });
         }
 
         private void Awake() => _root.SetActive(false);

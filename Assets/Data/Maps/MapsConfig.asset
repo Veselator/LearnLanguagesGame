@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Map.Data.MapsConfig
   _maps:
   - {fileID: 11400000, guid: 0ec1994647ac9904eb56977559048d4f, type: 2}
+  - {fileID: 11400000, guid: 3dba7c0e44942f44dae03695ada5d16a, type: 2}
+  - {fileID: 11400000, guid: 9efa7081b533e9347a5949e2302c1134, type: 2}

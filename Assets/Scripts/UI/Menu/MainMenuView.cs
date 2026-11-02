@@ -11,7 +11,8 @@ using Zenject;
 namespace LearnLanguages.UI.Menu
 {
     /// <summary>
-    /// Main menu and the new game setup: map, trained language, interface language, level, difficulty, opponents.
+    /// Main menu and the new game setup: map, trained language, level, difficulty, opponents.
+    /// The interface language lives in <see cref="SettingsMenuView"/>.
     /// </summary>
     public sealed class MainMenuView : MonoBehaviour
     {
@@ -19,22 +20,25 @@ namespace LearnLanguages.UI.Menu
         [SerializeField] private GameObject _mainPanel;
         [SerializeField] private Button _newGame;
         [SerializeField] private Button _continue;
+        [SerializeField] private Button _settings;
+        [SerializeField] private Button _aiProfiles;
         [SerializeField] private Button _quit;
-        [SerializeField] private TMP_Dropdown _menuLanguage;
+        [SerializeField] private SettingsMenuView _settingsMenu;
+        [SerializeField] private AIProfilesMenuView _aiProfilesMenu;
 
         [Header("New game")]
         [SerializeField] private GameObject _newGamePanel;
         [SerializeField] private TMP_Dropdown _map;
         [SerializeField] private RawImage _mapIcon;
         [SerializeField] private TMP_Dropdown _targetLanguage;
-        [SerializeField] private TMP_Dropdown _interfaceLanguage;
         [SerializeField] private TMP_Dropdown _level;
         [SerializeField] private TMP_Dropdown _difficulty;
         [SerializeField] private TMP_Dropdown _aiPlayers;
+        [SerializeField] private Toggle _simplifiedBattles;
         [SerializeField] private Button _start;
         [SerializeField] private Button _back;
 
-        private readonly List<Language> _interfaceOptions = new List<Language>();
+        private readonly List<Language> _targetOptions = new List<Language>();
         private MapsConfig _maps;
         private ILocalizationService _localization;
         private IGameSession _session;
@@ -64,14 +68,17 @@ namespace LearnLanguages.UI.Menu
             _newGame.onClick.AddListener(() => ShowNewGame(true));
             _back.onClick.AddListener(() => ShowNewGame(false));
             _continue.onClick.AddListener(Continue);
+            _settings.onClick.AddListener(ShowSettings);
+            _settingsMenu.Closed += () => _mainPanel.SetActive(true);
+            _aiProfiles.onClick.AddListener(ShowAiProfiles);
+            _aiProfilesMenu.Closed += () => _mainPanel.SetActive(true);
             _quit.onClick.AddListener(() => _scenes.Quit());
             _start.onClick.AddListener(StartGame);
-            _menuLanguage.onValueChanged.AddListener(OnMenuLanguageChanged);
-            _interfaceLanguage.onValueChanged.AddListener(_ => OnInterfaceLanguagePicked());
-            _targetLanguage.onValueChanged.AddListener(_ => OnTargetLanguageChanged());
             _map.onValueChanged.AddListener(_ => RefreshMapIcon());
 
             _continue.interactable = _saves.HasSave;
+            _settingsMenu.Show(false);
+            _aiProfilesMenu.Show(false);
             ShowNewGame(false);
             RefreshTexts();
         }
@@ -80,16 +87,24 @@ namespace LearnLanguages.UI.Menu
         {
             _mainPanel.SetActive(!show);
             _newGamePanel.SetActive(show);
-            if (show) _interfaceLanguage.SetValueWithoutNotify(InterfaceIndexOf(_localization.CurrentLanguage));
+        }
+
+        private void ShowAiProfiles()
+        {
+            _mainPanel.SetActive(false);
+            _aiProfilesMenu.Show(true);
+        }
+
+        private void ShowSettings()
+        {
+            _mainPanel.SetActive(false);
+            _settingsMenu.Show(true);
         }
 
         private void RefreshTexts()
         {
             if (_refreshing) return;
             _refreshing = true;
-
-            Fill(_menuLanguage, LanguageRules.InterfaceLanguages, l => _localization.Get("lang." + l));
-            _menuLanguage.SetValueWithoutNotify(IndexOf(LanguageRules.InterfaceLanguages, _localization.CurrentLanguage));
 
             var mapIndex = _map.value;
             _map.ClearOptions();
@@ -98,9 +113,7 @@ namespace LearnLanguages.UI.Menu
             _map.AddOptions(mapNames);
             _map.SetValueWithoutNotify(Mathf.Clamp(mapIndex, 0, mapNames.Count - 1));
 
-            var target = _targetLanguage.value;
-            Fill(_targetLanguage, LanguageRules.TrainableLanguages, l => _localization.Get("lang." + l));
-            _targetLanguage.SetValueWithoutNotify(target);
+            RebuildTargetOptions();
 
             var level = _level.value;
             Fill(_level, (LanguageLevel[])System.Enum.GetValues(typeof(LanguageLevel)), l => l.ToString());
@@ -115,39 +128,23 @@ namespace LearnLanguages.UI.Menu
             Fill(_aiPlayers, new[] { 1, 2, 3 }, n => n.ToString());
             _aiPlayers.SetValueWithoutNotify(ai);
 
-            RebuildInterfaceOptions();
             RefreshMapIcon();
             _refreshing = false;
         }
 
-        /// <summary>The interface language may never be the trained one.</summary>
-        private void RebuildInterfaceOptions()
+        /// <summary>The trained language may never be the interface one: only valid pairs are offered.</summary>
+        private void RebuildTargetOptions()
         {
-            var target = LanguageRules.TrainableLanguages[_targetLanguage.value];
-            _interfaceOptions.Clear();
-            foreach (var language in LanguageRules.InterfaceLanguages)
-                if (LanguageRules.IsValidPair(target, language)) _interfaceOptions.Add(language);
+            var previous = _targetOptions.Count > 0
+                ? _targetOptions[Mathf.Clamp(_targetLanguage.value, 0, _targetOptions.Count - 1)]
+                : LanguageRules.TrainableLanguages[0];
+            _targetOptions.Clear();
+            foreach (var language in LanguageRules.TrainableLanguages)
+                if (LanguageRules.IsValidPair(language, _localization.CurrentLanguage)) _targetOptions.Add(language);
 
-            Fill(_interfaceLanguage, _interfaceOptions, l => _localization.Get("lang." + l));
-            _interfaceLanguage.SetValueWithoutNotify(Mathf.Max(0, InterfaceIndexOf(_localization.CurrentLanguage)));
+            Fill(_targetLanguage, _targetOptions, l => _localization.Get("lang." + l));
+            _targetLanguage.SetValueWithoutNotify(Mathf.Max(0, _targetOptions.IndexOf(previous)));
         }
-
-        private void OnTargetLanguageChanged()
-        {
-            RebuildInterfaceOptions();
-            if (!_interfaceOptions.Contains(_localization.CurrentLanguage)) _localization.SetLanguage(_interfaceOptions[0]);
-        }
-
-        private int InterfaceIndexOf(Language language)
-        {
-            var index = _interfaceOptions.IndexOf(language);
-            return index < 0 ? 0 : index;
-        }
-
-        private void OnMenuLanguageChanged(int index) => _localization.SetLanguage(LanguageRules.InterfaceLanguages[index]);
-
-        private void OnInterfaceLanguagePicked() =>
-            _localization.SetLanguage(_interfaceOptions[Mathf.Clamp(_interfaceLanguage.value, 0, _interfaceOptions.Count - 1)]);
 
         private void RefreshMapIcon()
         {
@@ -159,10 +156,9 @@ namespace LearnLanguages.UI.Menu
         private void StartGame()
         {
             var map = _maps.Maps[Mathf.Clamp(_map.value, 0, _maps.Maps.Count - 1)];
-            var target = LanguageRules.TrainableLanguages[_targetLanguage.value];
-            var ui = _interfaceOptions[Mathf.Clamp(_interfaceLanguage.value, 0, _interfaceOptions.Count - 1)];
-            _session.StartNew(new GameSettings(map.Id, target, ui, (LanguageLevel)_level.value,
-                (GameDifficulty)_difficulty.value, _aiPlayers.value + 1, System.Environment.TickCount));
+            var target = _targetOptions[Mathf.Clamp(_targetLanguage.value, 0, _targetOptions.Count - 1)];
+            _session.StartNew(new GameSettings(map.Id, target, _localization.CurrentLanguage, (LanguageLevel)_level.value,
+                (GameDifficulty)_difficulty.value, _aiPlayers.value + 1, System.Environment.TickCount, _simplifiedBattles.isOn));
             _scenes.LoadGame();
         }
 
@@ -184,13 +180,6 @@ namespace LearnLanguages.UI.Menu
             foreach (var value in values) options.Add(label(value));
             dropdown.ClearOptions();
             dropdown.AddOptions(options);
-        }
-
-        private static int IndexOf<T>(IReadOnlyList<T> values, T value)
-        {
-            for (var i = 0; i < values.Count; i++)
-                if (EqualityComparer<T>.Default.Equals(values[i], value)) return i;
-            return 0;
         }
     }
 }

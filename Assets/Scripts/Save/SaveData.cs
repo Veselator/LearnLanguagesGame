@@ -35,6 +35,7 @@ namespace LearnLanguages.Save
         public Color Color;
         public bool IsHuman;
         public GameDifficulty Difficulty;
+        public string AiProfileId;
         public int CapitalTileId;
         public bool IsAlive;
         public ResourceBundle Resources;

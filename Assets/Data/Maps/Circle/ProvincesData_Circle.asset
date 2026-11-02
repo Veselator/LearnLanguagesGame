@@ -1,0 +1,1118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fb385331bb49d4bb2b80bf9242ec09, type: 3}
+  m_Name: ProvincesData_Circle
+  m_EditorClassIdentifier: LearnLanguages::LearnLanguages.Map.Data.ProvincesData
+  _entries:
+  - _name: Sea 0
+    _mapColor: {r: 0.13725491, g: 0.77254903, b: 0.7529412, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 189.5, y: 189.5}
+    _portLocalPos: {x: 189.5, y: 189.5}
+    _localUnitPosition: {x: 189.5, y: 154.5}
+    _neighbours: 010000000600000013000000
+  - _name: Sea 1
+    _mapColor: {r: 0.7764706, g: 0.5921569, b: 0.39607844, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 857.5, y: 163.5}
+    _portLocalPos: {x: 857.5, y: 163.5}
+    _localUnitPosition: {x: 857.5, y: 128.5}
+    _neighbours: 0000000002000000050000000600000007000000080000000a0000000c000000
+  - _name: Sea 2
+    _mapColor: {r: 0.32156864, g: 0.23529412, b: 0.83137256, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1510.5, y: 155.5}
+    _portLocalPos: {x: 1510.5, y: 155.5}
+    _localUnitPosition: {x: 1510.5, y: 120.5}
+    _neighbours: 010000000300000008000000090000000b000000
+  - _name: Sea 3
+    _mapColor: {r: 0.45882353, g: 0.09803922, b: 0.7058824, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1863.5, y: 250.5}
+    _portLocalPos: {x: 1863.5, y: 250.5}
+    _localUnitPosition: {x: 1863.5, y: 215.5}
+    _neighbours: 02000000040000000b0000000d0000000f000000
+  - _name: Sea 4
+    _mapColor: {r: 0.16470589, g: 0.47843137, b: 0.38431373, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 2233.5, y: 165.5}
+    _portLocalPos: {x: 2233.5, y: 165.5}
+    _localUnitPosition: {x: 2233.5, y: 130.5}
+    _neighbours: 030000000d000000
+  - _name: Corel
+    _mapColor: {r: 0.36078432, g: 0.5921569, b: 0.76862746, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 3
+    _production: 3
+    _settlementLocalPos: {x: 614.5, y: 223.5}
+    _portLocalPos: {x: 565.7, y: 239.5}
+    _localUnitPosition: {x: 614.5, y: 188.5}
+    _neighbours: 0100000006000000
+  - _name: Sea 6
+    _mapColor: {r: 0.14117648, g: 0.8, b: 0.43137255, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 390.5, y: 512.5}
+    _portLocalPos: {x: 390.5, y: 512.5}
+    _localUnitPosition: {x: 390.5, y: 477.5}
+    _neighbours: 0000000001000000050000000c00000012000000130000001f000000
+  - _name: Tenval
+    _mapColor: {r: 0.52156866, g: 0.75686276, b: 0.8901961, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1027.5, y: 374.5}
+    _portLocalPos: {x: 974.7, y: 315.3}
+    _localUnitPosition: {x: 1027.5, y: 339.5}
+    _neighbours: 01000000080000000a0000001000000011000000
+  - _name: Rosbri
+    _mapColor: {r: 0.49411765, g: 0.69803923, b: 0.2627451, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1206.5, y: 340.5}
+    _portLocalPos: {x: 1231.3, y: 276.5}
+    _localUnitPosition: {x: 1206.5, y: 305.5}
+    _neighbours: 0100000002000000070000000900000010000000
+  - _name: Dralor
+    _mapColor: {r: 0.4745098, g: 0.25490198, b: 0.68235296, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1374.5, y: 368.5}
+    _portLocalPos: {x: 1424.9, y: 326.9}
+    _localUnitPosition: {x: 1374.5, y: 333.5}
+    _neighbours: 02000000080000000b0000000e00000010000000
+  - _name: Ortorbel
+    _mapColor: {r: 0.29803923, g: 0.5058824, b: 0.24313726, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 1
+    _production: 3
+    _settlementLocalPos: {x: 860.5, y: 431.5}
+    _portLocalPos: {x: 860.5, y: 362.7}
+    _localUnitPosition: {x: 860.5, y: 396.5}
+    _neighbours: 01000000070000000c0000001100000015000000
+  - _name: Valbriar
+    _mapColor: {r: 0.08235294, g: 0.3137255, b: 0.22352941, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1583.5, y: 452.5}
+    _portLocalPos: {x: 1631.5, y: 403.7}
+    _localUnitPosition: {x: 1583.5, y: 417.5}
+    _neighbours: 0200000003000000090000000e0000000f00000014000000
+  - _name: Corvilkar
+    _mapColor: {r: 0.90588236, g: 0.25490198, b: 0.35686275, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 698.5, y: 491.5}
+    _portLocalPos: {x: 680.1, y: 428.3}
+    _localUnitPosition: {x: 698.5, y: 456.5}
+    _neighbours: 01000000060000000a0000001200000015000000
+  - _name: Sea 13
+    _mapColor: {r: 0.3647059, g: 0.60784316, b: 0.8039216, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 2171.5, y: 611.5}
+    _portLocalPos: {x: 2171.5, y: 611.5}
+    _localUnitPosition: {x: 2171.5, y: 576.5}
+    _neighbours: 03000000040000000f000000160000001e00000020000000
+  - _name: Falvil
+    _mapColor: {r: 0.62352943, g: 0.6745098, b: 0.5764706, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1407.5, y: 538.5}
+    _portLocalPos: {x: 1407.5, y: 538.5}
+    _localUnitPosition: {x: 1407.5, y: 503.5}
+    _neighbours: 090000000b000000100000001400000018000000
+  - _name: Falfal
+    _mapColor: {r: 0.8117647, g: 0.35686275, b: 0.078431375, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 3
+    _production: 1
+    _settlementLocalPos: {x: 1750.5, y: 538.5}
+    _portLocalPos: {x: 1786.5, y: 486.5}
+    _localUnitPosition: {x: 1750.5, y: 503.5}
+    _neighbours: 030000000b0000000d000000140000001600000017000000
+  - _name: Yrfen
+    _mapColor: {r: 0.81960785, g: 0.6627451, b: 0.29411766, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 3
+    _production: 1
+    _settlementLocalPos: {x: 1210.5, y: 550.5}
+    _portLocalPos: {x: 1210.5, y: 550.5}
+    _localUnitPosition: {x: 1210.5, y: 515.5}
+    _neighbours: 0700000008000000090000000e000000110000001800000019000000
+  - _name: Valfalcor
+    _mapColor: {r: 0.3137255, g: 0.92156863, b: 0.29803923, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 995.5, y: 583.5}
+    _portLocalPos: {x: 995.5, y: 583.5}
+    _localUnitPosition: {x: 995.5, y: 548.5}
+    _neighbours: 070000000a0000001000000015000000190000001a000000
+  - _name: Yrtor
+    _mapColor: {r: 0.54901963, g: 0.21960784, b: 0.11372549, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 652.5, y: 650.5}
+    _portLocalPos: {x: 590.1, y: 660.9}
+    _localUnitPosition: {x: 652.5, y: 615.5}
+    _neighbours: 060000000c000000150000001b0000001f000000
+  - _name: Sea 19
+    _mapColor: {r: 0.5882353, g: 0.45490196, b: 0.5686275, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 168.5, y: 777.5}
+    _portLocalPos: {x: 168.5, y: 777.5}
+    _localUnitPosition: {x: 168.5, y: 742.5}
+    _neighbours: 00000000060000001f000000230000002900000032000000
+  - _name: Halcor
+    _mapColor: {r: 0.65882355, g: 0.69803923, b: 0.53333336, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 1583.5, y: 623.5}
+    _portLocalPos: {x: 1583.5, y: 623.5}
+    _localUnitPosition: {x: 1583.5, y: 588.5}
+    _neighbours: 0b0000000e0000000f00000017000000180000001c000000
+  - _name: Weniskar
+    _mapColor: {r: 0.3647059, g: 0.8627451, b: 0.8862745, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 820.5, y: 662.5}
+    _portLocalPos: {x: 820.5, y: 662.5}
+    _localUnitPosition: {x: 820.5, y: 627.5}
+    _neighbours: 0a0000000c00000011000000120000001a0000001b000000
+  - _name: Toryrquin
+    _mapColor: {r: 0.32941177, g: 0.1764706, b: 0.27450982, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1881.5, y: 708.5}
+    _portLocalPos: {x: 1926.3, y: 737.3}
+    _localUnitPosition: {x: 1881.5, y: 673.5}
+    _neighbours: 0d0000000f000000170000001e000000
+  - _name: Wenis
+    _mapColor: {r: 0.8039216, g: 0.34509805, b: 0.3882353, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 1
+    _production: 4
+    _settlementLocalPos: {x: 1734.5, y: 707.5}
+    _portLocalPos: {x: 1734.5, y: 707.5}
+    _localUnitPosition: {x: 1734.5, y: 672.5}
+    _neighbours: 0f00000014000000160000001c0000001e000000
+  - _name: Elmon
+    _mapColor: {r: 0.54901963, g: 0.7921569, b: 0.7372549, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1423.5, y: 727.5}
+    _portLocalPos: {x: 1423.5, y: 727.5}
+    _localUnitPosition: {x: 1423.5, y: 692.5}
+    _neighbours: 0e0000001000000014000000190000001c0000001d00000024000000
+  - _name: Brigarkar
+    _mapColor: {r: 0.8509804, g: 0.78431374, b: 0.54509807, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 3
+    _production: 1
+    _settlementLocalPos: {x: 1167.5, y: 740.5}
+    _portLocalPos: {x: 1167.5, y: 740.5}
+    _localUnitPosition: {x: 1167.5, y: 705.5}
+    _neighbours: 1000000011000000180000001a0000001d00000021000000
+  - _name: Duntoror
+    _mapColor: {r: 0.47058824, g: 0.42745098, b: 0.83137256, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 985.5, y: 790.5}
+    _portLocalPos: {x: 985.5, y: 790.5}
+    _localUnitPosition: {x: 985.5, y: 755.5}
+    _neighbours: 1100000015000000190000001b0000002100000022000000
+  - _name: Rossal
+    _mapColor: {r: 0.101960786, g: 0.21960784, b: 0.22745098, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 717.5, y: 814.5}
+    _portLocalPos: {x: 717.5, y: 814.5}
+    _localUnitPosition: {x: 717.5, y: 779.5}
+    _neighbours: 12000000150000001a0000001f0000002200000025000000
+  - _name: Rosnormon
+    _mapColor: {r: 0.8039216, g: 0.8980392, b: 0.45882353, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1619.5, y: 857.5}
+    _portLocalPos: {x: 1619.5, y: 857.5}
+    _localUnitPosition: {x: 1619.5, y: 822.5}
+    _neighbours: 1400000017000000180000001e0000002400000027000000
+  - _name: Falpelkar
+    _mapColor: {r: 0.5058824, g: 0.43529412, b: 0.37254903, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 1
+    _production: 1
+    _settlementLocalPos: {x: 1296.5, y: 876.5}
+    _portLocalPos: {x: 1296.5, y: 876.5}
+    _localUnitPosition: {x: 1296.5, y: 841.5}
+    _neighbours: 180000001900000021000000240000002a000000
+  - _name: Ornor
+    _mapColor: {r: 0.2509804, g: 0.56078434, b: 0.078431375, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 1
+    _settlementLocalPos: {x: 1827.5, y: 871.5}
+    _portLocalPos: {x: 1900.3, y: 853.1}
+    _localUnitPosition: {x: 1827.5, y: 836.5}
+    _neighbours: 0d00000016000000170000001c00000020000000260000002700000028000000
+  - _name: Vilmon
+    _mapColor: {r: 0.8627451, g: 0.46666667, b: 0.5803922, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 1
+    _settlementLocalPos: {x: 572.5, y: 917.5}
+    _portLocalPos: {x: 539.7, y: 857.5}
+    _localUnitPosition: {x: 572.5, y: 882.5}
+    _neighbours: 0600000012000000130000001b00000023000000250000002b000000
+  - _name: Sea 32
+    _mapColor: {r: 0.7764706, g: 0.627451, b: 0.49803922, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 2247.5, y: 960.5}
+    _portLocalPos: {x: 2247.5, y: 960.5}
+    _localUnitPosition: {x: 2247.5, y: 925.5}
+    _neighbours: 0d0000001e000000260000002f0000003e000000
+  - _name: Falyrwen
+    _mapColor: {r: 0.8509804, g: 0.4862745, b: 0.91764706, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1123.5, y: 938.5}
+    _portLocalPos: {x: 1123.5, y: 938.5}
+    _localUnitPosition: {x: 1123.5, y: 903.5}
+    _neighbours: 190000001a0000001d000000220000002a0000002e000000
+  - _name: Monlor
+    _mapColor: {r: 0.23529412, g: 0.8862745, b: 0.49411765, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 1
+    _settlementLocalPos: {x: 923.5, y: 958.5}
+    _portLocalPos: {x: 923.5, y: 958.5}
+    _localUnitPosition: {x: 923.5, y: 923.5}
+    _neighbours: 1a0000001b00000021000000250000002e00000030000000
+  - _name: Ordun
+    _mapColor: {r: 0.21568628, g: 0.18039216, b: 0.5058824, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 367.5, y: 953.5}
+    _portLocalPos: {x: 365.1, y: 887.9}
+    _localUnitPosition: {x: 367.5, y: 918.5}
+    _neighbours: 130000001f000000290000002b0000002d000000
+  - _name: Arnor
+    _mapColor: {r: 0.4117647, g: 0.85490197, b: 0.52156866, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 2
+    _settlementLocalPos: {x: 1453.5, y: 966.5}
+    _portLocalPos: {x: 1453.5, y: 966.5}
+    _localUnitPosition: {x: 1453.5, y: 931.5}
+    _neighbours: 180000001c0000001d000000270000002a0000002c000000
+  - _name: Halar
+    _mapColor: {r: 0.08235294, g: 0.6745098, b: 0.14901961, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 1
+    _settlementLocalPos: {x: 759.5, y: 975.5}
+    _portLocalPos: {x: 759.5, y: 975.5}
+    _localUnitPosition: {x: 759.5, y: 940.5}
+    _neighbours: 1b0000001f000000220000002b0000003000000031000000
+  - _name: Karbel
+    _mapColor: {r: 0.25882354, g: 0.25882354, b: 0.8156863, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 1
+    _settlementLocalPos: {x: 1966.5, y: 1017.5}
+    _portLocalPos: {x: 1992.1, y: 967.1}
+    _localUnitPosition: {x: 1966.5, y: 982.5}
+    _neighbours: 1e00000020000000280000002f000000
+  - _name: Monbel
+    _mapColor: {r: 0.5058824, g: 0.23137255, b: 0.23529412, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 3
+    _settlementLocalPos: {x: 1662.5, y: 1039.5}
+    _portLocalPos: {x: 1662.5, y: 1039.5}
+    _localUnitPosition: {x: 1662.5, y: 1004.5}
+    _neighbours: 1c0000001e00000024000000280000002c0000003b000000
+  - _name: Beldun
+    _mapColor: {r: 0.31764707, g: 0.44313726, b: 0.3764706, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 1825.5, y: 1106.5}
+    _portLocalPos: {x: 1825.5, y: 1106.5}
+    _localUnitPosition: {x: 1825.5, y: 1071.5}
+    _neighbours: 1e00000026000000270000002f0000003c000000
+  - _name: Noris
+    _mapColor: {r: 0.11372549, g: 0.75686276, b: 0.21960784, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 2
+    _production: 0
+    _settlementLocalPos: {x: 258.5, y: 1083.5}
+    _portLocalPos: {x: 210.5, y: 1113.9}
+    _localUnitPosition: {x: 258.5, y: 1048.5}
+    _neighbours: 13000000230000002d00000033000000
+  - _name: Dunzan
+    _mapColor: {r: 0.5686275, g: 0.5647059, b: 0.47058824, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 3
+    _production: 3
+    _settlementLocalPos: {x: 1289.5, y: 1110.5}
+    _portLocalPos: {x: 1289.5, y: 1110.5}
+    _localUnitPosition: {x: 1289.5, y: 1075.5}
+    _neighbours: 1d00000021000000240000002c0000002e00000039000000
+  - _name: Karfenwen
+    _mapColor: {r: 0.54901963, g: 0.64705884, b: 0.29411766, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 566.5, y: 1091.5}
+    _portLocalPos: {x: 566.5, y: 1091.5}
+    _localUnitPosition: {x: 566.5, y: 1056.5}
+    _neighbours: 1f00000023000000250000002d0000003100000035000000
+  - _name: Iscor
+    _mapColor: {r: 0.32941177, g: 0.8392157, b: 0.64705884, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 2
+    _production: 3
+    _settlementLocalPos: {x: 1516.5, y: 1123.5}
+    _portLocalPos: {x: 1516.5, y: 1123.5}
+    _localUnitPosition: {x: 1516.5, y: 1088.5}
+    _neighbours: 24000000270000002a0000003a000000
+  - _name: Isbriten
+    _mapColor: {r: 0.5921569, g: 0.6, b: 0.5803922, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 3
+    _production: 3
+    _settlementLocalPos: {x: 403.5, y: 1120.5}
+    _portLocalPos: {x: 403.5, y: 1120.5}
+    _localUnitPosition: {x: 403.5, y: 1085.5}
+    _neighbours: 23000000290000002b00000034000000
+  - _name: Bellorkar
+    _mapColor: {r: 0.5921569, g: 0.75686276, b: 0.7254902, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1100.5, y: 1115.5}
+    _portLocalPos: {x: 1100.5, y: 1115.5}
+    _localUnitPosition: {x: 1100.5, y: 1080.5}
+    _neighbours: 21000000220000002a0000003000000038000000
+  - _name: Lorkarar
+    _mapColor: {r: 0.63529414, g: 0.5372549, b: 0.7254902, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 1
+    _production: 0
+    _settlementLocalPos: {x: 2048.5, y: 1132.5}
+    _portLocalPos: {x: 2093.3, y: 1101.3}
+    _localUnitPosition: {x: 2048.5, y: 1097.5}
+    _neighbours: 2000000026000000280000003d000000
+  - _name: Monwen
+    _mapColor: {r: 0.8980392, g: 0.67058825, b: 0.65882355, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 908.5, y: 1121.5}
+    _portLocalPos: {x: 908.5, y: 1121.5}
+    _localUnitPosition: {x: 908.5, y: 1086.5}
+    _neighbours: 22000000250000002e0000003100000037000000
+  - _name: Roslordra
+    _mapColor: {r: 0.64705884, g: 0.70980394, b: 0.078431375, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 721.5, y: 1126.5}
+    _portLocalPos: {x: 721.5, y: 1126.5}
+    _localUnitPosition: {x: 721.5, y: 1091.5}
+    _neighbours: 250000002b0000003000000036000000
+  - _name: Sea 50
+    _mapColor: {r: 0.2784314, g: 0.5019608, b: 0.5176471, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 168.5, y: 1621.5}
+    _portLocalPos: {x: 168.5, y: 1621.5}
+    _localUnitPosition: {x: 168.5, y: 1586.5}
+    _neighbours: 130000003300000043000000450000004e0000005c000000
+  - _name: Maris
+    _mapColor: {r: 0.24705882, g: 0.8784314, b: 0.18431373, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 2
+    _production: 0
+    _settlementLocalPos: {x: 257.5, y: 1315.5}
+    _portLocalPos: {x: 210.3, y: 1285.9}
+    _localUnitPosition: {x: 257.5, y: 1280.5}
+    _neighbours: 29000000320000003400000043000000
+  - _name: Faldun
+    _mapColor: {r: 0.3882353, g: 0.81960785, b: 0.13725491, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 3
+    _production: 3
+    _settlementLocalPos: {x: 403.5, y: 1277.5}
+    _portLocalPos: {x: 403.5, y: 1277.5}
+    _localUnitPosition: {x: 403.5, y: 1242.5}
+    _neighbours: 2d000000330000003500000043000000
+  - _name: Wenmonquin
+    _mapColor: {r: 0.827451, g: 0.14117648, b: 0.41960785, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 566.5, y: 1308.5}
+    _portLocalPos: {x: 566.5, y: 1308.5}
+    _localUnitPosition: {x: 566.5, y: 1273.5}
+    _neighbours: 2b0000003400000036000000410000004300000045000000
+  - _name: Vilfalgar
+    _mapColor: {r: 0.7372549, g: 0.6, b: 0.3529412, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 721.5, y: 1273.5}
+    _portLocalPos: {x: 721.5, y: 1273.5}
+    _localUnitPosition: {x: 721.5, y: 1238.5}
+    _neighbours: 31000000350000003700000041000000
+  - _name: Halcorfal
+    _mapColor: {r: 0.74509805, g: 0.34509805, b: 0.5372549, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 908.5, y: 1277.5}
+    _portLocalPos: {x: 908.5, y: 1277.5}
+    _localUnitPosition: {x: 908.5, y: 1242.5}
+    _neighbours: 3000000036000000380000004100000042000000
+  - _name: Monor
+    _mapColor: {r: 0.8117647, g: 0.25882354, b: 0.5686275, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1100.5, y: 1284.5}
+    _portLocalPos: {x: 1100.5, y: 1284.5}
+    _localUnitPosition: {x: 1100.5, y: 1249.5}
+    _neighbours: 2e00000037000000390000004200000044000000
+  - _name: Karzan
+    _mapColor: {r: 0.7294118, g: 0.5921569, b: 0.25882354, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 3
+    _production: 3
+    _settlementLocalPos: {x: 1289.5, y: 1288.5}
+    _portLocalPos: {x: 1289.5, y: 1288.5}
+    _localUnitPosition: {x: 1289.5, y: 1253.5}
+    _neighbours: 2a000000380000003a000000400000004400000046000000
+  - _name: Dunrosmar
+    _mapColor: {r: 0.31764707, g: 0.69411767, b: 0.5921569, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 2
+    _production: 3
+    _settlementLocalPos: {x: 1516.5, y: 1276.5}
+    _portLocalPos: {x: 1516.5, y: 1276.5}
+    _localUnitPosition: {x: 1516.5, y: 1241.5}
+    _neighbours: 2c000000390000003b00000040000000
+  - _name: Halisten
+    _mapColor: {r: 0.827451, g: 0.91764706, b: 0.22352941, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 3
+    _settlementLocalPos: {x: 1662.5, y: 1360.5}
+    _portLocalPos: {x: 1662.5, y: 1360.5}
+    _localUnitPosition: {x: 1662.5, y: 1325.5}
+    _neighbours: 270000003a0000003c000000400000004700000048000000
+  - _name: Marzan
+    _mapColor: {r: 0.6313726, g: 0.34117648, b: 0.87058824, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 1825.5, y: 1291.5}
+    _portLocalPos: {x: 1825.5, y: 1291.5}
+    _localUnitPosition: {x: 1825.5, y: 1256.5}
+    _neighbours: 280000003b0000003d0000003f00000047000000
+  - _name: Tenzan
+    _mapColor: {r: 0.4862745, g: 0.4117647, b: 0.7921569, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 1
+    _production: 0
+    _settlementLocalPos: {x: 2048.5, y: 1267.5}
+    _portLocalPos: {x: 2093.3, y: 1298.7}
+    _localUnitPosition: {x: 2048.5, y: 1232.5}
+    _neighbours: 2f0000003c0000003e0000003f000000
+  - _name: Sea 62
+    _mapColor: {r: 0.6901961, g: 0.20784314, b: 0.5411765, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 2247.5, y: 1439.5}
+    _portLocalPos: {x: 2247.5, y: 1439.5}
+    _localUnitPosition: {x: 2247.5, y: 1404.5}
+    _neighbours: 200000003d0000003f000000470000004d000000
+  - _name: Belmar
+    _mapColor: {r: 0.41568628, g: 0.6627451, b: 0.7372549, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 1
+    _settlementLocalPos: {x: 1966.5, y: 1382.5}
+    _portLocalPos: {x: 1992.1, y: 1432.9}
+    _localUnitPosition: {x: 1966.5, y: 1347.5}
+    _neighbours: 3c0000003d0000003e00000047000000
+  - _name: Orlor
+    _mapColor: {r: 0.6862745, g: 0.3882353, b: 0.5529412, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 2
+    _settlementLocalPos: {x: 1451.5, y: 1431.5}
+    _portLocalPos: {x: 1451.5, y: 1431.5}
+    _localUnitPosition: {x: 1451.5, y: 1396.5}
+    _neighbours: 390000003a0000003b00000046000000480000004b000000
+  - _name: Cortenhal
+    _mapColor: {r: 0.2901961, g: 0.16470589, b: 0.3137255, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 1
+    _settlementLocalPos: {x: 759.5, y: 1424.5}
+    _portLocalPos: {x: 759.5, y: 1424.5}
+    _localUnitPosition: {x: 759.5, y: 1389.5}
+    _neighbours: 350000003600000037000000420000004500000049000000
+  - _name: Yrval
+    _mapColor: {r: 0.10980392, g: 0.78039217, b: 0.14901961, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 1
+    _settlementLocalPos: {x: 923.5, y: 1441.5}
+    _portLocalPos: {x: 923.5, y: 1441.5}
+    _localUnitPosition: {x: 923.5, y: 1406.5}
+    _neighbours: 37000000380000004100000044000000490000004a000000
+  - _name: Garkar
+    _mapColor: {r: 0.84705883, g: 0.9137255, b: 0.7019608, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 366.5, y: 1445.5}
+    _portLocalPos: {x: 364.9, y: 1511.9}
+    _localUnitPosition: {x: 366.5, y: 1410.5}
+    _neighbours: 3200000033000000340000003500000045000000
+  - _name: Brizanros
+    _mapColor: {r: 0.5568628, g: 0.29411766, b: 0.09411765, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1123.5, y: 1461.5}
+    _portLocalPos: {x: 1123.5, y: 1461.5}
+    _localUnitPosition: {x: 1123.5, y: 1426.5}
+    _neighbours: 380000003900000042000000460000004a0000004c000000
+  - _name: Lordra
+    _mapColor: {r: 0.27058825, g: 0.17254902, b: 0.105882354, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 2
+    _production: 1
+    _settlementLocalPos: {x: 572.5, y: 1482.5}
+    _portLocalPos: {x: 539.7, y: 1542.5}
+    _localUnitPosition: {x: 572.5, y: 1447.5}
+    _neighbours: 32000000350000004100000043000000490000004e00000052000000
+  - _name: Wenhalpel
+    _mapColor: {r: 0.08235294, g: 0.38431373, b: 0.41568628, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 1
+    _production: 1
+    _settlementLocalPos: {x: 1289.5, y: 1516.5}
+    _portLocalPos: {x: 1289.5, y: 1516.5}
+    _localUnitPosition: {x: 1289.5, y: 1481.5}
+    _neighbours: 3900000040000000440000004b0000004c000000
+  - _name: Yrulbri
+    _mapColor: {r: 0.16470589, g: 0.22352941, b: 0.5176471, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 1
+    _settlementLocalPos: {x: 1827.5, y: 1527.5}
+    _portLocalPos: {x: 1900.3, y: 1546.7}
+    _localUnitPosition: {x: 1827.5, y: 1492.5}
+    _neighbours: 3b0000003c0000003e0000003f000000480000004d0000004f00000051000000
+  - _name: Wenmar
+    _mapColor: {r: 0.62352943, g: 0.08627451, b: 0.29803923, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1619.5, y: 1541.5}
+    _portLocalPos: {x: 1619.5, y: 1541.5}
+    _localUnitPosition: {x: 1619.5, y: 1506.5}
+    _neighbours: 3b00000040000000470000004b0000004f00000053000000
+  - _name: Corhal
+    _mapColor: {r: 0.6039216, g: 0.10980392, b: 0.38039216, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 717.5, y: 1585.5}
+    _portLocalPos: {x: 717.5, y: 1585.5}
+    _localUnitPosition: {x: 717.5, y: 1550.5}
+    _neighbours: 4100000042000000450000004a0000005000000052000000
+  - _name: Yrzanlor
+    _mapColor: {r: 0.5764706, g: 0.11372549, b: 0.6509804, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 984.5, y: 1608.5}
+    _portLocalPos: {x: 984.5, y: 1608.5}
+    _localUnitPosition: {x: 984.5, y: 1573.5}
+    _neighbours: 4200000044000000490000004c0000005000000054000000
+  - _name: Rosten
+    _mapColor: {r: 0.9019608, g: 0.64705884, b: 0.8117647, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1424.5, y: 1671.5}
+    _portLocalPos: {x: 1424.5, y: 1671.5}
+    _localUnitPosition: {x: 1424.5, y: 1636.5}
+    _neighbours: 4000000046000000480000004c000000530000005500000056000000
+  - _name: Fenpelfen
+    _mapColor: {r: 0.1254902, g: 0.1764706, b: 0.48235294, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 3
+    _production: 1
+    _settlementLocalPos: {x: 1167.5, y: 1659.5}
+    _portLocalPos: {x: 1167.5, y: 1659.5}
+    _localUnitPosition: {x: 1167.5, y: 1624.5}
+    _neighbours: 44000000460000004a0000004b0000005400000055000000
+  - _name: Sea 77
+    _mapColor: {r: 0.23137255, g: 0.7137255, b: 0.11764706, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 2171.5, y: 1787.5}
+    _portLocalPos: {x: 2171.5, y: 1787.5}
+    _localUnitPosition: {x: 2171.5, y: 1752.5}
+    _neighbours: 3e0000004700000051000000570000005900000060000000
+  - _name: Sea 78
+    _mapColor: {r: 0.7254902, g: 0.87058824, b: 0.4392157, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 389.5, y: 1885.5}
+    _portLocalPos: {x: 389.5, y: 1885.5}
+    _localUnitPosition: {x: 389.5, y: 1850.5}
+    _neighbours: 320000004500000052000000580000005c0000006200000063000000
+  - _name: Halyr
+    _mapColor: {r: 0.60784316, g: 0.89411765, b: 0.43137255, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 1
+    _production: 4
+    _settlementLocalPos: {x: 1734.5, y: 1692.5}
+    _portLocalPos: {x: 1734.5, y: 1692.5}
+    _localUnitPosition: {x: 1734.5, y: 1657.5}
+    _neighbours: 4700000048000000510000005300000057000000
+  - _name: Karmonvil
+    _mapColor: {r: 0.14509805, g: 0.7529412, b: 0.85882354, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 821.5, y: 1735.5}
+    _portLocalPos: {x: 821.5, y: 1735.5}
+    _localUnitPosition: {x: 821.5, y: 1700.5}
+    _neighbours: 490000004a0000005200000054000000580000005a000000
+  - _name: Tenyr
+    _mapColor: {r: 0.21568628, g: 0.40392157, b: 0.28627452, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1881.5, y: 1690.5}
+    _portLocalPos: {x: 1924.7, y: 1660.1}
+    _localUnitPosition: {x: 1881.5, y: 1655.5}
+    _neighbours: 470000004d0000004f00000057000000
+  - _name: Noryr
+    _mapColor: {r: 0.20784314, g: 0.70980394, b: 0.7411765, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 652.5, y: 1747.5}
+    _portLocalPos: {x: 590.1, y: 1738.7}
+    _localUnitPosition: {x: 652.5, y: 1712.5}
+    _neighbours: 45000000490000004e0000005000000058000000
+  - _name: Wenul
+    _mapColor: {r: 0.6901961, g: 0.7176471, b: 0.4509804, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 1584.5, y: 1775.5}
+    _portLocalPos: {x: 1584.5, y: 1775.5}
+    _localUnitPosition: {x: 1584.5, y: 1740.5}
+    _neighbours: 480000004b0000004f00000056000000570000005b000000
+  - _name: Falcorcor
+    _mapColor: {r: 0.8784314, g: 0.34509805, b: 0.9098039, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 3
+    _settlement: 0
+    _production: 4
+    _settlementLocalPos: {x: 996.5, y: 1813.5}
+    _portLocalPos: {x: 996.5, y: 1813.5}
+    _localUnitPosition: {x: 996.5, y: 1778.5}
+    _neighbours: 4a0000004c00000050000000550000005a0000005d000000
+  - _name: Arellor
+    _mapColor: {r: 0.6313726, g: 0.24313726, b: 0.15686275, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 3
+    _production: 1
+    _settlementLocalPos: {x: 1210.5, y: 1849.5}
+    _portLocalPos: {x: 1210.5, y: 1849.5}
+    _localUnitPosition: {x: 1210.5, y: 1814.5}
+    _neighbours: 4b0000004c00000054000000560000005d0000005e0000005f000000
+  - _name: Vilpel
+    _mapColor: {r: 0.81960785, g: 0.6509804, b: 0.7176471, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1407.5, y: 1861.5}
+    _portLocalPos: {x: 1407.5, y: 1861.5}
+    _localUnitPosition: {x: 1407.5, y: 1826.5}
+    _neighbours: 4b00000053000000550000005b0000005e000000
+  - _name: Ultorpel
+    _mapColor: {r: 0.34901962, g: 0.8666667, b: 0.5019608, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 3
+    _production: 1
+    _settlementLocalPos: {x: 1751.5, y: 1860.5}
+    _portLocalPos: {x: 1786.7, y: 1913.3}
+    _localUnitPosition: {x: 1751.5, y: 1825.5}
+    _neighbours: 4d0000004f0000005100000053000000590000005b000000
+  - _name: Salhalfen
+    _mapColor: {r: 0.12941177, g: 0.654902, b: 0.6666667, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 1
+    _production: 2
+    _settlementLocalPos: {x: 698.5, y: 1908.5}
+    _portLocalPos: {x: 680.1, y: 1971.7}
+    _localUnitPosition: {x: 698.5, y: 1873.5}
+    _neighbours: 4e00000050000000520000005a00000062000000
+  - _name: Sea 89
+    _mapColor: {r: 0.827451, g: 0.45882353, b: 0.15294118, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1863.5, y: 2146.5}
+    _portLocalPos: {x: 1863.5, y: 2146.5}
+    _localUnitPosition: {x: 1863.5, y: 2111.5}
+    _neighbours: 4d000000570000005b0000006000000061000000
+  - _name: Ismar
+    _mapColor: {r: 0.21176471, g: 0.68235296, b: 0.3529412, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 1
+    _production: 3
+    _settlementLocalPos: {x: 860.5, y: 1968.5}
+    _portLocalPos: {x: 860.5, y: 2037.3}
+    _localUnitPosition: {x: 860.5, y: 1933.5}
+    _neighbours: 5000000054000000580000005d00000062000000
+  - _name: Brigar
+    _mapColor: {r: 0.105882354, g: 0.49803922, b: 0.20392157, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1583.5, y: 1947.5}
+    _portLocalPos: {x: 1631.5, y: 1996.3}
+    _localUnitPosition: {x: 1583.5, y: 1912.5}
+    _neighbours: 530000005600000057000000590000005e00000061000000
+  - _name: Sea 92
+    _mapColor: {r: 0.7254902, g: 0.1764706, b: 0.5137255, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 189.5, y: 2210.5}
+    _portLocalPos: {x: 189.5, y: 2210.5}
+    _localUnitPosition: {x: 189.5, y: 2175.5}
+    _neighbours: 320000004e00000062000000
+  - _name: Tenzan
+    _mapColor: {r: 0.5372549, g: 0.49019608, b: 0.25490198, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 1
+    _settlement: 0
+    _production: 2
+    _settlementLocalPos: {x: 1031.5, y: 2005.5}
+    _portLocalPos: {x: 975.5, y: 2080.7}
+    _localUnitPosition: {x: 1031.5, y: 1970.5}
+    _neighbours: 54000000550000005a0000005f00000062000000
+  - _name: Fententen
+    _mapColor: {r: 0.44313726, g: 0.40784314, b: 0.5411765, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 0
+    _production: 3
+    _settlementLocalPos: {x: 1374.5, y: 2031.5}
+    _portLocalPos: {x: 1424.9, y: 2073.1}
+    _localUnitPosition: {x: 1374.5, y: 1996.5}
+    _neighbours: 55000000560000005b0000005f00000061000000
+  - _name: Elyrvil
+    _mapColor: {r: 0.14901961, g: 0.84313726, b: 0.6392157, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 2
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1207.5, y: 2053.5}
+    _portLocalPos: {x: 1231.5, y: 2122.3}
+    _localUnitPosition: {x: 1207.5, y: 2018.5}
+    _neighbours: 550000005d0000005e0000006100000062000000
+  - _name: Sea 96
+    _mapColor: {r: 0.23921569, g: 0.78431374, b: 0.7019608, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 2234.5, y: 2227.5}
+    _portLocalPos: {x: 2234.5, y: 2227.5}
+    _localUnitPosition: {x: 2234.5, y: 2192.5}
+    _neighbours: 4d00000059000000
+  - _name: Sea 97
+    _mapColor: {r: 0.44313726, g: 0.8784314, b: 0.46666667, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 1510.5, y: 2244.5}
+    _portLocalPos: {x: 1510.5, y: 2244.5}
+    _localUnitPosition: {x: 1510.5, y: 2209.5}
+    _neighbours: 590000005b0000005e0000005f00000062000000
+  - _name: Sea 98
+    _mapColor: {r: 0.4862745, g: 0.2, b: 0.7137255, a: 1}
+    _type: 1
+    _impassable: 0
+    _landscape: 0
+    _settlement: 0
+    _production: 0
+    _settlementLocalPos: {x: 857.5, y: 2236.5}
+    _portLocalPos: {x: 857.5, y: 2236.5}
+    _localUnitPosition: {x: 857.5, y: 2201.5}
+    _neighbours: 4e000000580000005a0000005c0000005d0000005f0000006100000063000000
+  - _name: Fendun
+    _mapColor: {r: 0.87058824, g: 0.2509804, b: 0.63529414, a: 1}
+    _type: 0
+    _impassable: 0
+    _landscape: 0
+    _settlement: 3
+    _production: 3
+    _settlementLocalPos: {x: 614.5, y: 2176.5}
+    _portLocalPos: {x: 565.7, y: 2160.5}
+    _localUnitPosition: {x: 614.5, y: 2141.5}
+    _neighbours: 4e00000062000000
+  _possibleSpawnPoints: 6300000005000000570000000f000000
+  _colorAliases: []
+  _mirrors: 5c00000062000000610000005900000060000000630000004e0000005d0000005f0000005e0000005a0000005b000000580000004d0000005600000057000000550000005400000052000000320000005300000050000000510000004f0000004b0000004c0000004a00000049000000480000004600000047000000450000003e00000044000000420000004300000040000000410000003f0000003b0000003c0000003300000039000000350000003a00000034000000380000003d000000370000003600000013000000290000002d0000002b00000031000000300000002e0000002a0000002c00000027000000280000002f000000200000002600000024000000250000002200000023000000210000001f0000001d0000001e0000001c0000001b0000001a00000018000000190000000d00000006000000170000001500000016000000120000001400000011000000100000000e0000000f0000000c000000030000000a0000000b0000000000000007000000090000000800000004000000020000000100000005000000
